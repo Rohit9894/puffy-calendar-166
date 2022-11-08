@@ -1,0 +1,28 @@
+.loginbtn {
+  color: var(--black-color);
+  --button-color-active: var(--white-color);
+  background-color: transparent;
+  --button-bg-color-active: #0d233b;
+  --button-border-color-active: #0d233b;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.6;
+  padding: 14px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: pre-wrap;
+  width: 100%;
+}
+.loginbtn:hover {
+  color: var(--white-color);
+  border-color: var(--black-color-hover);
+  background-color: var(--black-color-hover);
+}
