@@ -1,5 +1,6 @@
+import { Box } from "@chakra-ui/react";
 function App() {
-  return <div>Hello</div>;
+  return <Box textAlign={"center"}>Hello</Box>;
 }
 
 export default App;
