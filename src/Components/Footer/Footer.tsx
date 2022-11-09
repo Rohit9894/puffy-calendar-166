@@ -33,7 +33,7 @@ export const Footer = () => {
         flexWrap="wrap"
         m="auto"
       >
-        <Box>
+        <Box mt={["10px", ""]}>
           <Heading fontSize={"18px"}>Mail Test</Heading>
           <List fontSize={"14px"} pl="5px" spacing={2} mt="10px">
             <ListItem className="dropdownlistmenu">
@@ -59,10 +59,7 @@ export const Footer = () => {
             </ListItem>
           </List>
         </Box>
-        <Box
-          display={["none", "none", "none", "block", "block"]}
-          //   display={path === "/login" || path === "/signup" ? "none" : "block"}
-        >
+        <Box display={["none", "none", "none", "block", "block"]}>
           <Heading fontSize={"18px"}>Railsware Experience</Heading>
           <List fontSize={"14px"} pl="5px" spacing={2} mt="10px">
             <ListItem className="dropdownlistmenu">
@@ -85,7 +82,7 @@ export const Footer = () => {
           </List>
         </Box>
         <Box>
-          <Box>
+          <Box mt={["10px", ""]}>
             <Heading fontSize={"18px"}>Contact</Heading>
             <a
               style={{ fontSize: "14px" }}
