@@ -6,14 +6,10 @@ import Price from "./Components/Pricing/Price";
 function App() {
   return (
     <AuthContextProvider>
- <Navbar />
+    <Navbar />
       <AllRoutes />
-
-      
-
       <Footer />
-     </AuthContextProvider>
-   
+    </AuthContextProvider>
   );
 }
 
