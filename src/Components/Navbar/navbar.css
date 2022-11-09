@@ -1,12 +1,13 @@
 nav {
   top: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 70px;
   position: fixed;
   background: #f9f9f7;
+  padding: 0 10%;
 }
 .navbar {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -84,4 +85,28 @@ nav {
   top: 0;
   right: 45%;
   transform: translateX(-50%);
+}
+.iconrotate {
+  transform: rotate(45deg);
+}
+.dropdownhamlist {
+  position: fixed;
+  width: 99%;
+  left: 50%;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-height: calc(90vh - 4rem);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 0.625rem;
+  box-shadow: 0.3125rem 1rem 2.5rem rgb(0 0 0 / 7%);
+  transition: 0.5s;
+  padding: 1rem;
+}
+.dropdownhamlist::-webkit-scrollbar {
+  display: none;
 }
