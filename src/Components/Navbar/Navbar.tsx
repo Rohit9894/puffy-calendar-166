@@ -175,15 +175,15 @@ export const Navbar = () => {
         </Box>
       </Flex>
       <Flex
-        w="30px"
-        h="30px"
+        w="35px"
+        h="35px"
         cursor="pointer"
         justify="center"
         align={"center"}
         fontSize="22px"
         bg={path === "/login" || path === "/signup" ? "#22d172" : "#566583"}
         borderRadius={path === "/login" || path === "/signup" ? "50%" : "2px"}
-        // display={["flex", "flex", "flex", "none", "none"]}
+        display={["flex", "flex", "flex", "none", "none"]}
       >
         {open ? (
           <FaBars onClick={() => setOpen(!open)} color="#fff" />
