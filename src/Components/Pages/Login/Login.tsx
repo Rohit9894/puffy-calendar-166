@@ -12,7 +12,7 @@ import login from "./login.svg";
 import "./login.css";
 export const Login = () => {
   return (
-    <Box h="100vh" m="100px auto" w="80%" border={"1px solid red"}>
+    <Box h="100vh" m="100px auto" w="80%">
       <HStack w="100%" justify={"space-evenly"}>
         <VStack w={"380px"} align="flex-start" gap={"15px"}>
           <Heading mb="10px">Log In</Heading>
