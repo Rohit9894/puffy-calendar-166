@@ -110,3 +110,7 @@ nav {
 .dropdownhamlist::-webkit-scrollbar {
   display: none;
 }
+.mailspan:hover {
+  transition: 0.5s;
+  border-bottom: 1px solid black;
+}
