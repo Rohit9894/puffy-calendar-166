@@ -2,12 +2,22 @@ import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import { useState, FormEvent } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
 import { SiMicrosoftoffice } from "react-icons/si";
+import { UserAuth } from "../../Context/AuthContext";
 import login from "./assets/login.svg";
 import "./login.css";
 export const Login = () => {
+  const { googleSignIn } = UserAuth();
   const [putmail, setPutmail] = useState(true);
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+  };
+  const handleGoogleLogin = async () => {
+    console.log("check");
+    // try {
+    //   await googleSignIn();
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>
@@ -15,7 +25,7 @@ export const Login = () => {
         <Flex w="100%" justify={"space-evenly"} h="full" gap="10px">
           <VStack w="380px" align="flex-start" gap={"15px"} h="full">
             <Heading mb="10px">Log In</Heading>
-            <Box className="loginbtn">
+            <Box className="loginbtn" onClick={handleGoogleLogin}>
               <AiOutlineGoogle /> Use Google account
             </Box>
             <Box className="loginbtn">
