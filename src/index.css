@@ -1,13 +1,42 @@
+:root {
+  --black-color: #1a2e44;
+  --black-color-hover: #566583;
+  --primary-color: #4c83ee;
+  --primary-color-hover: #5d93fc;
+  --primary-color-hover-with-opacity: rgba(93, 147, 252, 0.5);
+  --secondary-color: #22d172;
+  --secondary-color-hover: #45e890;
+  --success-color: #22d172;
+  --danger-color: #fb5151;
+  --danger-color-hover: #ff7171;
+  --danger-color-hover-with-opacity: rgba(255, 113, 113, 0.5);
+  --warning-color: #ffa726;
+  --warning-color-hover: #f70;
+  --warning-light-color: #fffcf9;
+  --white-color: #fff;
+  --muted-color: #eee;
+  --note-color: #b4cdff;
+  --field-border-color: #d0d3d8;
+  --primary-bright-color: #66f2d5;
+  --primary-brand-color: #00d7ab;
+  --primary-dark-color: #00b08c;
+  --postsecondary-color: #dcbaff;
+  --bright-color: #f70;
+  --light-bg-color: #f7f9fb;
+  --text-light-color: #a2adc1;
+  --primary-border-color: #dfe3ea;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f9f9f7 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
