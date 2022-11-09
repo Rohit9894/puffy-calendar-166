@@ -1,0 +1,76 @@
+.loginbtn {
+  color: var(--black-color);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.6;
+  padding: 14px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: pre-wrap;
+  width: 100%;
+}
+.loginbtn:hover {
+  color: var(--white-color);
+  border-color: var(--black-color-hover);
+  background-color: var(--black-color-hover);
+}
+.loginlabel {
+  padding-left: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.loginhyperlink {
+  color: var(--primary-color);
+}
+.loginhyperlink a:hover {
+  text-decoration: underline;
+}
+.loginform input[type="email"],
+.loginform input[type="password"],
+.loginform input[type="submit"],
+.nextbtn {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  display: block;
+  font-size: 14px;
+  line-height: 1.3rem;
+  width: 100%;
+  border: 1px solid var(--field-border-color);
+  border-radius: 7px;
+  padding: 11px 10px;
+  transition: border-color 0.5s ease 0s;
+}
+.loginform input[type="email"]:focus,
+.loginform input[type="password"]:focus {
+  outline: none;
+  border-color: var(--primary-color-hover);
+  box-shadow: 0 0 4px var(--primary-color-hover-with-opacity);
+}
+.loginform input[type="submit"],
+.nextbtn {
+  background-color: #22d172;
+  border: 1px solid transparent;
+  color: var(--white-color);
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: pre-wrap;
+}
+.loginform input[type="submit"]:hover,
+.nextbtn:hover {
+  background-color: #45e890;
+}

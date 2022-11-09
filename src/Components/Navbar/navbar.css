@@ -1,0 +1,116 @@
+nav {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background: #f9f9f7;
+  padding: 0 10%;
+}
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.droplist {
+  position: relative;
+  padding: 20px 0;
+}
+
+.dropdownlist {
+  display: none;
+  position: absolute;
+  border-radius: 0.625rem;
+  box-shadow: 0.3125rem 1rem 2.5rem rgb(0 0 0 / 20%);
+  left: 10%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 0.75rem;
+  padding: 1.5rem;
+  border: none;
+  width: max-content;
+  background-color: #fff;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.dropdownlist::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+  rotate: 45deg;
+  top: 0;
+  right: 30%;
+  transform: translateX(-50%);
+}
+.droplist:hover .dropdownlist,
+.droplist:hover .dropdownlist2 {
+  display: block;
+  transition: 0.5s;
+}
+.dropdownlistmenu {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.dropdownlistmenu:hover {
+  color: #22d172;
+}
+.dropdownlist2 {
+  display: none;
+  position: absolute;
+  border-radius: 0.625rem;
+  box-shadow: 0.3125rem 1rem 2.5rem rgb(0 0 0 / 20%);
+  left: 20%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-40%);
+  margin-top: 0.75rem;
+  padding: 1.5rem;
+  border: none;
+  width: max-content;
+  background-color: #fff;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.dropdownlist2::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+  rotate: 45deg;
+  top: 0;
+  right: 45%;
+  transform: translateX(-50%);
+}
+.iconrotate {
+  transform: rotate(45deg);
+}
+.dropdownhamlist {
+  position: fixed;
+  width: 99%;
+  left: 50%;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-height: calc(90vh - 4rem);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 0.625rem;
+  box-shadow: 0.3125rem 1rem 2.5rem rgb(0 0 0 / 7%);
+  transition: 0.5s;
+  padding: 1rem;
+}
+.dropdownhamlist::-webkit-scrollbar {
+  display: none;
+}
+.mailspan:hover {
+  transition: 0.5s;
+  border-bottom: 1px solid black;
+}

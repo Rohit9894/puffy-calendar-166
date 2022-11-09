@@ -1,12 +1,17 @@
-import { Box} from "@chakra-ui/react";
-import Blog from "./Component/Pages/Blog/Blog";
-
-// import Case_Studies from "./Component/Pages/Case_Studies/Case_Studies";
+import { AuthContextProvider } from "./Components/Context/AuthContext";
+import { Footer } from "./Components/Footer/Footer";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { AllRoutes } from "./Components/Routes/AllRoutes";
+import Price from "./Components/Pricing/Price";
 function App() {
-  
-  return <Box textAlign={"center"}>
-     <Blog/>
-   </Box>;
+  return (
+    <AuthContextProvider>
+    <Navbar />
+      <AllRoutes />
+      <Footer />
+    </AuthContextProvider>
+  );
 }
 
 export default App;
+
