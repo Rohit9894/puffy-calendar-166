@@ -4,14 +4,11 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import { AllRoutes } from "./Components/Routes/AllRoutes";
 function App() {
   return (
-    // <AuthContextProvider>
-
-    // </AuthContextProvider>
-    <>
+    <AuthContextProvider>
       <Navbar />
       <AllRoutes />
       <Footer />
-    </>
+    </AuthContextProvider>
   );
 }
 
