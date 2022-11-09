@@ -98,7 +98,7 @@ export const Navbar = () => {
             <Link to={""}>Email API</Link>
           </ListItem>
           <ListItem className="droplist">
-            <Link to="">Pricing</Link>
+            <Link to="/price">Pricing</Link>
           </ListItem>
           <ListItem className="droplist">
             Resources
