@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import EmailAPI from "../Pages/EmailAPI";
 import Blog from "../Pages/Blog/Blog";
 import { Home } from "../Pages/Home";
 import { Login } from "../Pages/Login/Login";
@@ -15,8 +16,6 @@ export const AllRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-     <Route path="/price" element={<Price/>}/>
-     <Route path="/resources/blog" element={<Blog/>}/>
     </Routes>
   );
 };
