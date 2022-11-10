@@ -1,0 +1,14 @@
+.r_button_opt{
+    border: 1px solid black;
+   border-radius: 8px;
+
+}
+.r_bg{
+    display: inline-block;
+    background-color:#1a2e44 ;
+}
+.r_cards{
+   height: 208px;
+   width: 100%;
+   border-radius:12px;
+}
