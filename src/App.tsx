@@ -5,7 +5,7 @@ import { AllRoutes } from "./Components/Routes/AllRoutes";
 function App() {
   return (
     <AuthContextProvider>
-    <Navbar />
+      <Navbar />
       <AllRoutes />
       <Footer />
     </AuthContextProvider>
@@ -13,4 +13,3 @@ function App() {
 }
 
 export default App;
-
