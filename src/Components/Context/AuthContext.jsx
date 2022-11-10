@@ -6,6 +6,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
+// import { auth } from "../Firebase/firebase";
 const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const googleSignIn = () => {
