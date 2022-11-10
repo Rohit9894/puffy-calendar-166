@@ -1,0 +1,13 @@
+.r_button{
+
+          border:1px solid black;
+          background: #66f2d5;
+          height: 60px;
+          border-radius: 30px;
+          padding-inline: 35px;
+
+}
+.r_button:hover{
+    border: none;
+    background: pink;
+}

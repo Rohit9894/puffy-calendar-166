@@ -9,6 +9,7 @@ import {
   signInWithRedirect,
 } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
+// import { auth } from "../Firebase/firebase";
 const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState({});

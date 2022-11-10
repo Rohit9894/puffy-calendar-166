@@ -1,0 +1,30 @@
+.r_upper_poster{
+
+
+    margin: auto;
+    background: #f9c273;
+    border-radius: 10px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  .r_heading{
+  word-spacing: 6px;
+  line-height: 60px;
+
+}
+  .r_heading:hover{
+    color: gray;
+  
+  }
+  .active_catagory{
+    border-bottom: 2px solid green;
+    color: black;
+  }
+  .scrollbar{
+    overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
+ 
+  
