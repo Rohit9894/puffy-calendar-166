@@ -13,11 +13,11 @@ export const Login = () => {
   };
   const handleGoogleLogin = async () => {
     console.log("check");
-    // try {
-    //   await googleSignIn();
-    // } catch (error) {
-    //   console.log(error);
-    // }
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>

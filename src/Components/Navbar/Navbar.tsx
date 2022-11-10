@@ -123,7 +123,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to={""} className="dropdownlistmenu">
+                <Link to={"/resources/blog"} className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={blodimg}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Blog</Text>
