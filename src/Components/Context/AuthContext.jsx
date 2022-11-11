@@ -9,10 +9,37 @@ import {
   signInWithRedirect,
 } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
-// import { auth } from "../Firebase/firebase";
+
+// type AuthContextProviderType = {
+//   children: ReactNode;
+// };
+// type AuthContextType = {
+//   googleSignIn: Function;
+//   logout: Function;
+//   user: {};
+//   setUser: Function;
+//   githubSignIn: Function;
+//   googleSignInR: Function;
+//   githubSignInR: Function;
+//   facebookSignIn: Function;
+//   facebookSignInR: Function;
+// };
+// const AuthContext = createContext<AuthContextType>({
+//   googleSignIn: () => {},
+//   logout: () => {},
+//   user: {},
+//   setUser: () => {},
+//   githubSignIn: () => {},
+//   googleSignInR: () => {},
+//   githubSignInR: () => {},
+//   facebookSignIn: () => {},
+//   facebookSignInR: () => {},
+// });
 const AuthContext = createContext();
+// export const AuthContextProvider = ({ children }: AuthContextProviderType) => {
+// const [user, setUser] = useState<{}>({});
 export const AuthContextProvider = ({ children }) => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState();
   const googleSignIn = () => {
     const Provider = new GoogleAuthProvider();
     signInWithPopup(auth, Provider);

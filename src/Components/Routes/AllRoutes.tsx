@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import EmailAPI from "../Pages/EmailAPI";
 import Blog from "../Pages/Blog/Blog";
 import { CaseStudies } from "../Pages/Case_Studies/CaseStudies";
 import Help from "../Pages/Help/Help";
@@ -10,6 +9,9 @@ import { Signup } from "../Pages/Login/Signup";
 import Price from "../Pages/Pricing/Price";
 import { DeleteAccount } from "../Pages/Login/DeleteAccount";
 import { User } from "../Pages/Login/User";
+import { UserManagement } from "../Pages/Dashboard/UserManagement";
+import { AccountManagement } from "../Pages/Dashboard/AccountManagement";
+import { Dashboard } from "../Pages/Dashboard/Dashboard";
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -24,6 +26,10 @@ export const AllRoutes = () => {
       <Route path="/resources/blog" element={<Blog />} />
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />
+      <Route path="/user-management" element={<UserManagement />}>
+        <Route path="" element={<Dashboard />} />
+        <Route path="account-management" element={<AccountManagement />} />
+      </Route>
     </Routes>
   );
 };

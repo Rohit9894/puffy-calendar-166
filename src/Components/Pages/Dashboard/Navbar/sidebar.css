@@ -1,0 +1,44 @@
+.loginmenuicon {
+  rotate: 90deg;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+.logindropdownicon,
+.rotatelogout {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.rotatelogout {
+  rotate: 180deg;
+  translate: 10px;
+}
+
+.loginDropdown {
+  max-width: 250px;
+  min-width: 200px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #dfe3ea;
+  border-radius: 7px;
+  -webkit-filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.08));
+  z-index: 1000;
+  gap: 5px;
+}
+.logindropdownlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 2px;
+  border-bottom: 1px solid #dfe3ea;
+  gap: 10px;
+  width: 100%;
+}

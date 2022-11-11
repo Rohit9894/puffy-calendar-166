@@ -26,12 +26,16 @@ export const Navbar = () => {
   const [active, setActive] = useState(" ");
   const [tdisplay, setTdisplay] = useState(false);
   const [rdisplay, setRdisplay] = useState(false);
+  const [navdisplay, setDisplay] = useState(true);
   const [open, setOpen] = useState(true);
   const path = useLocation().pathname;
   useEffect(() => {
+    if (path.includes("user-management")) {
+      setDisplay(false);
+    }
     window.addEventListener("scroll", stickNavbar);
     return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
+  }, [path]);
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
@@ -39,7 +43,10 @@ export const Navbar = () => {
     }
   };
   return (
-    <nav className={active}>
+    <nav
+      className={active}
+      style={{ display: `${navdisplay ? "flex" : "none"}` }}
+    >
       <Box width={["80px", "80px", "100px", "100px", "120px"]}>
         <Link to={"/"}>
           <Image src={logo} alt="MailTest" />
