@@ -64,7 +64,7 @@ export const Navbar = () => {
             <ListIcon as={IoIosArrowDown} m="0" className="dropdownicon" />
             <List className="dropdownlist" spacing={7}>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/qaAutomation" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={qa}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>QA Automation</Text>

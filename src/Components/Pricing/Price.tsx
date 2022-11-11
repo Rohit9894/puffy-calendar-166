@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
 import { useState } from "react";
-import { Box, Button, Center, Heading, Hide, Text } from "@chakra-ui/react";
+
+import { Box, Button, Center, Heading, Hide, Text,Image } from "@chakra-ui/react";
 import {
   Table,
   Thead,
@@ -15,14 +16,21 @@ import {
 } from "@chakra-ui/react";
 import { BsOctagon } from "react-icons/bs";
 
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from "@chakra-ui/react";
 const Price = () => {
-  const [table, setTable] = useState(false);
+  const [drop, setDrop] = useState(false);
   const style = {
     border: "1px solid black",
   };
   return (
     <Box
-      border={"1px solid gray"}
+     
       w="100%"
       p={4}
       marginTop={"100px"}
@@ -416,7 +424,7 @@ const Price = () => {
       </Hide>
       {/* day one work done
       chart */}
-      <Box backgroundColor={"lightpink"}>
+      <Box backgroundColor={"lightpink.200"}>
         <Box textAlign="center" marginTop={"5pc"}>
           <Heading> See How Much We Offer</Heading>
         </Box>
@@ -764,6 +772,7 @@ const Price = () => {
               </Tbody>
             </Table>
           </TableContainer>
+           
         </Box>
       </Box>
     </Box>
