@@ -121,7 +121,7 @@ export const Home = () => {
 
 
     <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
-      {/* <HStack w="100%" justify={"space-evenly"}> */}
+ 
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={10}>
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3}  textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
