@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
-import {useState} from "react"
-import { Box, Button, Center, Heading, Hide, Text } from "@chakra-ui/react";
+import { useState } from "react";
+
+import { Box, Button, Center, Heading, Hide, Text,Image } from "@chakra-ui/react";
 import {
   Table,
   Thead,
@@ -15,15 +16,21 @@ import {
 } from "@chakra-ui/react";
 import { BsOctagon } from "react-icons/bs";
 
-
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from "@chakra-ui/react";
 const Price = () => {
-  const [table,setTable] = useState(false)
+  const [drop, setDrop] = useState(false);
   const style = {
-    border:"1px solid black"
-  }
+    border: "1px solid black",
+  };
   return (
     <Box
-      border={"1px solid gray"}
+     
       w="100%"
       p={4}
       marginTop={"100px"}
@@ -51,7 +58,6 @@ const Price = () => {
                   h="30%"
                 >
                   <Text fontWeight="bold" textAlign="center">
-                    
                     Free
                   </Text>
                   <Box
@@ -143,7 +149,11 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button bg="rgb(34,209,114)" color="white" position={"revert"}>
+                  <Button
+                    bg="rgb(34,209,114)"
+                    color="white"
+                    position={"revert"}
+                  >
                     {" "}
                     Buy Now
                   </Button>
@@ -199,7 +209,11 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button bg="rgb(34,209,114)" color="white" position={"revert"}>
+                  <Button
+                    bg="rgb(34,209,114)"
+                    color="white"
+                    position={"revert"}
+                  >
                     {" "}
                     Buy now
                   </Button>
@@ -273,7 +287,11 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button bg="rgb(34,209,114)" color="white" position={"revert"}>
+                  <Button
+                    bg="rgb(34,209,114)"
+                    color="white"
+                    position={"revert"}
+                  >
                     Buy Now
                   </Button>
                 </Box>
@@ -288,7 +306,6 @@ const Price = () => {
                   h="30%"
                 >
                   <Text fontWeight="bold" textAlign="center">
-                   
                     Premium
                   </Text>
                   <Box
@@ -328,8 +345,11 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button bg="rgb(34,209,114)" color="white" position={"revert"}>
-                   
+                  <Button
+                    bg="rgb(34,209,114)"
+                    color="white"
+                    position={"revert"}
+                  >
                     Buy Now
                   </Button>
                 </Box>
@@ -377,7 +397,6 @@ const Price = () => {
                 <hr />
                 <Box bg="rgb(249,249,247)" height="200px">
                   <Text padding={["10px", "10px", "10px", "10px"]}>
-                   
                     For clients who are capable of challenging Mailtrap by
                     loading it with email testing from both development and
                     staging environments with virtually no limits.
@@ -390,8 +409,11 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button bg="rgb(34,209,114)" color="white" position={"revert"}>
-                
+                  <Button
+                    bg="rgb(34,209,114)"
+                    color="white"
+                    position={"revert"}
+                  >
                     Buy Now
                   </Button>
                 </Box>
@@ -402,7 +424,7 @@ const Price = () => {
       </Hide>
       {/* day one work done
       chart */}
-      <Box backgroundColor={"lightpink"}>
+      <Box backgroundColor={"lightpink.200"}>
         <Box textAlign="center" marginTop={"5pc"}>
           <Heading> See How Much We Offer</Heading>
         </Box>
@@ -411,17 +433,18 @@ const Price = () => {
             <Table variant="striped" colorScheme="rgb(249,249,247)">
               <Thead>
                 <Tr>
-                  <Th>    </Th>
-                  <Th style={style} >Free</Th>
-                  <Th style= {style}>Indevidual</Th>
-                  <Th style = {style}>Team</Th>
-                  <Th  height="50px"  w="150px" border={"1px solid green"}>Business</Th>
-                  <Th style = { style}>Premium</Th>
-                  <Th style = { style}>Enterprise</Th>
+                  <Th> </Th>
+                  <Th style={style}>Free</Th>
+                  <Th style={style}>Indevidual</Th>
+                  <Th style={style}>Team</Th>
+                  <Th height="50px" w="150px" border={"1px solid green"}>
+                    Business
+                  </Th>
+                  <Th style={style}>Premium</Th>
+                  <Th style={style}>Enterprise</Th>
                 </Tr>
               </Thead>
               <Tbody>
-              
                 <Tr style={style}>
                   <Td style={style}>Total test emails per month</Td>
                   <Td style={style}>500</Td>
@@ -429,7 +452,7 @@ const Price = () => {
                   <Td style={style}>15K</Td>
                   <Td style={style}>50K</Td>
                   <Td style={style}>100K</Td>
-                  <Td style ={style}>10M</Td>
+                  <Td style={style}>10M</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Sending rate limits per 10 sec</Td>
@@ -438,7 +461,7 @@ const Price = () => {
                   <Td style={style}>25</Td>
                   <Td style={style}>50</Td>
                   <Td style={style}>100</Td>
-                  <Td style ={style}>150</Td>
+                  <Td style={style}>150</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Inboxes</Td>
@@ -447,7 +470,7 @@ const Price = () => {
                   <Td style={style}>15</Td>
                   <Td style={style}>40</Td>
                   <Td style={style}>80</Td>
-                  <Td style ={style}>999</Td>
+                  <Td style={style}>999</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Max emails per inbox</Td>
@@ -456,7 +479,7 @@ const Price = () => {
                   <Td style={style}>400</Td>
                   <Td style={style}>600</Td>
                   <Td style={style}>800</Td>
-                  <Td style ={style}>1000</Td>
+                  <Td style={style}>1000</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>API</Td>
@@ -465,26 +488,25 @@ const Price = () => {
                   <Td style={style}>✅</Td>
                   <Td style={style}>✅</Td>
                   <Td style={style}>✅</Td>
-                  <Td style ={style}>✅</Td>
+                  <Td style={style}>✅</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Inbox email address</Td>
                   <Td style={style}></Td>
                   <Td style={style}></Td>
-                  <Td style={style}>             </Td>
+                  <Td style={style}> </Td>
                   <Td style={style}>✅</Td>
                   <Td style={style}>✅</Td>
-                  <Td style ={style}>✅</Td>
+                  <Td style={style}>✅</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Email size</Td>
                   <Td style={style}>5</Td>
-                  <Td style={style}>7
-                  </Td>
+                  <Td style={style}>7</Td>
                   <Td style={style}>10</Td>
                   <Td style={style}>15</Td>
                   <Td style={style}>20</Td>
-                  <Td style ={style}>25</Td>
+                  <Td style={style}>25</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Tech info and Bcc</Td>
@@ -493,7 +515,7 @@ const Price = () => {
                   <Td style={style}>✅</Td>
                   <Td style={style}>✅</Td>
                   <Td style={style}>✅</Td>
-                  <Td style ={style}>✅</Td>
+                  <Td style={style}>✅</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Total forwarded emails per month</Td>
@@ -502,7 +524,7 @@ const Price = () => {
                   <Td style={style}>500</Td>
                   <Td style={style}>2K</Td>
                   <Td style={style}>5K</Td>
-                  <Td style ={style}>10K</Td>
+                  <Td style={style}>10K</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Manual forwarding recipients</Td>
@@ -511,7 +533,7 @@ const Price = () => {
                   <Td style={style}>25</Td>
                   <Td style={style}>100</Td>
                   <Td style={style}>100</Td>
-                  <Td style ={style}>300</Td>
+                  <Td style={style}>300</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Projects</Td>
@@ -520,7 +542,7 @@ const Price = () => {
                   <Td style={style}>15</Td>
                   <Td style={style}>40</Td>
                   <Td style={style}>80</Td>
-                  <Td style ={style}>300</Td>
+                  <Td style={style}>300</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Support</Td>
@@ -529,7 +551,7 @@ const Price = () => {
                   <Td style={style}>priority</Td>
                   <Td style={style}>priority</Td>
                   <Td style={style}>priority</Td>
-                  <Td style ={style}>priority</Td>
+                  <Td style={style}>priority</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td style={style}>Single Sign-ON(SSO)</Td>
@@ -538,167 +560,219 @@ const Price = () => {
                   <Td style={style}></Td>
                   <Td style={style}></Td>
                   <Td style={style}></Td>
-                  <Td style ={style}>✅</Td>
+                  <Td style={style}>✅</Td>
                 </Tr>
                 <Tr style={style}>
                   <Td border={"none"}></Td>
 
-                  <Td style={style} fontWeight="bold"
-                  padding={["10px", "10px", "10px", "10px"]}
-                  h="150px">
-                  <Box>
-                  <Box
-                    display={"flex"}
-                    // alignContent="center"
-                    textAlign="center"
-                    marginLeft="20%"
-                    color="rgb(34,209,114)"
-                    width={"75px"}
-                    justifyContent="space-between"
+                  <Td
+                    style={style}
+                    fontWeight="bold"
+                    padding={["10px", "10px", "10px", "10px"]}
+                    h="150px"
                   >
-                    <Text textAlign="center">$ </Text>
-                    <Text fontSize="42px" textAlign="center">
-                      0
-                    </Text>
-                    
-                  </Box>
-                  </Box> 
-                  
-                   <Button bg="rgb(34,209,114)" color="white" position={"revert"} marginTop="30px" marginLeft={"15%"}>
-                   
-                   Buy Now
-                 </Button></Td>
-                 <Td style={style} fontWeight="bold"
-                  padding={["10px", "10px", "10px", "10px"]}
-                  h="150px">
-                  <Box>
-                  <Box
-                    display={"flex"}
-                    // alignContent="center"
-                    textAlign="center"
-                    marginLeft="20%"
-                    color="rgb(34,209,114)"
-                    width={"75px"}
-                    justifyContent="space-between"
+                    <Box>
+                      <Box
+                        display={"flex"}
+                        // alignContent="center"
+                        textAlign="center"
+                        marginLeft="20%"
+                        color="rgb(34,209,114)"
+                        width={"75px"}
+                        justifyContent="space-between"
+                      >
+                        <Text textAlign="center">$ </Text>
+                        <Text fontSize="42px" textAlign="center">
+                          0
+                        </Text>
+                      </Box>
+                    </Box>
+
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                      marginTop="30px"
+                      marginLeft={"15%"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Td>
+                  <Td
+                    style={style}
+                    fontWeight="bold"
+                    padding={["10px", "10px", "10px", "10px"]}
+                    h="150px"
                   >
-                    <Text textAlign="center">$ </Text>
-                    <Text fontSize="42px" textAlign="center">
-                      9
-                    </Text>
-                    <Text textAlign="center">99 </Text>
-                  </Box>
-                  </Box> 
-                  
-                   <Button bg="rgb(34,209,114)" color="white" position={"revert"} marginTop="30px" marginLeft={"15%"}>
-                   
-                   Buy Now
-                 </Button></Td>
-                 <Td style={style} fontWeight="bold"
-                  padding={["10px", "10px", "10px", "10px"]}
-                  h="150px">
-                  <Box>
-                  <Box
-                    display={"flex"}
-                    // alignContent="center"
-                    textAlign="center"
-                    marginLeft="20%"
-                    color="rgb(34,209,114)"
-                    width={"75px"}
-                    justifyContent="space-between"
+                    <Box>
+                      <Box
+                        display={"flex"}
+                        // alignContent="center"
+                        textAlign="center"
+                        marginLeft="20%"
+                        color="rgb(34,209,114)"
+                        width={"75px"}
+                        justifyContent="space-between"
+                      >
+                        <Text textAlign="center">$ </Text>
+                        <Text fontSize="42px" textAlign="center">
+                          9
+                        </Text>
+                        <Text textAlign="center">99 </Text>
+                      </Box>
+                    </Box>
+
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                      marginTop="30px"
+                      marginLeft={"15%"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Td>
+                  <Td
+                    style={style}
+                    fontWeight="bold"
+                    padding={["10px", "10px", "10px", "10px"]}
+                    h="150px"
                   >
-                    <Text textAlign="center">$ </Text>
-                    <Text fontSize="42px" textAlign="center">
-                      24
-                    </Text>
-                    <Text textAlign="center">99 </Text>
-                  </Box>
-                  </Box> 
-                  
-                   <Button bg="rgb(34,209,114)" color="white" position={"revert"} marginTop="30px" marginLeft={"15%"}>
-                   
-                   Buy Now
-                 </Button></Td>
-                 <Td style={style} fontWeight="bold"
-                  padding={["10px", "10px", "10px", "10px"]}
-                  h="150px">
-                  <Box>
-                  <Box
-                    display={"flex"}
-                    // alignContent="center"
-                    textAlign="center"
-                    marginLeft="20%"
-                    color="rgb(34,209,114)"
-                    width={"75px"}
-                    justifyContent="space-between"
+                    <Box>
+                      <Box
+                        display={"flex"}
+                        // alignContent="center"
+                        textAlign="center"
+                        marginLeft="20%"
+                        color="rgb(34,209,114)"
+                        width={"75px"}
+                        justifyContent="space-between"
+                      >
+                        <Text textAlign="center">$ </Text>
+                        <Text fontSize="42px" textAlign="center">
+                          24
+                        </Text>
+                        <Text textAlign="center">99 </Text>
+                      </Box>
+                    </Box>
+
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                      marginTop="30px"
+                      marginLeft={"15%"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Td>
+                  <Td
+                    style={style}
+                    fontWeight="bold"
+                    padding={["10px", "10px", "10px", "10px"]}
+                    h="150px"
                   >
-                    <Text textAlign="center">$ </Text>
-                    <Text fontSize="42px" textAlign="center">
-                      49
-                    </Text>
-                    <Text textAlign="center">99 </Text>
-                  </Box>
-                  </Box> 
-                  
-                   <Button bg="rgb(34,209,114)" color="white" position={"revert"} marginTop="30px" marginLeft={"15%"}>
-                   
-                   Buy Now
-                 </Button></Td>
-                 <Td style={style} fontWeight="bold"
-                  padding={["10px", "10px", "10px", "10px"]}
-                  h="150px">
-                  <Box>
-                  <Box
-                    display={"flex"}
-                    // alignContent="center"
-                    textAlign="center"
-                    marginLeft="20%"
-                    color="rgb(34,209,114)"
-                    width={"75px"}
-                    justifyContent="space-between"
+                    <Box>
+                      <Box
+                        display={"flex"}
+                        // alignContent="center"
+                        textAlign="center"
+                        marginLeft="20%"
+                        color="rgb(34,209,114)"
+                        width={"75px"}
+                        justifyContent="space-between"
+                      >
+                        <Text textAlign="center">$ </Text>
+                        <Text fontSize="42px" textAlign="center">
+                          49
+                        </Text>
+                        <Text textAlign="center">99 </Text>
+                      </Box>
+                    </Box>
+
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                      marginTop="30px"
+                      marginLeft={"15%"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Td>
+                  <Td
+                    style={style}
+                    fontWeight="bold"
+                    padding={["10px", "10px", "10px", "10px"]}
+                    h="150px"
                   >
-                    <Text textAlign="center">$ </Text>
-                    <Text fontSize="42px" textAlign="center">
-                      99
-                    </Text>
-                    <Text textAlign="center">99 </Text>
-                  </Box>
-                  </Box> 
-                  
-                   <Button bg="rgb(34,209,114)" color="white" position={"revert"} marginTop="30px" marginLeft={"15%"}>
-                   
-                   Buy Now
-                 </Button></Td>
-                 <Td style={style} fontWeight="bold"
-                  padding={["10px", "10px", "10px", "10px"]}
-                  h="150px">
-                  <Box>
-                  <Box
-                    display={"flex"}
-                    // alignContent="center"
-                    textAlign="center"
-                    marginLeft="20%"
-                    color="rgb(34,209,114)"
-                    width={"75px"}
-                    justifyContent="space-between"
+                    <Box>
+                      <Box
+                        display={"flex"}
+                        // alignContent="center"
+                        textAlign="center"
+                        marginLeft="20%"
+                        color="rgb(34,209,114)"
+                        width={"75px"}
+                        justifyContent="space-between"
+                      >
+                        <Text textAlign="center">$ </Text>
+                        <Text fontSize="42px" textAlign="center">
+                          99
+                        </Text>
+                        <Text textAlign="center">99 </Text>
+                      </Box>
+                    </Box>
+
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                      marginTop="30px"
+                      marginLeft={"15%"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Td>
+                  <Td
+                    style={style}
+                    fontWeight="bold"
+                    padding={["10px", "10px", "10px", "10px"]}
+                    h="150px"
                   >
-                    <Text textAlign="center">$ </Text>
-                    <Text fontSize="42px" textAlign="center">
-                      299
-                    </Text>
-                    <Text textAlign="center">99 </Text>
-                  </Box>
-                  </Box> 
-                  
-                   <Button bg="rgb(34,209,114)" color="white" position={"revert"} marginTop="30px" marginLeft={"15%"}>
-                   
-                   Buy Now
-                 </Button></Td>
+                    <Box>
+                      <Box
+                        display={"flex"}
+                        // alignContent="center"
+                        textAlign="center"
+                        marginLeft="20%"
+                        color="rgb(34,209,114)"
+                        width={"75px"}
+                        justifyContent="space-between"
+                      >
+                        <Text textAlign="center">$ </Text>
+                        <Text fontSize="42px" textAlign="center">
+                          299
+                        </Text>
+                        <Text textAlign="center">99 </Text>
+                      </Box>
+                    </Box>
+
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                      marginTop="30px"
+                      marginLeft={"15%"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Td>
                 </Tr>
-              
               </Tbody>
             </Table>
           </TableContainer>
-          
+           
         </Box>
       </Box>
     </Box>
