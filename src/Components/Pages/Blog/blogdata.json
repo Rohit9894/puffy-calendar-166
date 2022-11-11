@@ -1,0 +1,462 @@
+{
+  "Eamil_Infrastruture": [
+    {
+      "background": "#22d172",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/email-deliverability/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2021/01/blog-img-364x185-Ultimate-Email-Deliverability-Guide@2x-350x180.png",
+      "title": "Email deliverability: Everything you need to know",
+      "d_block": "On September 07, 2022",
+      "d_block_2": "17min read",
+      "description": "Many factors have an impact on whether an email will be delivered or not. Check out what to do and what to avoid to always be on the winning side!",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/spf-records-explained/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/07/spf-record-explained-yellow2x-350x180.png",
+      "title": "SPF Record Explained",
+      "d_block": "On February 07, 2022",
+      "d_block_2": "8min read",
+      "description": "SPF (Sender Policy Framework) record is a DNS record to protect your emails from being forged. Find out more about the SPF to increase the credibility of your product.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Zakhar-CV.jpg 280w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Zakhar Yung",
+      "b_block": "Technical Content Writer @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/imap-pop3-smtp/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/08/difference-between-blue-big2x-245x180.png",
+      "title": "Difference Between IMAP, POP3, and SMTP Email Protocols",
+      "d_block": "On August 01, 2019",
+      "d_block_2": "7min read",
+      "description": "SMTP is a protocol to send emails, while POP3 and IMAP are meant to receive electronic messages. Learn more about email protocols to know which one to use",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV.jpg 280w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Yevgen Tsvetukhin",
+      "b_block": "Product Manager @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    }
+  ],
+  "Latest_Jobs": [
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/csharp-send-email/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2022/11/mailtrap_C-347x180.png",
+      "title": "Send and Receive Emails in C#",
+      "d_block": "On November 08, 2022",
+      "d_block_2": "10min read",
+      "description": "Find out how to send plain text or HTML emails with attachments in C# using the built-in .NET SMTP library, MailKit library, or Mailtrap Email API.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2022/09/dzenana-57x57.jpeg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2022/09/dzenana-57x57.jpeg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2022/09/dzenana-57x57.jpeg 57w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-150x150.jpeg 150w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-480x480.jpeg 480w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-453x453.jpeg 453w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-350x350.jpeg 350w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-270x270.jpeg 270w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-180x180.jpeg 180w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-360x360.jpeg 360w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-114x114.jpeg 114w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-33x33.jpeg 33w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-66x66.jpeg 66w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-32x32.jpeg 32w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-64x64.jpeg 64w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-105x105.jpeg 105w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-210x210.jpeg 210w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana-250x250.jpeg 250w, https://mailtrap.io/wp-content/uploads/2022/09/dzenana.jpeg 512w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Dzenana Kajtaz",
+      "b_block": "Technical Content Writer @Mailtrap"
+    },
+    {
+      "background": "#22d172",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/phpmailer-gmail/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2022/10/PHPMailer-Gmail-Tutorial-02-346x180.png",
+      "title": "PHPMailer Gmail Tutorial",
+      "d_block": "On October 27, 2022",
+      "d_block_2": "7min read",
+      "description": "A comprehensive overview of sending emails with PHPMailer via Gmail SMTP and why it is advantageous to do so.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2022/08/Denys-Kontorskyy-Avatar-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Denys Kontorskyy",
+      "b_block": "Technical Content Writer @Mailtrap"
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/sending-email-using-java/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/07/Guide-to-Send-Emails-in-Java_light-blob-347x180.png",
+      "title": "How to Send Emails in Java: 2022 Guide",
+      "d_block": "On October 18, 2022",
+      "d_block_2": "14min read",
+      "description": "This post will introduce main options for sending emails from Java apps. While Java Mail (which is now Jakarta Mail) is the main package, Simple Java Mail, Spring Framework, and Apache Commons Email also deserve your attention. See the code samples to understand which one works for you.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap"
+    },
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/send-email-in-asp-net-c-sharp/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2022/03/Sending_-Emails_Codeignite_C_Featured1-347x180.png",
+      "title": "Send and Receive Emails in ASP.NET C#",
+      "d_block": "On October 18, 2022",
+      "d_block_2": "10min read",
+      "description": "When building software in ASP.NET, sooner or later you'll need to figure out how to send emails from your platform. We're covering various scenarios for you.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap"
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/sendgrid-alternative/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2022/10/Featured_img_2-347x180.png",
+      "title": "What Is a Good Alternative for SendGrid?",
+      "d_block": "On October 18, 2022",
+      "d_block_2": "11min read",
+      "description": "There are 400+ email sending services, so if you are looking for a SendGrid alternative, you definitely have plenty to choose from. We have prepared this article to help you find the right email sending service among the huge list of available options.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap"
+    }
+  ],
+
+  "Email_security": [
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/email-authentication/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2020/07/blog-img-364x185-Ultimate-Guide-to-Email-Authentication@2x-350x180.png",
+      "title": "Ultimate Guide to Email Authentication",
+      "d_block": "On July 09, 2020",
+      "d_block_2": "11min read",
+      "description": "In this ultimate guide, we cover all available email authentication methods, such as SPF, DKIM, and others. We also share detailed examples for each one.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#22d172",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/smtp-security/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/08/Security-Small-green@2x-350x178.png",
+      "title": "Everything You Need to Know About SMTP Security",
+      "d_block": "On August 14, 2019",
+      "d_block_2": "10min read",
+      "description": "SMTP by its nature is not secured in any way, surprisingly. Luckily there are ways to keep your emails safe with no or little effort.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/starttls-ssl-tls/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2021/03/STARTTLS-vs-SSL-vs-TLS-orange2x-350x178.png",
+      "title": "STARTTLS vs SSL vs TLS",
+      "d_block": "On October 08, 2019",
+      "d_block_2": "5min read",
+      "description": "With so many similar names, it's not hard to get confused. Check out our latest guide to email encryption.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    }
+  ],
+  "Email_Testing": [
+    {
+      "background": "#22d172",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/test-emails-in-php/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2020/05/blog-img-364x185-How-to-Test-Emails-in-PHP@2x-350x178.png",
+      "title": "How to Test Emails in PHP",
+      "d_block": "On May 28, 2020",
+      "d_block_2": "6min read",
+      "description": "Let’s discuss how to test and preview emails in your PHP app or website during development!",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/cloud-or-local-smtp-server/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2018/09/Cloud-Local-Small-blue@2x-350x178.png",
+      "title": "SMTP Server for Testing: Cloud-based or Local?",
+      "d_block": "On September 27, 2018",
+      "d_block_2": "4min read",
+      "description": "How would you approach choosing an SMTP server for testing? Find the key factors to consider in this blog post.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/test-sendgrid-mandrill-mailgun/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/05/How-to-Test-Emails-in-Mandrill-Sendgrid-and-Mailgun-yellow2x-350x178.png",
+      "title": "How to Test Emails in Mandrill, Sendgrid, and Mailgun",
+      "d_block": "On May 21, 2019",
+      "d_block_2": "6min read",
+      "description": "Learn about the options for quality email testing proposed by each of listed sending providers and decide whether a third-party dedicated testing service will be the right choice.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV.jpg 280w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Yevgen Tsvetukhin",
+      "b_block": "Product Manager @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    }
+  ],
+  "Html_email": [
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/embedding-images-in-html-email-have-the-rules-changed/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2018/11/blog-img-364x185-Embedding-Images-in-HTML-Email_-Have-the-Rules-Changed_@2x-350x180.png",
+      "title": "Embedding Images in HTML Email: Have the Rules Changed?",
+      "d_block": "On November 02, 2018",
+      "d_block_2": "8min read",
+      "description": "How to embed images in HTML emails properly? CID attachment, inline embedding, linked image, or any new technique? Read in our overview along with email testing tips.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/amp-email/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/10/AMP-Small-blue@2x-350x178.png",
+      "title": "Everything You Want to Know About AMP for Email",
+      "d_block": "On October 31, 2019",
+      "d_block_2": "7min read",
+      "description": "AMP for Email gives email marketers an abundance of tools for improving their campaigns. Read what this is about and how to use it the right way.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#22d172",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/best-email-builders/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/08/Comparison-of-10-HTML-Email-Editors-green2x-2-350x178.png",
+      "title": "Comparison of 10 HTML Email Editors for Your Next Campaign",
+      "d_block": "On August 14, 2019",
+      "d_block_2": "12min read",
+      "description": "Choosing a tool for painless building of responsive email templates? We selected 10 options for you and prepared a comparison table and UI screenshots for you to get the full picture.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    }
+  ],
+  "Email_Marketing": [
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/sendgrid-vs-mandrill-vs-mailgun/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/04/blog-img-364x185-Sendgrid-vs-Mandrill-vs-Mailgun-How-to-Choose_@2x-1-350x178.png",
+      "title": "Sendgrid vs Mandrill vs Mailgun – How to Choose?",
+      "d_block": "On April 29, 2019",
+      "d_block_2": "10min read",
+      "description": "Which features of the email service provider matter the most? Let’s review and compare Sendgrid, Mandrill, and Mailgun, the most popular email services.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV.jpg 280w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Yevgen Tsvetukhin",
+      "b_block": "Product Manager @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#22d172",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/?p=6326",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2020/11/Tips2021-Small-dark@2x-350x178.png",
+      "title": "11 Tips to Improve Your Email Marketing in 2021",
+      "d_block": "On November 30, 2020",
+      "d_block_2": "9min read",
+      "description": "The new year can be an excellent opportinity for improving your email marketing. Our friends from HubSpot share what to focus on in 2021.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-57x57.png",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-57x57.png\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-57x57.png 57w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-1024x1024.png 1024w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-150x150.png 150w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-453x453.png 453w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-906x906.png 906w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-350x350.png 350w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-700x700.png 700w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-114x114.png 114w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-32x32.png 32w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-64x64.png 64w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-105x105.png 105w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-210x210.png 210w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent-250x250.png 250w, https://mailtrap.io/wp-content/uploads/2021/02/irina_1000x1000_color_transparent.png 1080w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Irina Nica",
+      "b_block": "Senior Marketing Manager @Hubspot",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/transactional-emails/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/08/Intro-to-Transactional-Emails-yellow2x-350x178.png",
+      "title": "Intro to Transactional Emails",
+      "d_block": "On August 28, 2019",
+      "d_block_2": "11min read",
+      "description": "Transactional emails are an inseparable part of any customer experience, for a reason! Learn what they’re used for and how to make yours better in no time.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1024x1024.jpg 1024w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1536x1536.jpg 1536w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-1920x1920.jpg 1920w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-453x453.jpg 453w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-906x906.jpg 906w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-350x350.jpg 350w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-700x700.jpg 700w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Piotr-Big.jpg 2000w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Piotr Malek",
+      "b_block": "Technical Content Writer @ Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    }
+  ],
+  "Product_Updates": [
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/?p=3009",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2020/01/blog-img-450x330-5-Things-That-Only-Mailtrap-Can-Do@2x-245x180.png",
+      "title": "Private: What Makes Mailtrap a Unique Email Testing Tool?",
+      "d_block": "On January 28, 2020",
+      "d_block_2": "4min read",
+      "description": "Test Bcc, preview messages, inspect HTML errors right away, and conduct other crucial email checks in one tool. Yes, that’s all about Mailtrap, a simple but super powerful tool for safe email testing.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Diana-Le-250x250.jpg 250w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Diana Lepilkina",
+      "b_block": "Content Specialist @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#b4cdff",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/?p=900",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/07/Share-Small-yellow@2x-350x178.png",
+      "title": "Share Your Email Testing Results with Team Members",
+      "d_block": "On July 03, 2019",
+      "d_block_2": "3min read",
+      "description": "Learn how Mailtrap can help you increase the efficiency of your email testing process. Features for organizing your test data and sharing results with your colleagues and clients are explained in this post.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV.jpg 280w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Yevgen Tsvetukhin",
+      "b_block": "Product Manager @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    },
+    {
+      "background": "#f9c273",
+      "single-post-preview__image-wrapper href": "https://mailtrap.io/blog/cc-bcc-in-smtp/",
+      "image_src": "https://mailtrap.io/wp-content/uploads/2019/08/Using-and-Testing-Cc-and-Bcc-in-SMTP-Protocol-green2x-350x178.png",
+      "title": "Using and Testing Cc and Bcc in SMTP Protocol",
+      "d_block": "On August 28, 2019",
+      "d_block_2": "5min read",
+      "description": "Referring to the SMTP mechanics, we define the main email headers and the Bcc specific in this post.  We also share a few email tips and explain how you can test Bcc with Mailtrap.",
+      "auth_img_src": "https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg",
+      "col": "<img width=\"57\" height=\"57\" src=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg\" class=\"author-image rounded-circle d_block c-mr-3\" alt=\"\" srcset=\"https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-57x57.jpg 57w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-150x150.jpg 150w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-114x114.jpg 114w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-32x32.jpg 32w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-64x64.jpg 64w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-105x105.jpg 105w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-210x210.jpg 210w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV-250x250.jpg 250w, https://mailtrap.io/wp-content/uploads/2021/02/Tsv-CV.jpg 280w\" sizes=\"(max-width: 57px) 100vw, 57px\" data-eio=\"l\" />",
+      "auth_name": "Yevgen Tsvetukhin",
+      "b_block": "Product Manager @Mailtrap",
+      "crunch-button": "",
+      "crunch-button href": ""
+    }
+  ],
+
+  "help_up": [
+    {
+      "categoryhref": "https://help.mailtrap.io/category/13-featured",
+      "category": "Getting started",
+      "category2": "Start working with Mailtrap",
+      "articlecount": "article",
+      "notranslate": 1
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/74-new-user-management",
+      "category": "New User Management",
+      "category2": "Centralized user management to configure permissions.",
+      "articlecount": "articles",
+      "notranslate": 5
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/80-sso",
+      "category": "SSO",
+      "category2": "Set of articles how to setup Mailtrap's SSO",
+      "articlecount": "articles",
+      "notranslate": 6
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/6-account-billing",
+      "category": "Account & Billing",
+      "category2": "Account management, billing, and payment details",
+      "articlecount": "articles",
+      "notranslate": 5
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/38-automation",
+      "category": "Automation",
+      "category2": "Automated email testing",
+      "articlecount": "articles",
+      "notranslate": 2
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/8-collaboration-and-reporting",
+      "category": "Collaboration and reporting",
+      "category2": "Sharing your inboxes and projects with your team",
+      "articlecount": "articles",
+      "notranslate": 2
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/10-emails-preview",
+      "category": "Email testing",
+      "category2": "Testing and debugging email template",
+      "articlecount": "articles",
+      "notranslate": 8
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/7-privacy-security",
+      "category": "Privacy & Security",
+      "category2": "Authentication and data protection",
+      "articlecount": "articles",
+      "notranslate": 3
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/11-email-sending",
+      "category": "Sending emails to Mailtrap",
+      "category2": "Integrating Mailtrap with your email system",
+      "articlecount": "articles",
+      "notranslate": 2
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/9-troubleshooting",
+      "category": "Troubleshooting",
+      "category2": "A list of possible errors and ways to fix them",
+      "articlecount": "article",
+      "notranslate": 1
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/39-faq",
+      "category": "FAQ",
+      "category2": "Frequently asked questions",
+      "articlecount": "article",
+      "notranslate": 1
+    }
+  ],
+  "head_down": [
+    {
+      "categoryhref": "https://help.mailtrap.io/category/78-mailtrap-transactional-email-sending-beta",
+      "articlecount": "article",
+      "category": "Email API",
+      "category2": "You can now send real emails to your end users with Mailtrap.",
+      "notranslate": 2
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/89-sending-emails",
+      "articlecount": "article",
+      "category": "Sending Emails",
+      "category2": "Everything you need to get started with Mailtrap Sending",
+      "notranslate": 7
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/91-configuration",
+      "articlecount": "article",
+      "category": "Configuration",
+      "category2": "",
+      "notranslate": 4
+    },
+    {
+      "categoryhref": "https://help.mailtrap.io/category/90-analytics",
+      "articlecount": "article",
+      "category": "Analytics",
+      "category2": "Understanding the common metrics behind your email sending",
+      "notranslate": 3
+    }
+  ]
+}

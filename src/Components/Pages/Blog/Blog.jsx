@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import "./blog.css";
+import blog_data from "./blogdata.json";
 import React, { useEffect, useState } from "react";
 import email from "./assets/email.png";
 import email_inside from "./assets/emal_inside.jpeg";
@@ -19,32 +20,26 @@ function Blog() {
   const [latest, setLatest] = useState([]);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("Eamil_Infrastruture");
+
   function getLatest() {
-    fetch("http://localhost:3004/Latest_Jobs")
-      .then((res) => res.json())
-      .then((res) => setLatest(res));
+    setLatest(blog_data["Latest_Jobs"]);
   }
   function getData(query) {
-    setLoading(true);
-    fetch(`http://localhost:3004/${query}`)
-      .then((res) => res.json())
-      .then((res) => {
-        setLoading(false);
-        setData(res);
-      });
+    console.log(query);
+    const blog_database = blog_data[query];
+    setData(blog_database);
+    console.log(blog_database);
   }
-  useEffect(() => {
-    getLatest();
-  });
   useEffect(() => {
     getData(query);
   }, [query]);
-  //   console.log(query)
-  console.log(latest);
+  useEffect(() => {
+    getLatest();
+  }, []);
 
   return (
     <div>
-      <Box w={["90%", "85%"]} m="auto">
+      <Box pt="90px" w={["90%", "85%"]} m="auto">
         <Flex
           className="r_upper_poster"
           direction={["column", "row", "row"]}
@@ -87,14 +82,13 @@ function Blog() {
           <Box w="100%" my="20px">
             <Flex
               gap="30px"
-              overflow={["scroll","auto"]}
+              overflow={["scroll", "auto"]}
               fontSize="16px"
               fontWeight="medium"
               fontFamily="'Open Sans', sans-serif"
               color="#bcc4cd"
               cursor="pointer"
               // w={["100%", "auto"]}
-             
             >
               <Text
                 whiteSpace="nowrap"
