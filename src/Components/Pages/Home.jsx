@@ -422,17 +422,14 @@ export const Home = () => {
             </Box>
           </SimpleGrid>
         </VStack>
-      </Box>
 
-      <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
-        {/* <HStack w="100%" justify={"space-evenly"}> */}
-        <VStack
-          w={"100%"}
-          textAlign="center"
-          display={"block"}
-          justifyContent={"center"}
-          marginTop={10}
-        >
+    </Box>
+
+
+    <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
+ 
+        <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
+
           <VStack marginBottom={10}>
             <Heading
               fontWeight={600}
