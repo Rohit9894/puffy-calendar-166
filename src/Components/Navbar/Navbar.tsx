@@ -112,7 +112,7 @@ export const Navbar = () => {
             <ListIcon as={IoIosArrowDown} m="0" />
             <List className="dropdownlist2" spacing={7}>
               <ListItem className="dropdownlistmenu">
-                <Link to={""} className="dropdownlistmenu">
+                <Link to={"resources/api"} className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={apiimg}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>API</Text>
