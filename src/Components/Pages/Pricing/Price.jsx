@@ -1,18 +1,5 @@
-import React from "react";
-import { Navbar } from "../../Navbar/Navbar";
 import { Box, Button, Center, Heading, Hide, Text } from "@chakra-ui/react";
-import {
-  Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption,
-  TableContainer,
-} from "@chakra-ui/react";
-import { BsOctagon } from "react-icons/bs";
+import { Table } from "@chakra-ui/react";
 const Price = () => {
   return (
     <Box
