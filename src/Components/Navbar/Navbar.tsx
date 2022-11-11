@@ -95,7 +95,7 @@ export const Navbar = () => {
             </List>
           </ListItem>
           <ListItem className="droplist">
-            <Link to={""}>Email API</Link>
+            <Link to={"/emailApi"}>Email API</Link>
           </ListItem>
           <ListItem className="droplist">
             <Link to="/price">Pricing</Link>
@@ -114,7 +114,10 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to={""} className="dropdownlistmenu">
+                <Link
+                  to={"/resources/casestudies"}
+                  className="dropdownlistmenu"
+                >
                   <Image w="35px" h="37px" src={cs}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Case Studies</Text>
@@ -132,7 +135,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to={""} className="dropdownlistmenu">
+                <Link to={"/resources/help"} className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={helpimg}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Help</Text>
