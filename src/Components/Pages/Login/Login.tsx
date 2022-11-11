@@ -38,7 +38,8 @@ export const Login = () => {
     fetchSignInMethodsForEmail(auth, putmail)
       .then((res) => {
         setDisable(false);
-        if (res[0] === "password") setShow(!show);
+        console.log(res);
+        if (res.length !== 0) setShow(!show);
         else setError("Email doesn't exist");
       })
       .catch((error) => {

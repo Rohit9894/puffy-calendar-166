@@ -66,6 +66,7 @@ export const AuthContextProvider = ({ children }) => {
   };
   const logout = () => {
     signOut(auth);
+    localStorage.setItem("user", JSON.stringify(""));
   };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currenUser) => {

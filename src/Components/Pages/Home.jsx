@@ -1,30 +1,17 @@
 import {
   Box,
   Button,
-  Center,
   Circle,
-  Container,
   Flex,
-  FormControl,
-  FormLabel,
-  Grid,
-  GridItem,
   Heading,
   HStack,
   Image,
-  Input,
   SimpleGrid,
-  Spacer,
-  Stack,
   UnorderedList,
   ListItem,
   Text,
   VStack,
 } from "@chakra-ui/react";
-
-import React from "react";
-import { IoMdCheckmarkCircle } from "react-icons/io";
-import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -422,14 +409,16 @@ export const Home = () => {
             </Box>
           </SimpleGrid>
         </VStack>
+      </Box>
 
-    </Box>
-
-
-    <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
- 
-        <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
-
+      <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
+        <VStack
+          w={"100%"}
+          textAlign="center"
+          display={"block"}
+          justifyContent={"center"}
+          marginTop={10}
+        >
           <VStack marginBottom={10}>
             <Heading
               fontWeight={600}
