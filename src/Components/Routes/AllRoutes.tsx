@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import EmailAPI from "../Pages/EmailAPI";
+import Api from "../Pages/Api/Api";
 import Blog from "../Pages/Blog/Blog";
 import { CaseStudies } from "../Pages/Case_Studies/CaseStudies";
 import Help from "../Pages/Help/Help";
+
 import { Home } from "../Pages/Home";
 import { Login } from "../Pages/Login/Login";
 import { Signup } from "../Pages/Login/Signup";
@@ -14,12 +15,11 @@ export const AllRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-
       <Route path="/price" element={<Price />} />
       <Route path="/resources/blog" element={<Blog />} />
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />
-
+      <Route path="resources/api"  element={<Api/>} />
     </Routes>
   );
 };
