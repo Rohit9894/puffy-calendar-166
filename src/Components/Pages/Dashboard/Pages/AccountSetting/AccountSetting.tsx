@@ -19,7 +19,6 @@ export const AccountSetting = () => {
         <TabList>
           <Tab>Account Details</Tab>
           <Tab>Transfer Ownership</Tab>
-          <Tab>SSO</Tab>
           <Tab>Delete Account</Tab>
         </TabList>
 
@@ -43,9 +42,6 @@ export const AccountSetting = () => {
                 and invite somebody.
               </div>
             </Box>
-          </TabPanel>
-          <TabPanel>
-            <p>three!</p>
           </TabPanel>
           <TabPanel>
             <DeleteAccount />
