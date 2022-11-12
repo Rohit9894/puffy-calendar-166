@@ -14,98 +14,90 @@ type elem = {
 export const Navbar = ({ onToggle }: elem) => {
   const { user, logout } = UserAuth();
   const [show, setShow] = useState(false);
-  console.log(user);
+
   return (
-    <Flex
-      align={"center"}
-      bg="#fff"
-      borderBottom={"1px solid #eee"}
-      lineHeight="1.4"
-      h={"40px"}
-      px="10px"
-      justify={"space-between"}
-    >
-      <Flex justify={"center"} align="center" gap="5px">
-        <Box className="loginmenuicon" onClick={onToggle}>
-          <FiBarChart2 />
-        </Box>
-        <Box>Home</Box>
-      </Flex>
+    <Box className="loginnavbar">
       <Flex
-        gap="5px"
-        justify={"center"}
-        align="center"
-        cursor={"pointer"}
-        onClick={() => setShow(!show)}
+        align={"center"}
+        bg="#fff"
+        borderBottom={"1px solid #eee"}
+        lineHeight="1.4"
+        h={"40px"}
+        px="10px"
+        justify={"space-between"}
       >
+        <Flex justify={"center"} align="center" gap="5px">
+          <Box className="loginmenuicon" onClick={onToggle}>
+            <FiBarChart2 />
+          </Box>
+          <Box>Home</Box>
+        </Flex>
         <Flex
+          gap="5px"
           justify={"center"}
           align="center"
-          w="30px"
-          h="30px"
-          borderRadius={"50%"}
-          bg="red"
+          cursor={"pointer"}
+          onClick={() => setShow(!show)}
         >
-          S
-        </Flex>
-        <Box display={["none", "block"]} _hover={{ color: "#566583" }}>
-          Saroj Pahi
-        </Box>
-        <BiChevronDown />
-        <Box className="loginDropdown" display={show ? "block" : "none"}>
-          <Flex
-            justify={"center"}
-            flexDir="column"
-            align={"center"}
-            borderBottom="1px solid #eee"
-            w="full"
-            p="10px"
-            gap={1}
-          >
-            <Image borderRadius={"50%"} w="30px" h="30px" src={avatar} />
-            <Text>Saroj Kumar Pahi</Text>
-            <Link to="/profile">
-              <Text color={"blue.300"} textDecoration="underline">
-                My Profile
-              </Text>
-            </Link>
+          <Flex w="30px" h="30px" objectFit={"contain"} borderRadius="50%">
+            <Image borderRadius={"50%"} src={user.photoURL} />
           </Flex>
-          <Flex className="logindropdownlist">
+          <BiChevronDown />
+          <Box className="loginDropdown" display={show ? "block" : "none"}>
             <Flex
               justify={"center"}
-              align="center"
-              w="30px"
-              h="30px"
-              borderRadius={"50%"}
-              bg="red"
-              ml="10px"
+              flexDir="column"
+              align={"center"}
+              borderBottom="1px solid #eee"
+              w="full"
+              p="10px"
+              gap={1}
             >
-              S
+              <Image borderRadius={"50%"} w="30px" h="30px" src={avatar} />
+              <Text>{user.email}</Text>
+              <Link to="/profile">
+                <Text color={"blue.300"} textDecoration="underline">
+                  My Profile
+                </Text>
+              </Link>
             </Flex>
-            <Box>Saroj Pahi</Box>
-          </Flex>
-          <Flex className="logindropdownlist">
-            <Flex className="logindropdownicon">
-              <BsWindowDock />
+            <Flex className="logindropdownlist">
+              <Flex
+                justify={"center"}
+                align="center"
+                w="30px"
+                h="30px"
+                borderRadius={"50%"}
+                objectFit="contain"
+                ml="10px"
+              >
+                <Image src={user.photoURL} borderRadius="50%" />
+              </Flex>
+              <Box>{user?.displayName ? user.displayName : user.email}</Box>
             </Flex>
-            <Box>
-              API Docs <Badge colorScheme="blue">New</Badge>
-            </Box>
-          </Flex>
-          <Flex className="logindropdownlist">
-            <Flex className="logindropdownicon">
-              <TfiHelpAlt />
+            <Flex className="logindropdownlist">
+              <Flex className="logindropdownicon">
+                <BsWindowDock />
+              </Flex>
+              <Box>
+                API Docs <Badge colorScheme="blue">New</Badge>
+              </Box>
             </Flex>
-            <Box>Help</Box>
-          </Flex>
-          <Flex className="logindropdownlist" pb="10px" onClick={logout}>
-            <Flex className="rotatelogout">
-              <CiLogout />
+            <Flex className="logindropdownlist">
+              <Flex className="logindropdownicon">
+                <TfiHelpAlt />
+              </Flex>
+              <Box>Help</Box>
             </Flex>
-            <Box>Logout</Box>
-          </Flex>
-        </Box>
+            <Flex className="logindropdownlist" pb="10px" onClick={logout}>
+              <Flex className="rotatelogout">
+                <CiLogout />
+              </Flex>
+              <Box>Logout</Box>
+            </Flex>
+          </Box>
+        </Flex>
       </Flex>
-    </Flex>
+    </Box>
   );
 };

@@ -26,6 +26,7 @@ export const Footer = () => {
       pt="40px"
       pb={"20px"}
       borderTop="1px solid rgba(0, 0, 0, 0.24)"
+      display={path.includes("home") ? "none" : "block"}
     >
       <Flex
         w={["100%", "80%", "80%", "70%", "70%"]}

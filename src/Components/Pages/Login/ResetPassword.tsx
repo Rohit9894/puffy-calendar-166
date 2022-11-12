@@ -33,15 +33,12 @@ export const ResetPassword = ({ code }: any) => {
       .then(() => {
         setDisable(false);
         toast({
+          title: "Success",
+          description: "Password reset successfully",
           status: "success",
           duration: 3000,
           isClosable: true,
           position: "top",
-          render: () => (
-            <Box className="toastbox">
-              <Heading>Password reset successfully</Heading>
-            </Box>
-          ),
         });
         alert("Password reset successfully");
         navigate("/login");

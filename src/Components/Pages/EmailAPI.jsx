@@ -8,13 +8,13 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+
 import React from "react";
 
 const EmailAPI = () => {
   return (
     <>
-      <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
-        {/* <HStack w="100%" justify={"space-evenly"}> */}
+      <Box h="130%" m="100px auto" w="80%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -66,7 +66,6 @@ const EmailAPI = () => {
                   application. Monitor deliverability and share stats with the
                   team.
                 </Box>
-                {/* <Button float={"left"} justifyContent="left" bgColor={"#22d172"} color={"#fff"} fontSize=".875rem" marginTop={9}>Sign Up</Button> */}
               </VStack>
 
               <VStack>
@@ -93,7 +92,7 @@ const EmailAPI = () => {
         </VStack>
       </Box>
 
-      <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
+      <Box h="130%" m="100px auto" w="80%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -352,7 +351,6 @@ const EmailAPI = () => {
         h="130%"
         m="100px auto"
         w="70%"
-        border={"1px solid red"}
         bgColor="#f9c273"
         display={"block"}
         padding="1.6rem"
@@ -397,7 +395,6 @@ const EmailAPI = () => {
       </Box>
 
       <Box h="130%" m="100px auto" w="70%">
-        {/* <HStack w="100%" justify={"space-evenly"}> */}
         <VStack
           w={"100%"}
           textAlign="center"
@@ -526,6 +523,7 @@ const EmailAPI = () => {
                   improved a little. We love how smooth the experience was.
                 </Text>
               </VStack>
+
               <VStack
                 rows={[1, null, 1]}
                 spacing={1}
@@ -567,7 +565,6 @@ const EmailAPI = () => {
       </Box>
 
       <Box h="130%" m="100px auto" w="73%">
-        {/* <HStack w="100%" justify={"space-evenly"}> */}
         <VStack
           w={"100%"}
           textAlign="center"
@@ -626,6 +623,7 @@ const EmailAPI = () => {
                   Why try Mailtrap SMTP and Email API?
                 </Text>
               </HStack>
+
               <VStack>
                 <Text
                   marginLeft={5}
@@ -923,7 +921,7 @@ const EmailAPI = () => {
         </VStack>
       </Box>
 
-      <Box h="80%" m="100px auto" w="100%" border={"1px solid red"}>
+      <Box h="80%" m="100px auto" w="100%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -934,7 +932,7 @@ const EmailAPI = () => {
             columns={["1", "2"]}
             direction={["column", "row"]}
             spacing={20}
-            gap={250}
+            gap={{ base: 10, lg: 250 }}
             bgColor="#1a2e44"
           >
             <Box marginTop="25%">

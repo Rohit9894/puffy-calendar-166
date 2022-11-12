@@ -51,16 +51,12 @@ export const Login = () => {
     setDisable(true);
     sendEmailVerification(user.auth.currentUser).then(() => {
       toast({
+        title: "Success",
+        description: "A verfication link has been sent to your email.",
         status: "success",
         duration: 3000,
         isClosable: true,
         position: "top",
-        render: () => (
-          <Box className="toastbox">
-            <Heading>Verification Link Sent Successfully</Heading>
-            <Text>A verfication link has been sent to your email.</Text>
-          </Box>
-        ),
       });
       setShow(true);
       setShowverify(false);
@@ -82,7 +78,7 @@ export const Login = () => {
         setUser(user);
         if (user.emailVerified) {
           if (check.checked) localStorage.setItem("user", JSON.stringify(user));
-          navigate("/user-management");
+          navigate("/home");
         } else {
           setShowverify(true);
           setShow(false);
@@ -119,7 +115,7 @@ export const Login = () => {
     }
   };
   useEffect(() => {
-    if (user && user.emailVerified) navigate("/user-management");
+    if (user && user.emailVerified) navigate("/home");
   }, [user, navigate]);
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>
