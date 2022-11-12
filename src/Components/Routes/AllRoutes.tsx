@@ -16,6 +16,7 @@ import { AccountManagement } from "../Pages/Dashboard/AccountManagement";
 import { Dashboard } from "../Pages/Dashboard/Dashboard";
 import EmailAPI from "../Pages/EmailAPI";
 import { Protected } from "../Context/Protected";
+import Payment from "../Pages/Pricing/Payment";
 
 export const AllRoutes = () => {
   return (
@@ -33,6 +34,7 @@ export const AllRoutes = () => {
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />
       <Route path="resources/api" element={<Api />} />
+      <Route path="/payement" element={<Payment/>}/>
       <Route
         path="/user-management"
         element={
