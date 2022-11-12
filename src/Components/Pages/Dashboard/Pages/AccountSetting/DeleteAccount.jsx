@@ -1,8 +1,49 @@
-import { Box, Button, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  HStack,
+  Text,
+  useToast,
+  VStack,
+} from "@chakra-ui/react";
+import { deleteUser } from "firebase/auth";
 import React, { useState } from "react";
 import { CgDanger } from "react-icons/cg";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../../../../Firebase/firebase";
 export const DeleteAccount = () => {
   const [show, setShow] = useState(true);
+  const [disable, setDisable] = useState(false);
+  const toast = useToast();
+  const navigate = useNavigate();
+  const handleDelete = () => {
+    setDisable(true);
+    const user = auth.currentUser;
+    deleteUser(user)
+      .then(() => {
+        toast({
+          position: "top",
+          title: "Success",
+          description: "Account deleted successfully",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
+        });
+        setDisable(false);
+        setTimeout(() => navigate("/login"), 2000);
+      })
+      .catch(() =>
+        toast({
+          position: "top",
+          title: "Error",
+          description: "Something went wrong",
+          status: "error",
+          duration: 3000,
+          isClosable: true,
+        })
+      );
+  };
   return (
     <Box h="max-content" w="95%">
       <VStack align={"flex-start"} fontSize="14px" gap="15px">
@@ -50,6 +91,7 @@ export const DeleteAccount = () => {
                   bg=""
                   borderRadius={"30px"}
                   _hover={{ background: "#ff7171", color: "#fff" }}
+                  onClick={handleDelete}
                 >
                   Yes, Delete
                 </Button>
