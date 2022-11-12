@@ -7,10 +7,14 @@ import { Home } from "../Pages/Home";
 import { Login } from "../Pages/Login/Login";
 import { ForgotPassword } from "../Pages/Login/ForgotPassword";
 import { Signup } from "../Pages/Login/Signup";
-import QAAutomation from "../Pages/QAAutomation";
-import Price from "../Pages/Pricing/Price";
+
 import { DeleteAccount } from "../Pages/Login/DeleteAccount";
 import { User } from "../Pages/Login/User";
+import Price from "../Pricing/Price";
+import QAAutomation from "../Pages/QAAutomation";
+import HtmlCheck from "../Pages/HtmlCheck";
+import FakeServer from "../Pages/FakeServer";
+import MailTrapApi from "../Pages/MailTrapApi";
 import { UserManagement } from "../Pages/Dashboard/UserManagement";
 import { AccountManagement } from "../Pages/Dashboard/AccountManagement";
 import { Dashboard } from "../Pages/Dashboard/Dashboard";
@@ -24,8 +28,15 @@ export const AllRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/emailApi" element={<EmailAPI />} />
-      <Route path="/qaAutomation" element={<QAAutomation />} />
+
+
+      <Route path="/emailApi" element={<EmailAPI />}  />
+      <Route path="/qaAutomation" element={<QAAutomation />}  />
+      <Route path="/htmlcheck" element={<HtmlCheck />}  />
+      <Route path="/fakeserver" element={<FakeServer />}  />
+      <Route path="/mailtrapApi" element={<MailTrapApi />}  />
+
+
       <Route path="/price" element={<Price />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/delete-account-confirmation" element={<DeleteAccount />} />
