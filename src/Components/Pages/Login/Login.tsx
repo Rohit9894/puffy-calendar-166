@@ -12,7 +12,7 @@ import {
   signInWithEmailAndPassword,
   sendEmailVerification,
 } from "firebase/auth";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
 import { SiFacebook } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
@@ -38,7 +38,8 @@ export const Login = () => {
     fetchSignInMethodsForEmail(auth, putmail)
       .then((res) => {
         setDisable(false);
-        if (res[0] === "password") setShow(!show);
+        console.log(res);
+        if (res.length !== 0) setShow(!show);
         else setError("Email doesn't exist");
       })
       .catch((error) => {
@@ -81,7 +82,7 @@ export const Login = () => {
         setUser(user);
         if (user.emailVerified) {
           if (check.checked) localStorage.setItem("user", JSON.stringify(user));
-          navigate("/");
+          navigate("/user-management");
         } else {
           setShowverify(true);
           setShow(false);
@@ -117,6 +118,9 @@ export const Login = () => {
       console.log(error);
     }
   };
+  useEffect(() => {
+    if (user && user.emailVerified) navigate("/user-management");
+  }, [user, navigate]);
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>
       <Box h="full" py="50px" mx="auto" w={["95%", "90%", "90%", "90%", "80%"]}>

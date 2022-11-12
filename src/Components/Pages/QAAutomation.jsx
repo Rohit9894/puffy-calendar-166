@@ -1,3 +1,4 @@
+
 import { Box, Button,  Flex,  Heading, HStack, Icon, Image,  List,  ListItem, SimpleGrid,  Text,  VStack } from "@chakra-ui/react";
 import React from "react";
 
@@ -112,10 +113,12 @@ const QAAutomation = () => {
                 <VStack>
                   <Box fontSize={"1.125rem"} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} color={"#202c45"} textAlign="left" display={"block"} fontWeight={600} lineHeight={1.3} >Collaborate with development team</Box>
                   <Box display={"block"} fontSize={"13px"} lineHeight={1.7} fontWeight={400} color={"#202c45"} textAlign="left" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Share the testing space with your dev team or set up individual inboxes for each environment. Pass test emails between team members effortlessly.</Box>
+
                 </VStack>
               </HStack>
             </Box>
           </SimpleGrid>
+
 
         </VStack>
     </Box>
@@ -145,6 +148,7 @@ const QAAutomation = () => {
     
 
  <Box h="130%" m="100px auto" w="90%" >
+
       
       <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
       
@@ -152,12 +156,15 @@ const QAAutomation = () => {
 
         <SimpleGrid columns={['1','2']} direction={['column', 'row']}  spacing={20} gap={50} >
 
+
           <VStack w={"90%"}  display={"block"} textAlign="left" marginTop={10}>
+
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3} marginBottom={12} textAlign="left" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
             How QAs use Email Sandbox
             </Heading>
 
             <List spacing={3} alignItems={"flex-start"} w="100%" >
+
               <ListItem alignItems={"flex-start"} w="100%" display={"block"} color="#202c45" fontSize={"1.125rem"} fontWeight={600} lineHeight={1.3} fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">
                   <CircleIcon color='#22d172' />
                   Check any emails within your end-to-end automated test suites
@@ -186,10 +193,12 @@ const QAAutomation = () => {
 
           <Box>
             <Image h="100%" w="100%" src='https://mailtrap.io/wp-content/uploads/2021/05/img__qa.svg' />
+
           </Box>
         </SimpleGrid>
 
       </VStack>
+
 
   </Box> 
 
@@ -308,3 +317,4 @@ const QAAutomation = () => {
 }
 
 export default QAAutomation
+

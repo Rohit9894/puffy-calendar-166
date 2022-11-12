@@ -1,18 +1,12 @@
-
 import {
   Box,
   Button,
-  
-  Circle,
-  
+  Circle, 
   Flex,
-  
   Heading,
   HStack,
-  Image,
-  
+  Image, 
   SimpleGrid,
-  
   Text,
   VStack,
   UnorderedList,
@@ -25,7 +19,6 @@ export const Home = () => {
   return (
     <>
       <Box h="200%" m="100px auto" w="100%">
-        
         <VStack
           w={"100%"}
           textAlign="center"
@@ -418,6 +411,8 @@ export const Home = () => {
             </Box>
           </SimpleGrid>
         </VStack>
+      </Box>
+
 
       </Box>
 
@@ -425,6 +420,7 @@ export const Home = () => {
       <Box h="130%" m="100px auto" w="80%" >
 
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
+
 
           <VStack marginBottom={10}>
             <Heading
@@ -544,19 +540,21 @@ export const Home = () => {
         </VStack>
       </Box>
 
+
       <Box h="130%" m="100px auto" w="80%" >
         {/* <HStack w="100%" justify={"space-evenly"}> */}
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={20}>
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3} textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
+
               How different teams use Mailtrap
             </Heading>
-            <Image src='https://mailtrap.io/wp-content/uploads/2021/03/img_team.svg' />
-
+            <Image src="https://mailtrap.io/wp-content/uploads/2021/03/img_team.svg" />
           </VStack>
 
-          <SimpleGrid columns={[1, null, 3]} spacing='40px' w="100%" gap={10}>
+          <SimpleGrid columns={[1, null, 3]} spacing="40px" w="100%" gap={10}>
             <Box w="90%" alignItems={"flex-start"}>
+
               <Text fontSize={"1.125rem"} marginBottom={4} fontWeight={600} lineHeight={1.3} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} display={"block"} color="#202c45" textAlign={"left"}>Developers</Text>
               <UnorderedList spacing={5} w="100%" textAlign={"left"} fontSize="14px" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} fontWeight={400} color="#202c45" display={"block"}>
                 <ListItem>
@@ -587,12 +585,14 @@ export const Home = () => {
                 </ListItem>
                 <ListItem>
 
+
                   Compare revised emails with their previous versions
                 </ListItem>
               </UnorderedList>
             </Box>
 
             <Box w="95%" alignItems={"flex-start"}>
+
               <Text fontSize={"1.125rem"} marginBottom={4} fontWeight={600} lineHeight={1.3} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} display={"block"} color="#202c45" textAlign={"left"}>Marketers and managers</Text>
 
               <UnorderedList spacing={5} w="100%" textAlign={"left"} fontSize="14px" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} fontWeight={400} color="#202c45" display={"block"}>
@@ -611,13 +611,50 @@ export const Home = () => {
               </UnorderedList>
             </Box>
 
+
+              <UnorderedList
+                spacing={5}
+                w="100%"
+                textAlign={"left"}
+                fontSize="14px"
+                fontFamily={
+                  "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+                }
+                fontWeight={400}
+                color="#202c45"
+                display={"block"}
+              >
+                <ListItem w="100%">
+                  Smoothly collaborate with development and QA teams
+                </ListItem>
+                <ListItem w="100%">
+                  View test emails in shared inboxes or forward to real
+                  recipients
+                </ListItem>
+                <ListItem w="100%">
+                  Send emails to Mailtrap inboxes from CRMs and common sending
+                  tools
+                </ListItem>
+              </UnorderedList>
+            </Box>
           </SimpleGrid>
 
           <VStack>
-            <Button bgColor={"#22d172"} color={"#fff"} fontSize=".875rem" marginTop={9}>Sign Up For Free</Button>
+            <Button
+              bgColor={"#22d172"}
+              color={"#fff"}
+              fontSize=".875rem"
+              marginTop={9}
+            >
+              Sign Up For Free
+            </Button>
           </VStack>
 
+
+
         </VStack>
+      </Box>
+
 
       </Box>
 
@@ -626,10 +663,11 @@ export const Home = () => {
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={20}>
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3} textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
+
               From our #BestClientEver
             </Heading>
-
           </VStack>
+
 
           <SimpleGrid columns={[1, null, 2]} spacing={10}  >
 
@@ -642,11 +680,23 @@ export const Home = () => {
                 <Text marginLeft={5} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
 
                   After all these years of web development, how have I only  JUST started using @Mailtrap. I had heard about it, but never got round to using it. An awesome way of testing emails.
+
                 </Text>
               </VStack>
-              <Text marginLeft={5} marginBottom={5} textAlign={"left"} fontSize="14px" color={"GrayText"} lineHeight={1.7} fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">7:38 PM – Jan 13, 2021</Text>
-
+              <Text
+                marginLeft={5}
+                marginBottom={5}
+                textAlign={"left"}
+                fontSize="14px"
+                color={"GrayText"}
+                lineHeight={1.7}
+                fontWeight={400}
+                fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+              >
+                7:38 PM – Jan 13, 2021
+              </Text>
             </Box>
+
 
             <Box h="100%" spacing={10} borderRadius={"0.625rem"} bgColor="#fff" display={"block"} lineHeight={1.7} boxShadow={"0 0.3125rem 1rem rgb(0 0 0 / 7%)"} textAlign="left" color="#202c45" fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">
               <HStack columns={[1, null, 2]} spacing={2} marginLeft={5} marginTop={5}>
@@ -656,14 +706,27 @@ export const Home = () => {
               <VStack>
                 <Text marginLeft={5} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
                   I love @Mailtrap. It removes all the asshole of configuring email servers in test environments. Great service! Is totally worth your money!
+
                 </Text>
               </VStack>
-              <Text marginLeft={5} marginBottom={5} textAlign={"left"} fontSize="14px" color={"GrayText"} lineHeight={1.7} fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">1:15 PM – Oct 20, 2020  </Text>
-
+              <Text
+                marginLeft={5}
+                marginBottom={5}
+                textAlign={"left"}
+                fontSize="14px"
+                color={"GrayText"}
+                lineHeight={1.7}
+                fontWeight={400}
+                fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+              >
+                1:15 PM – Oct 20, 2020{" "}
+              </Text>
             </Box>
 
           </SimpleGrid>
         </VStack>
+      </Box>
+
 
       </Box>
 
@@ -694,20 +757,23 @@ export const Home = () => {
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={20}>
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3} textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
+
               Frequently Asked Questions
             </Heading>
-
           </VStack>
+
 
           <SimpleGrid columns={[1, null, 2]} spacing={10}  >
 
             <Box h="100%" spacing={10} borderRadius={"0.625rem"} bgColor="#fff" display={"block"} lineHeight={1.7} boxShadow={"0 0.3125rem 1rem rgb(0 0 0 / 7%)"} textAlign="left" color="#202c45" fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">
               <HStack columns={[1, null, 2]} spacing={2} marginLeft={5} marginTop={5}>
                 <Text fontSize={"1.125rem"} textAlign="left" color="#202c45" display={"block"} fontWeight={600} lineHeight={1.7} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>
+
                   Can Email Sandbox send emails to real recipients inboxes?
                 </Text>
               </HStack>
               <VStack>
+
                 <Text marginLeft={5} marginBottom={10} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
 
                   Email Sandbox is a testing tool and is not designed to deliver emails to real email addresses. But you can use our Email API or SMTP Service to send emails to your recipients.
@@ -719,10 +785,12 @@ export const Home = () => {
             <Box h="100%" spacing={10} borderRadius={"0.625rem"} bgColor="#fff" display={"block"} lineHeight={1.7} boxShadow={"0 0.3125rem 1rem rgb(0 0 0 / 7%)"} textAlign="left" color="#202c45" fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">
               <HStack columns={[1, null, 2]} spacing={2} marginLeft={5} marginTop={5}>
                 <Text fontSize={"1.125rem"} textAlign="left" color="#202c45" display={"block"} fontWeight={600} lineHeight={1.7} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>
+
                   How can I preview my email in different email clients?
                 </Text>
               </HStack>
               <VStack>
+
                 <Text marginLeft={5} marginBottom={10} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
 
                   HTML Check analyzes your template for support with popular email clients and explains how to fix errors right away. This is more efficient than manual comparison of previews from email clients, but you still can forward your test emails to real recipients and open them in specific email clients.
@@ -734,10 +802,12 @@ export const Home = () => {
             <Box h="100%" spacing={10} borderRadius={"0.625rem"} bgColor="#fff" display={"block"} lineHeight={1.7} boxShadow={"0 0.3125rem 1rem rgb(0 0 0 / 7%)"} textAlign="left" color="#202c45" fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">
               <HStack columns={[1, null, 2]} spacing={2} marginLeft={5} marginTop={5}>
                 <Text fontSize={"1.125rem"} textAlign="left" color="#202c45" display={"block"} fontWeight={600} lineHeight={1.7} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>
+
                   Can I send a test email to Sandbox from my Gmail?
                 </Text>
               </HStack>
               <VStack>
+
                 <Text marginLeft={5} marginBottom={10} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
 
                   Yes, you can! On Business, Premium, and Enterprise plans, there is a separate email address available for each of your inboxes. With it, you can send messages from any CRM, email sending app or client, such as Gmail, Hubspot, Sendgrid, etc.
@@ -749,19 +819,24 @@ export const Home = () => {
             <Box h="100%" spacing={10} borderRadius={"0.625rem"} bgColor="#fff" display={"block"} lineHeight={1.7} boxShadow={"0 0.3125rem 1rem rgb(0 0 0 / 7%)"} textAlign="left" color="#202c45" fontWeight={400} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">
               <HStack columns={[1, null, 2]} spacing={2} marginLeft={5} marginTop={5}>
                 <Text fontSize={"1.125rem"} textAlign="left" color="#202c45" display={"block"} fontWeight={600} lineHeight={1.7} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>
+
                   How much does Email Sandbox cost?
                 </Text>
               </HStack>
               <VStack>
+
                 <Text marginLeft={5} marginBottom={10} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
 
                   Mailtrap features a forever free plan that offers the basic functionality for personal use of Email Sandbox. Paid plans start from $9.99 per month, and are suitable for companies of different sizes. View the Mailtrap pricing for more details.
                 </Text>
               </VStack>
 
+
             </Box>
           </SimpleGrid>
         </VStack>
+      </Box>
+
 
       </Box>
 
@@ -777,16 +852,22 @@ export const Home = () => {
               </VStack>
               <Button bgColor={"#22d172"} color={"#fff"} fontSize=".875rem" marginTop={9}>Sign Up For Free</Button>
 
+
             </Box>
 
             <Box>
-              <Image boxSize='sm' textAlign={"right"} src='https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg' />
+              <Image
+                boxSize="sm"
+                textAlign={"right"}
+                src="https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg"
+              />
             </Box>
           </SimpleGrid>
-
         </VStack>
 
+
       </Box>
+
 
     </>
   );
