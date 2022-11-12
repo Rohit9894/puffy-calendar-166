@@ -7,16 +7,16 @@ import {
   HStack,
   Image,
   SimpleGrid,
-  UnorderedList,
-  ListItem,
   Text,
   VStack,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 
 export const Home = () => {
   return (
     <>
-      <Box h="200%" m="100px auto" w="100%">
+      <Box h="200%" m="120px auto" w="100%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -141,8 +141,7 @@ export const Home = () => {
         </VStack>
       </Box>
 
-      <Box h="120%" m="100px auto" w="80%" border={"1px solid red"}>
-        {/* <HStack w="100%" justify={"space-evenly"}> */}
+      <Box h="120%" m="100px auto" w="80%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -411,7 +410,7 @@ export const Home = () => {
         </VStack>
       </Box>
 
-      <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
+      <Box h="130%" m="100px auto" w="80%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -537,7 +536,7 @@ export const Home = () => {
         </VStack>
       </Box>
 
-      <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
+      <Box h="130%" m="100px auto" w="80%">
         {/* <HStack w="100%" justify={"space-evenly"}> */}
         <VStack
           w={"100%"}
@@ -699,7 +698,6 @@ export const Home = () => {
       </Box>
 
       <Box h="130%" m="100px auto" w="70%">
-        {/* <HStack w="100%" justify={"space-evenly"}> */}
         <VStack
           w={"100%"}
           textAlign="center"
@@ -877,7 +875,7 @@ export const Home = () => {
         </VStack>
       </Box>
 
-      <Box h="200%" m="100px auto" w="100%" border={"1px solid red"}>
+      <Box h="200%" m="100px auto" w="100%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -1184,7 +1182,7 @@ export const Home = () => {
         </VStack>
       </Box>
 
-      <Box h="80%" m="100px auto" w="100%" border={"1px solid red"}>
+      <Box h="80%" m="100px auto" w="100%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -1195,7 +1193,7 @@ export const Home = () => {
             columns={["1", "2"]}
             direction={["column", "row"]}
             spacing={20}
-            gap={250}
+            gap={{ base: 10, lg: 250 }}
             bgColor="#1a2e44"
           >
             <Box marginTop="25%">

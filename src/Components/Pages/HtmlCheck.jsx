@@ -23,10 +23,10 @@ const CircleIcon = (props) => (
   </Icon>
 );
 
-const QAAutomation = () => {
+const HtmlCheck = () => {
   return (
     <>
-      <Box h="130%" m="100px auto" w="90%">
+      <Box h="130%" m="120px auto" w="90%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -37,8 +37,8 @@ const QAAutomation = () => {
           <SimpleGrid
             columns={["1", "2"]}
             direction={["column", "row"]}
-            spacing={20}
-            gap={50}
+            spacing={30}
+            gap={30}
           >
             <VStack
               w={{ base: "100%", lg: "82%" }}
@@ -47,20 +47,22 @@ const QAAutomation = () => {
               justifyContent={"center"}
               marginTop={10}
             >
-              <Heading
-                fontWeight={600}
-                fontSize="1.875rem"
-                lineHeight={1.3}
-                marginBottom={12}
-                textAlign={{ base: "none", lg: "left" }}
-                display={"block"}
-                color="#202c45"
-                fontFamily={
-                  "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                }
-              >
-                Powerful Automation For Testing Your Email Sequences
-              </Heading>
+              <VStack>
+                <Heading
+                  fontWeight={600}
+                  fontSize="1.875rem"
+                  lineHeight={1.3}
+                  marginBottom={10}
+                  textAlign={{ base: "none", lg: "left" }}
+                  display={"block"}
+                  color="#202c45"
+                  fontFamily={
+                    "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+                  }
+                >
+                  Check The HTML & CSS Support For Top Email Clients
+                </Heading>
+              </VStack>
 
               <VStack gap={4} w="100%">
                 <Box
@@ -74,8 +76,12 @@ const QAAutomation = () => {
                     "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                   }
                 >
-                  Cover all your testing scenarios with Sandbox API.
+                  See how Gmail, Outlook, Apple Mail, and others will treat your
+                  emails. Fix the issues right away.
                 </Box>
+              </VStack>
+
+              <VStack mb={5}>
                 <Button
                   display={"block"}
                   textAlign="left"
@@ -88,7 +94,7 @@ const QAAutomation = () => {
                 </Button>
               </VStack>
 
-              <Box>
+              <Box mt={15}>
                 <Flex
                   w={{ base: "100%", lg: "120%" }}
                   direction={{ base: "column", lg: "row" }}
@@ -97,59 +103,60 @@ const QAAutomation = () => {
                   textAlign="center"
                   justifyContent={"center"}
                   marginTop={5}
+                  gap={2}
                 >
                   <Image
                     w={106}
                     h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/06/Selenium-110x33.png"
-                    alt="Selenium"
+                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__gmail.svg"
+                    alt="Gmail"
                   />
                   <Image
                     w={106}
                     h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/06/Cucumber.svg"
-                    alt="cucumber"
+                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__apple-mail.svg"
+                    alt="Apple"
                   />
                   <Image
                     w={106}
                     h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/06/Protractor.svg"
-                    alt="Protractor"
+                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__yahoo-mail.svg"
+                    alt="Yahoo"
                   />
                   <Image
                     w={106}
                     h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/06/Cypress.svg"
-                    alt="Cypress"
+                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__outlook.svg"
+                    alt="Outlook"
                   />
                   <Image
                     w={106}
                     h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/06/Jmeter.svg"
-                    alt="Jmeter"
+                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__thunderbird.svg"
+                    alt="Thunderbird"
                   />
                 </Flex>
               </Box>
             </VStack>
 
-            <Box>
+            <Box mt={5}>
               <Image
-                h="80%"
+                h="100%"
                 w="100%"
-                src="https://mailtrap.io/wp-content/uploads/2021/05/img__qa.svg"
+                src="https://mailtrap.io/wp-content/uploads/2021/06/html_check_main_image.png"
               />
             </Box>
           </SimpleGrid>
         </VStack>
       </Box>
 
-      <Box h="120%" m="100px auto" w="80%">
+      <Box h="120%" m="100px auto" w="80%" mt={5}>
         <VStack
           w={"100%"}
           textAlign="center"
           display={"block"}
           justifyContent={"center"}
-          marginTop={10}
+          mt={20}
         >
           <Heading
             fontWeight={600}
@@ -163,7 +170,7 @@ const QAAutomation = () => {
               "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
             }
           >
-            Email testing essentials available with Sandbox API
+            Everything you need to validate your HTML/CSS
           </Heading>
 
           <SimpleGrid
@@ -177,7 +184,7 @@ const QAAutomation = () => {
                   w={79}
                   h={82}
                   marginBottom={5}
-                  src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg"
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/logo-computer.svg"
                 />
                 <VStack>
                   <Box
@@ -191,7 +198,7 @@ const QAAutomation = () => {
                     fontWeight={600}
                     lineHeight={1.3}
                   >
-                    Integrate with your favorite environment
+                    Verify email client support
                   </Box>
                   <Box
                     display={"block"}
@@ -204,8 +211,8 @@ const QAAutomation = () => {
                       "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                     }
                   >
-                    Sandbox Fake SMTP works seamlessly with Selenium, Cucumber,
-                    Protractor, and many other testing tools.
+                    See how many of your recipients will have no trouble
+                    displaying your emails.
                   </Box>
                 </VStack>
               </HStack>
@@ -217,7 +224,7 @@ const QAAutomation = () => {
                   w={79}
                   h={82}
                   marginBottom={5}
-                  src="https://mailtrap.io/wp-content/uploads/2021/01/icon_work.svg"
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/comp.svg"
                 />
                 <VStack>
                   <Box
@@ -233,7 +240,7 @@ const QAAutomation = () => {
                     fontWeight={600}
                     lineHeight={1.3}
                   >
-                    Verify multiple variables at a time
+                    Check each HTML/CSS element
                   </Box>
                   <Box
                     display={"block"}
@@ -246,9 +253,8 @@ const QAAutomation = () => {
                       "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                     }
                   >
-                    Testing if emails are sent and delivered is just the first
-                    step. Automatically verify email headers, subject, body,
-                    attachments, and more.
+                    View the list of unsupported elements and find out which
+                    email clients lack compatibility.
                   </Box>
                 </VStack>
               </HStack>
@@ -260,7 +266,7 @@ const QAAutomation = () => {
                   w={79}
                   h={82}
                   marginBottom={5}
-                  src="https://mailtrap.io/wp-content/uploads/2021/03/icon2.svg"
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/person-icon.svg"
                 />
                 <VStack>
                   <Box
@@ -274,7 +280,7 @@ const QAAutomation = () => {
                     fontWeight={600}
                     lineHeight={1.3}
                   >
-                    Make use of well-documented API
+                    Optimize for your audience
                   </Box>
                   <Box
                     display={"block"}
@@ -287,9 +293,8 @@ const QAAutomation = () => {
                       "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                     }
                   >
-                    Comprehensive documentation is available for each feature.
-                    There’s no learning curve and you’ll launch the first tests
-                    within minutes.
+                    Enhance your emails for mobile or focus only on a particular
+                    email client, if you wish.
                   </Box>
                 </VStack>
               </HStack>
@@ -301,7 +306,7 @@ const QAAutomation = () => {
                   w={79}
                   h={82}
                   marginBottom={5}
-                  src="https://mailtrap.io/wp-content/uploads/2021/01/icon_men.svg"
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/comment-icon.svg"
                 />
                 <VStack>
                   <Box
@@ -315,7 +320,7 @@ const QAAutomation = () => {
                     fontWeight={600}
                     lineHeight={1.3}
                   >
-                    Test complex sequences with ease
+                    Find problematic lines in code
                   </Box>
                   <Box
                     display={"block"}
@@ -328,8 +333,8 @@ const QAAutomation = () => {
                       "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                     }
                   >
-                    Write tests covering simple and complex scenarios. Test any
-                    email-related functionality effortlessly.
+                    Jump directly to the unsupported elements in your email’s
+                    code. Fix them, resend an email and check for improvements.
                   </Box>
                 </VStack>
               </HStack>
@@ -341,7 +346,7 @@ const QAAutomation = () => {
                   w={79}
                   h={82}
                   marginBottom={5}
-                  src="https://mailtrap.io/wp-content/uploads/2021/03/ivon__performance.svg"
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/email-icon-1.svg"
                 />
                 <VStack>
                   <Box
@@ -355,7 +360,7 @@ const QAAutomation = () => {
                     fontWeight={600}
                     lineHeight={1.3}
                   >
-                    Collaborate with development team
+                    Preview each iteration
                   </Box>
                   <Box
                     display={"block"}
@@ -368,9 +373,9 @@ const QAAutomation = () => {
                       "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                     }
                   >
-                    Share the testing space with your dev team or set up
-                    individual inboxes for each environment. Pass test emails
-                    between team members effortlessly.
+                    See how each email renders on desktop, mobile and a tablet.
+                    Validate each new version without leaving your Sandbox
+                    inbox.
                   </Box>
                 </VStack>
               </HStack>
@@ -472,7 +477,7 @@ const QAAutomation = () => {
                   "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                 }
               >
-                How QAs use Email Sandbox
+                Check your HTML in a few simple steps
               </Heading>
 
               <List spacing={3} alignItems={"flex-start"} w="100%">
@@ -487,7 +492,7 @@ const QAAutomation = () => {
                   fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                 >
                   <CircleIcon color="#22d172" />
-                  Check any emails within your end-to-end automated test suites
+                  Integrate Email Sandbox with your app
                 </ListItem>
                 <Text
                   ml={5}
@@ -501,8 +506,9 @@ const QAAutomation = () => {
                     "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                   }
                 >
-                  Pick any, even the most complex email sequence and include it
-                  in the corresponding test.
+                  Copy the credentials or use the ready code available for over
+                  20 frameworks and libraries. Trigger the first email and watch
+                  as it arrives into your Sandbox inbox.
                 </Text>
                 <ListItem
                   alignItems={"flex-start"}
@@ -515,7 +521,7 @@ const QAAutomation = () => {
                   fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                 >
                   <CircleIcon color="#22d172" />
-                  Launch the tests
+                  Check the HTML
                 </ListItem>
                 <Text
                   ml={5}
@@ -529,8 +535,9 @@ const QAAutomation = () => {
                     "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                   }
                 >
-                  Use Sandbox API to build and launch automated acceptance tests
-                  for the entire sequence.
+                  View the market support score for your emails. See the list of
+                  unsupported elements and find the problematic lines in the
+                  email code.
                 </Text>
                 <ListItem
                   alignItems={"flex-start"}
@@ -543,7 +550,7 @@ const QAAutomation = () => {
                   fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                 >
                   <CircleIcon color="#22d172" />
-                  Verify the test results automatically
+                  Iterate on your template
                 </ListItem>
                 <Text
                   ml={5}
@@ -557,10 +564,9 @@ const QAAutomation = () => {
                     "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                   }
                 >
-                  Confirm the results automatically using the Sandbox API.
-                  Validate if email headers and content are as expected and if
-                  the sending triggers work properly. Validate subject lines,
-                  links, attachments, and others.
+                  Fix the outlined issues and send in the new copies of your
+                  emails into your Sandbox inbox. Repeat until you’re happy with
+                  the results.
                 </Text>
               </List>
 
@@ -582,7 +588,7 @@ const QAAutomation = () => {
               <Image
                 h="100%"
                 w="100%"
-                src="https://mailtrap.io/wp-content/uploads/2021/05/img__qa.svg"
+                src="https://mailtrap.io/wp-content/uploads/2021/06/image_checker_retina-700x760.png"
               />
             </Box>
           </SimpleGrid>
@@ -798,7 +804,7 @@ const QAAutomation = () => {
                 ml={20}
                 display={"block"}
                 textAlign="center"
-                src="https://mailtrap.io/wp-content/uploads/2021/01/html-checkef.svg"
+                src="https://mailtrap.io/wp-content/uploads/2021/01/auomation-logo.svg"
               />
               <Heading
                 textAlign={"center"}
@@ -811,7 +817,7 @@ const QAAutomation = () => {
                 color="#202c45"
                 fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
               >
-                HTML Check
+                QA Automation
               </Heading>
               <Text
                 display={"block"}
@@ -824,9 +830,9 @@ const QAAutomation = () => {
                   "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
                 }
               >
-                Validate the HTML/CSS rules included in your emails template.
-                Gauge the support across popular clients – on web, mobile, and
-                desktop.
+                Build automated tests of your email sequences and include them
+                in your testing suite. Verify each component of a message with
+                Sandbox API.
               </Text>
               <Button
                 colorScheme="#1a2e44"
@@ -997,4 +1003,4 @@ const QAAutomation = () => {
   );
 };
 
-export default QAAutomation;
+export default HtmlCheck;

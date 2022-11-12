@@ -90,6 +90,7 @@ export const DeleteAccount = () => {
                   border="1px solid #fb5151"
                   bg=""
                   borderRadius={"30px"}
+                  disabled={disable}
                   _hover={{ background: "#ff7171", color: "#fff" }}
                   onClick={handleDelete}
                 >
