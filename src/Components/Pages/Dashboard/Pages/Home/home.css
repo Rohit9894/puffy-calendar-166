@@ -1,0 +1,33 @@
+.dashboardbtn {
+  background-color: #4c83ee;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.15;
+  padding: 12px 15px;
+  transition: 0.3s;
+}
+.dashboardbtn:hover {
+  background-color: #5d93fc;
+}
+.accountupdate {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  display: block;
+  font-size: 14px;
+  line-height: 1.3rem;
+  width: 100%;
+  border: 1px solid var(--field-border-color);
+  border-radius: 7px;
+  padding: 8px 10px;
+  transition: border-color 0.5s ease 0s;
+}
+.accountupdate:focus {
+  outline: none;
+  border-color: var(--primary-color-hover);
+  box-shadow: 0 0 4px var(--primary-color-hover-with-opacity);
+}

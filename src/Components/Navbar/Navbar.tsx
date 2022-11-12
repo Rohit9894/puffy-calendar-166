@@ -30,7 +30,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(true);
   const path = useLocation().pathname;
   useEffect(() => {
-    if (path.includes("user-management")) {
+    if (path.includes("home")) {
       setDisplay(false);
     }
     window.addEventListener("scroll", stickNavbar);
