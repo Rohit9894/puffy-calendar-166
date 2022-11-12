@@ -1,19 +1,25 @@
 import React from "react";
 
 import { useState } from "react";
-import { Box, Button, Center, Heading, Hide, Text,Image } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Heading,
+  Hide,
+  Text,
+  Image,
+} from "@chakra-ui/react";
 import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
 } from "@chakra-ui/react";
-import { BsOctagon } from "react-icons/bs";
+
 import {
   Accordion,
   AccordionItem,
@@ -21,19 +27,14 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 const Price = () => {
-  const [drop, setDrop] = useState(false);
+ 
   const style = {
     border: "1px solid black",
   };
   return (
-    <Box
-     
-      w="100%"
-      p={4}
-      marginTop={"100px"}
-      color="black"
-    >
+    <Box w="100%" p={4} marginTop={"100px"} color="black">
       {/* upper chart */}
 
       <Hide below="xl">
@@ -92,10 +93,16 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button bg="rgb(26,46,68)" color="white" position={"revert"}>
-                    {" "}
-                    Try Free
-                  </Button>
+                  <Link to="/payment" state={0}>
+                    <Button
+                      bg="rgb(26,46,68)"
+                      color="white"
+                      position={"revert"}
+                    >
+                      {" "}
+                      Try Free
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -147,14 +154,16 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button
-                    bg="rgb(34,209,114)"
-                    color="white"
-                    position={"revert"}
-                  >
-                    {" "}
-                    Buy Now
-                  </Button>
+                  <Link to="/payment" state={9}>
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                    >
+                      {" "}
+                      Buy Now
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -207,14 +216,16 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button
-                    bg="rgb(34,209,114)"
-                    color="white"
-                    position={"revert"}
-                  >
-                    {" "}
-                    Buy now
-                  </Button>
+                  <Link to="/payment" state={24}>
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                    >
+                      {" "}
+                      Buy now
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -285,13 +296,15 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button
-                    bg="rgb(34,209,114)"
-                    color="white"
-                    position={"revert"}
-                  >
-                    Buy Now
-                  </Button>
+                  <Link to="/payment" state={49}>
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -343,13 +356,15 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button
-                    bg="rgb(34,209,114)"
-                    color="white"
-                    position={"revert"}
-                  >
-                    Buy Now
-                  </Button>
+                  <Link to="/payment" state={99}>
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -407,13 +422,16 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Button
-                    bg="rgb(34,209,114)"
-                    color="white"
-                    position={"revert"}
-                  >
-                    Buy Now
-                  </Button>
+                  <Link to="/payment" state={299}>
+                    {" "}
+                    <Button
+                      bg="rgb(34,209,114)"
+                      color="white"
+                      position={"revert"}
+                    >
+                      Buy Now
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -748,15 +766,18 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Button
-                        bg="rgb(34,209,114)"
-                        color="white"
-                        marginLeft={["auto", "auto", "auto", "15%"]}
-                        position={"revert"}
-                        marginTop="30px"
-                      >
-                        Buy Now
-                      </Button>
+                      <Link to="/payment" state={0}>
+                        {" "}
+                        <Button
+                          bg="rgb(34,209,114)"
+                          color="white"
+                          marginLeft={["auto", "auto", "auto", "15%"]}
+                          position={"revert"}
+                          marginTop="30px"
+                        >
+                          Buy Now
+                        </Button>
+                      </Link>
                     </Td>
                     <Td
                       style={style}
@@ -782,15 +803,17 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Button
-                        bg="rgb(34,209,114)"
-                        color="white"
-                        marginLeft={["auto", "auto", "auto", "8%"]}
-                        position={"revert"}
-                        marginTop="30px"
-                      >
-                        Buy Now
-                      </Button>
+                      <Link to="/payment" state={9}>
+                        <Button
+                          bg="rgb(34,209,114)"
+                          color="white"
+                          marginLeft={["auto", "auto", "auto", "8%"]}
+                          position={"revert"}
+                          marginTop="30px"
+                        >
+                          Buy Now
+                        </Button>
+                      </Link>
                     </Td>
                     <Td
                       style={style}
@@ -816,15 +839,17 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Button
-                        bg="rgb(34,209,114)"
-                        color="white"
-                        marginLeft={["auto", "auto", "auto", "auto"]}
-                        position={"revert"}
-                        marginTop="30px"
-                      >
-                        Buy Now
-                      </Button>
+                      <Link to="/payment" state={24}>
+                        <Button
+                          bg="rgb(34,209,114)"
+                          color="white"
+                          marginLeft={["auto", "auto", "auto", "auto"]}
+                          position={"revert"}
+                          marginTop="30px"
+                        >
+                          Buy Now
+                        </Button>
+                      </Link>
                     </Td>
                     <Td
                       style={style}
@@ -849,7 +874,7 @@ const Price = () => {
                           <Text textAlign="center">99 </Text>
                         </Box>
                       </Box>
-
+                      <Link to="/payment" state={49}>
                       <Button
                         bg="rgb(34,209,114)"
                         color="white"
@@ -859,6 +884,7 @@ const Price = () => {
                       >
                         Buy Now
                       </Button>
+                      </Link>
                     </Td>
                     <Td
                       style={style}
@@ -883,6 +909,7 @@ const Price = () => {
                           <Text textAlign="center">99 </Text>
                         </Box>
                       </Box>
+                      <Link to="/payment" state={99}>
                       <Button
                         bg="rgb(34,209,114)"
                         color="white"
@@ -892,6 +919,7 @@ const Price = () => {
                       >
                         Buy Now
                       </Button>
+                      </Link>
                     </Td>
                     <Td
                       style={style}
@@ -917,6 +945,7 @@ const Price = () => {
                         </Box>
                       </Box>
 
+                      <Link to="/payment" state ={299}>
                       <Button
                         bg="rgb(34,209,114)"
                         color="white"
@@ -926,6 +955,7 @@ const Price = () => {
                       >
                         Buy Now
                       </Button>
+                      </Link>
                     </Td>
                   </Tr>
                 </Tbody>
@@ -956,28 +986,34 @@ const Price = () => {
         </Box>
       </Box>
       {/* last part of template */}
-      <Box bg="rgb(26,46,68)"
-      marginTop={"5pc"}
-       w="100%"
-       
-        p={4} 
-      color="white"
-       display={["block","block","flex","flex"]} 
-      justifyContent="space-between" >
-        <Box marginLeft={["10%","10%","20%","20%"]} marginTop={["1%","1%","5%","10%"]}>
-         <Text fontSize={"30px"} fontWeight={"bold"}
-         >Create Your Free Account
-         </Text>
-         <Text fontSize={["50px","50px","50px","70px"]} 
-         fontWeight={600}
-         >In 3 Clicks</Text>
-         <Button color="white"  bg={"rgb(34,209,114)"} 
-         position="revert">
-           Sign Up Now</Button>
-
+      <Box
+        bg="rgb(26,46,68)"
+        marginTop={"5pc"}
+        w="100%"
+        p={4}
+        color="white"
+        display={["block", "block", "flex", "flex"]}
+        justifyContent="space-between"
+      >
+        <Box
+          marginLeft={["10%", "10%", "20%", "20%"]}
+          marginTop={["1%", "1%", "5%", "10%"]}
+        >
+          <Text fontSize={"30px"} fontWeight={"bold"}>
+            Create Your Free Account
+          </Text>
+          <Text fontSize={["50px", "50px", "50px", "70px"]} fontWeight={600}>
+            In 3 Clicks
+          </Text>
+          <Button color="white" bg={"rgb(34,209,114)"} position="revert">
+            Sign Up Now
+          </Button>
         </Box>
         <Box>
-        <Image src='https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg' alt='Dan Abramov' />
+          <Image
+            src="https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg"
+            alt="Dan Abramov"
+          />
         </Box>
       </Box>
     </Box>

@@ -34,7 +34,7 @@ export const AllRoutes = () => {
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />
       <Route path="resources/api" element={<Api />} />
-      <Route path="/payement" element={<Payment/>}/>
+      <Route path="/payment" element={<Payment/>}/>
       <Route
         path="/user-management"
         element={
