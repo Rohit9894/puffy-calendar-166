@@ -1,20 +1,18 @@
-import React from "react";
-
-import { useState } from "react";
-import { Box, Button, Center, Heading, Hide, Text,Image } from "@chakra-ui/react";
 import {
+  Box,
+  Button,
+  Center,
+  Heading,
+  Hide,
+  Text,
+  Image,
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
-} from "@chakra-ui/react";
-import { BsOctagon } from "react-icons/bs";
-import {
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -22,18 +20,11 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 const Price = () => {
-  const [drop, setDrop] = useState(false);
   const style = {
     border: "1px solid black",
   };
   return (
-    <Box
-     
-      w="100%"
-      p={4}
-      marginTop={"100px"}
-      color="black"
-    >
+    <Box w="100%" p={4} marginTop={"100px"} color="black">
       {/* upper chart */}
 
       <Hide below="xl">
@@ -956,28 +947,34 @@ const Price = () => {
         </Box>
       </Box>
       {/* last part of template */}
-      <Box bg="rgb(26,46,68)"
-      marginTop={"5pc"}
-       w="100%"
-       
-        p={4} 
-      color="white"
-       display={["block","block","flex","flex"]} 
-      justifyContent="space-between" >
-        <Box marginLeft={["10%","10%","20%","20%"]} marginTop={["1%","1%","5%","10%"]}>
-         <Text fontSize={"30px"} fontWeight={"bold"}
-         >Create Your Free Account
-         </Text>
-         <Text fontSize={["50px","50px","50px","70px"]} 
-         fontWeight={600}
-         >In 3 Clicks</Text>
-         <Button color="white"  bg={"rgb(34,209,114)"} 
-         position="revert">
-           Sign Up Now</Button>
-
+      <Box
+        bg="rgb(26,46,68)"
+        marginTop={"5pc"}
+        w="100%"
+        p={4}
+        color="white"
+        display={["block", "block", "flex", "flex"]}
+        justifyContent="space-between"
+      >
+        <Box
+          marginLeft={["10%", "10%", "20%", "20%"]}
+          marginTop={["1%", "1%", "5%", "10%"]}
+        >
+          <Text fontSize={"30px"} fontWeight={"bold"}>
+            Create Your Free Account
+          </Text>
+          <Text fontSize={["50px", "50px", "50px", "70px"]} fontWeight={600}>
+            In 3 Clicks
+          </Text>
+          <Button color="white" bg={"rgb(34,209,114)"} position="revert">
+            Sign Up Now
+          </Button>
         </Box>
         <Box>
-        <Image src='https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg' alt='Dan Abramov' />
+          <Image
+            src="https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg"
+            alt="Dan Abramov"
+          />
         </Box>
       </Box>
     </Box>

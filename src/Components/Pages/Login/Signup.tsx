@@ -50,16 +50,12 @@ export const Signup = () => {
         const user: any = res.user;
         sendEmailVerification(user.auth.currentUser).then(() => {
           toast({
+            title: "Success",
+            description: "A verfication link has been sent to your email.",
             status: "success",
             duration: 3000,
             isClosable: true,
             position: "top",
-            render: () => (
-              <Box className="toastbox">
-                <Heading>Verification Link Sent Successfully</Heading>
-                <Text>A verfication link has been sent to your email.</Text>
-              </Box>
-            ),
           });
           setTimeout(() => navigate("/login"), 3000);
         });

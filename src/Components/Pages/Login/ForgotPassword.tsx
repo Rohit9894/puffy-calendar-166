@@ -29,15 +29,12 @@ export const ForgotPassword = () => {
       .then((res) => {
         setDisable(false);
         toast({
+          title: "Success",
+          description: "Reset link has been sent to your email",
           status: "success",
           duration: 3000,
           isClosable: true,
           position: "top",
-          render: () => (
-            <Box className="toastbox">
-              <Heading>Reset link has been sent to your email</Heading>
-            </Box>
-          ),
         });
         navigate("/login");
       })
