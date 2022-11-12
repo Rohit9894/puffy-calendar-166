@@ -10,12 +10,18 @@ import { Signup } from "../Pages/Login/Signup";
 
 
 
-import Price from "../Pricing/Price";
-import QA_Automation from "../Pages/QA_Automation";
 
-import Price from "../Pages/Pricing/Price";
+
+
 import { DeleteAccount } from "../Pages/Login/DeleteAccount";
 import { User } from "../Pages/Login/User";
+import Price from "../Pricing/Price";
+import QAAutomation from "../Pages/QAAutomation";
+import HtmlCheck from "../Pages/HtmlCheck";
+import FakeServer from "../Pages/FakeServer";
+
+import MailTrapApi from "../Pages/MailTrapApi";
+
 
 export const AllRoutes = () => {
   return (
@@ -25,13 +31,15 @@ export const AllRoutes = () => {
       <Route path="/signup" element={<Signup />} />
 
       <Route path="/emailApi" element={<EmailAPI />}  />
-      <Route path="/qaAutomation" element={<QA_Automation />}  />
+      <Route path="/qaAutomation" element={<QAAutomation />}  />
+      <Route path="/htmlcheck" element={<HtmlCheck />}  />
+      <Route path="/fakeserver" element={<FakeServer />}  />
+      <Route path="/mailtrapApi" element={<MailTrapApi />}  />
 
       <Route path="/price" element={<Price />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/delete-account-confirmation" element={<DeleteAccount />} />
       <Route path="/user" element={<User />} />
-      <Route path="/price" element={<Price />} />
       <Route path="/resources/blog" element={<Blog />} />
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />

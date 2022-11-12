@@ -1,15 +1,13 @@
-import { Box, Button, Center, Circle, Container, Flex, FormControl, FormLabel, Grid, GridItem, Heading, HStack, Image, Input, List, ListIcon, ListItem, SimpleGrid, Spacer, Stack, Text, UnorderedList, VStack } from "@chakra-ui/react";
+import { Box, Button,  Heading, HStack, Image,  SimpleGrid,  Text,  VStack } from "@chakra-ui/react";
 import React from "react";
 
 const EmailAPI = () => {
   return (
     <>
-    <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
-      {/* <HStack w="100%" justify={"space-evenly"}> */}
+    <Box h="130%" m="100px auto" w="80%" >
+    
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
         
-  
-
           <SimpleGrid columns={['1','2']} direction={['column', 'row']}  spacing={20} gap={50} >
 
             <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
@@ -22,8 +20,6 @@ const EmailAPI = () => {
                 Deliver emails with Mailtrap Email API or SMTP from any application. Monitor deliverability and
                 share stats with the team.
                 </Box>
-                {/* <Button float={"left"} justifyContent="left" bgColor={"#22d172"} color={"#fff"} fontSize=".875rem" marginTop={9}>Sign Up</Button> */}
-                
               </VStack> 
 
               <VStack >
@@ -43,8 +39,7 @@ const EmailAPI = () => {
 
 
 
-
-    <Box h="130%" m="100px auto" w="80%" border={"1px solid red"}>
+    <Box h="130%" m="100px auto" w="80%" >
       
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={10}>
@@ -56,15 +51,11 @@ const EmailAPI = () => {
 
           <SimpleGrid columns={['1','2']} direction={['column', 'row']}    w="100%" h="100%"  >
 
-            
-        
               <Box  marginTop={{base:10, lg:28}}>
                 <VStack>
                   <Heading fontSize={"26px"} fontWeight={700} textAlign="left" color="#202c45" lineHeight={1.3} fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >Deliverability Monitoring</Heading>
-                  <Text fontWeight={400} fontSize="14px" textAlign="left" lineHeight={1.7} color="#202c45" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >Monitor your deliverability as you do with Infrastructure. Don’t be too late to respond to deliverability issues. With Mailtrap’s alerts you can be proactive and take action as soon as our system flags an issue with your emails.</Text>
-                  
+                  <Text fontWeight={400} fontSize="14px" textAlign="left" lineHeight={1.7} color="#202c45" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >Monitor your deliverability as you do with Infrastructure. Don’t be too late to respond to deliverability issues. With Mailtrap’s alerts you can be proactive and take action as soon as our system flags an issue with your emails.</Text>  
                 </VStack>
-                
               </Box>
 
               <Box >
@@ -136,8 +127,6 @@ const EmailAPI = () => {
               
             </Box>
 
-
-
           </SimpleGrid>
 
         </VStack>
@@ -145,7 +134,7 @@ const EmailAPI = () => {
     </Box>
 
 
-    <Box h="130%" m="100px auto" w="70%" border={"1px solid red"} bgColor="#f9c273" display={"block"} padding="1.6rem" marginTop={"2.4rem"} lineHeight={1.7} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;" textAlign={"left"}>
+    <Box h="130%" m="100px auto" w="70%"  bgColor="#f9c273" display={"block"} padding="1.6rem" marginTop={"2.4rem"} lineHeight={1.7} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;" textAlign={"left"}>
       <VStack>
         <Heading fontWeight={600} fontSize="1.5rem" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>We Help You Switch</Heading>
         <Text  fontWeight={400}  lineHeight={1.7} display="block" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Our Support and Deliverability experts are here to help you. Don’t hesitate to reach out now. Our team will guide you during the whole process.</Text>
@@ -154,7 +143,7 @@ const EmailAPI = () => {
     </Box>
 
     <Box h="130%" m="100px auto" w="70%" >
-      {/* <HStack w="100%" justify={"space-evenly"}> */}
+      
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={20}>
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3}  textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
@@ -185,6 +174,7 @@ const EmailAPI = () => {
                 We choose Mailtrap as sending provider for transactional emails. We’ve been using Sendgrid before and didn’t have any issues with the transition and our deliverability even improved a little. We love how smooth the experience was.
                 </Text>
               </VStack>
+
               <VStack rows={[1, null, 1]} spacing={1} display="block" textAlign="left" marginLeft={5}  marginTop={5}>
                 <Text fontSize={"1.125rem"} textAlign="left" color="#202c45" display={"block"} fontWeight={600} lineHeight={1.7} fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Julia Ryzhkova</Text>
                 <Text lineHeight={1.7} color={"#202c45"} display={"block"} fontSize=".75rem" fontWeight={600} textAlign="left" fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Product Manager @ Coupler.io</Text>
@@ -199,7 +189,7 @@ const EmailAPI = () => {
 
 
     <Box h="130%" m="100px auto" w="73%" >
-      {/* <HStack w="100%" justify={"space-evenly"}> */}
+      
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
           <VStack marginBottom={20}>
             <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3}  textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
@@ -216,6 +206,7 @@ const EmailAPI = () => {
                 Why try Mailtrap SMTP and Email API?
                 </Text>
               </HStack>
+
               <VStack>
                 <Text marginLeft={5} marginBottom={10} marginRight={5} display={"block"} fontSize="14px" lineHeight={1.7} fontWeight={400} color="#202c45" textAlign={"left"} fontFamily="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" >
                 We offer comprehensive metrics and stats to help understand emails performance, including alerts, logs, and content previews. It takes only a few steps to switch to our SMTP and if you need help – we’ll guide you through the process.
@@ -298,7 +289,7 @@ const EmailAPI = () => {
 
     </Box>
 
-    <Box h="80%" m="100px auto" w="100%" border={"1px solid red"}>
+    <Box h="80%" m="100px auto" w="100%" >
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} >
          
           <SimpleGrid columns={['1','2']} direction={['column', 'row']}  spacing={20} gap={250} bgColor="#1a2e44"  >
@@ -306,10 +297,8 @@ const EmailAPI = () => {
               <VStack>
                 <Text fontWeight={700} fontSize="1.25rem" lineHeight={1} color="#fff" textAlign={"left"} fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Create Your Free Account</Text>
                 <Text fontSize={"2.375rem"} lineHeight={1} fontWeight={600} display="block" color={"#fff"} textAlign="left" fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji">In 3 Clicks</Text>
-                
               </VStack>
               <Button bgColor={"#22d172"} color={"#fff"} fontSize=".875rem" marginTop={9}>Sign Up For Free</Button>
-            
             </Box>
 
             <Box>

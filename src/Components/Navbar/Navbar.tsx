@@ -66,7 +66,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/htmlcheck" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={ch}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>HTML Check</Text>
@@ -75,7 +75,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/fakeserver" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={fa}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Fake SMTP Server</Text>
@@ -84,7 +84,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/mailtrapApi" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={ap}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Mailtrap API</Text>
