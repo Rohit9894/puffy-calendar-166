@@ -151,11 +151,8 @@ const QAAutomation = () => {
 
       
       <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
-      
-
-
+    
         <SimpleGrid columns={['1','2']} direction={['column', 'row']}  spacing={20} gap={50} >
-
 
           <VStack w={"90%"}  display={"block"} textAlign="left" marginTop={10}>
 
@@ -294,7 +291,7 @@ const QAAutomation = () => {
       <Box h="80%" m="100px auto" w="100%" >
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} >
 
-          <SimpleGrid columns={['1', '2']} direction={['column', 'row']} spacing={20} gap={250} bgColor="#1a2e44"  >
+          <SimpleGrid columns={['1', '2']} direction={['column', 'row']} spacing={20} gap={{base:10,lg:250}} bgColor="#1a2e44"  >
             <Box marginTop='25%' >
               <VStack>
                 <Text fontWeight={700} fontSize="1.25rem" lineHeight={1} color="#fff" textAlign={"left"} fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Create Your Free Account</Text>

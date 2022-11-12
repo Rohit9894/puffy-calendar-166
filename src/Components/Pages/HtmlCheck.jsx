@@ -15,13 +15,13 @@ const CircleIcon = (props) => (
 const HtmlCheck = () => {
   return (
     <>
-    <Box h="130%" m="100px auto" w="90%" >
+    <Box h="130%" m="120px auto" w="90%" >
       
         <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
         
   
 
-          <SimpleGrid columns={['1','2']} direction={['column', 'row']}  spacing={20} gap={50} >
+          <SimpleGrid columns={['1','2']} direction={['column', 'row']}  spacing={30} gap={30} >
 
             <VStack w={{base:"100%", lg:"82%"}} textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
                 <VStack>
@@ -55,7 +55,7 @@ const HtmlCheck = () => {
          
             </VStack>
 
-            <Box>
+            <Box mt={5}>
               <Image h="100%" w="100%" src='https://mailtrap.io/wp-content/uploads/2021/06/html_check_main_image.png' />
             </Box>
           </SimpleGrid>
@@ -64,9 +64,9 @@ const HtmlCheck = () => {
 
     </Box>
 
-    <Box h="120%" m="100px auto" w="80%" >
+    <Box h="120%" m="100px auto" w="80%" mt={5} >
       
-        <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
+        <VStack w={"100%"}  textAlign="center" display={"block"} justifyContent={"center"} mt={20}>
           <Heading fontWeight={600} fontSize="1.875rem" lineHeight={1.3} marginBottom={20} textAlign="center" display={"block"} color="#202c45" fontFamily={"Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"} >
             Everything you need to validate your HTML/CSS
           </Heading>
@@ -297,7 +297,7 @@ const HtmlCheck = () => {
       <Box h="80%" m="100px auto" w="100%" >
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} >
 
-          <SimpleGrid columns={['1', '2']} direction={['column', 'row']} spacing={20} gap={250} bgColor="#1a2e44"  >
+          <SimpleGrid columns={['1', '2']} direction={['column', 'row']} spacing={20} gap={{base:10,lg:250}} bgColor="#1a2e44"  >
             <Box marginTop='25%' >
               <VStack>
                 <Text fontWeight={700} fontSize="1.25rem" lineHeight={1} color="#fff" textAlign={"left"} fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Create Your Free Account</Text>

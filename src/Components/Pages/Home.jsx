@@ -18,7 +18,7 @@ import {
 export const Home = () => {
   return (
     <>
-      <Box h="200%" m="100px auto" w="100%">
+      <Box h="200%" m="120px auto" w="100%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -413,10 +413,6 @@ export const Home = () => {
         </VStack>
       </Box>
 
-
-      </Box>
-
-
       <Box h="130%" m="100px auto" w="80%" >
 
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} marginTop={10}>
@@ -612,31 +608,7 @@ export const Home = () => {
             </Box>
 
 
-              <UnorderedList
-                spacing={5}
-                w="100%"
-                textAlign={"left"}
-                fontSize="14px"
-                fontFamily={
-                  "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                }
-                fontWeight={400}
-                color="#202c45"
-                display={"block"}
-              >
-                <ListItem w="100%">
-                  Smoothly collaborate with development and QA teams
-                </ListItem>
-                <ListItem w="100%">
-                  View test emails in shared inboxes or forward to real
-                  recipients
-                </ListItem>
-                <ListItem w="100%">
-                  Send emails to Mailtrap inboxes from CRMs and common sending
-                  tools
-                </ListItem>
-              </UnorderedList>
-            </Box>
+              
           </SimpleGrid>
 
           <VStack>
@@ -656,7 +628,6 @@ export const Home = () => {
       </Box>
 
 
-      </Box>
 
       <Box h="130%" m="100px auto" w="70%" >
         
@@ -728,7 +699,6 @@ export const Home = () => {
       </Box>
 
 
-      </Box>
 
       <Box h="200%" m="100px auto" w="100%" >
 
@@ -838,12 +808,11 @@ export const Home = () => {
       </Box>
 
 
-      </Box>
 
       <Box h="80%" m="100px auto" w="100%" >
         <VStack w={"100%"} textAlign="center" display={"block"} justifyContent={"center"} >
 
-          <SimpleGrid columns={['1', '2']} direction={['column', 'row']} spacing={20} gap={250} bgColor="#1a2e44"  >
+          <SimpleGrid columns={['1', '2']} direction={['column', 'row']} spacing={20} gap={{base:10,lg:250}} bgColor="#1a2e44"  >
             <Box marginTop='25%' >
               <VStack>
                 <Text fontWeight={700} fontSize="1.25rem" lineHeight={1} color="#fff" textAlign={"left"} fontFamily={"Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"}>Create Your Free Account</Text>
