@@ -32,14 +32,14 @@ export const AllRoutes = () => {
       <Route path="/htmlcheck" element={<HtmlCheck />} />
       <Route path="/fakeserver" element={<FakeServer />} />
       <Route path="/mailtrapApi" element={<MailTrapApi />} />
-      <Route path="/price" element={<Price/>}/>
+      <Route path="/price" element={<Price />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/user" element={<User />} />
       <Route path="/resources/blog" element={<Blog />} />
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />
       <Route path="resources/api" element={<Api />} />
-      <Route path="/payement" element={<Payment/>}/>
+
       <Route
         path="/home"
         element={
@@ -48,6 +48,7 @@ export const AllRoutes = () => {
           </Protected>
         }
       >
+        <Route path="payment" element={<Payment />} />
         <Route path="" element={<LoginHome />} />
         <Route path="account-settings" element={<AccountSetting />} />
         <Route path="delete-account-confirmation" element={<DeleteAccount />} />

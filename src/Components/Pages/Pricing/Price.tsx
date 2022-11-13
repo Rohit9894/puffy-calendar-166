@@ -1,6 +1,3 @@
-import React from "react";
-
-import { useState } from "react";
 import {
   Box,
   Button,
@@ -29,7 +26,6 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 const Price = () => {
- 
   const style = {
     border: "1px solid black",
   };
@@ -93,11 +89,12 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Link to="/payment" state={0}>
+                  <Link to="/home/payment" state={0}>
                     <Button
-                      bg="rgb(26,46,68)"
+                      bg="#1a2e44"
                       color="white"
                       position={"revert"}
+                      _hover={{ background: "#566583" }}
                     >
                       {" "}
                       Try Free
@@ -154,11 +151,12 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Link to="/payment" state={9}>
+                  <Link to="/home/payment" state={9}>
                     <Button
                       bg="rgb(34,209,114)"
                       color="white"
                       position={"revert"}
+                      _hover={{ background: "#45e890" }}
                     >
                       {" "}
                       Buy Now
@@ -216,11 +214,12 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Link to="/payment" state={24}>
+                  <Link to="/home/payment" state={24}>
                     <Button
                       bg="rgb(34,209,114)"
                       color="white"
                       position={"revert"}
+                      _hover={{ background: "#45e890" }}
                     >
                       {" "}
                       Buy now
@@ -296,11 +295,12 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Link to="/payment" state={49}>
+                  <Link to="/home/payment" state={49}>
                     <Button
                       bg="rgb(34,209,114)"
                       color="white"
                       position={"revert"}
+                      _hover={{ background: "#45e890" }}
                     >
                       Buy Now
                     </Button>
@@ -356,11 +356,12 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Link to="/payment" state={99}>
+                  <Link to="/home/payment" state={99}>
                     <Button
                       bg="rgb(34,209,114)"
                       color="white"
                       position={"revert"}
+                      _hover={{ background: "#45e890" }}
                     >
                       Buy Now
                     </Button>
@@ -422,12 +423,13 @@ const Price = () => {
                   textAlign="center"
                   margin={["10px", "10px", "10px", "10px"]}
                 >
-                  <Link to="/payment" state={299}>
+                  <Link to="/home/payment" state={299}>
                     {" "}
                     <Button
                       bg="rgb(34,209,114)"
                       color="white"
                       position={"revert"}
+                      _hover={{ background: "#45e890" }}
                     >
                       Buy Now
                     </Button>
@@ -766,7 +768,7 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Link to="/payment" state={0}>
+                      <Link to="/home/payment" state={0}>
                         {" "}
                         <Button
                           bg="rgb(34,209,114)"
@@ -803,7 +805,7 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Link to="/payment" state={9}>
+                      <Link to="/home/payment" state={9}>
                         <Button
                           bg="rgb(34,209,114)"
                           color="white"
@@ -839,7 +841,7 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Link to="/payment" state={24}>
+                      <Link to="/home/payment" state={24}>
                         <Button
                           bg="rgb(34,209,114)"
                           color="white"
@@ -874,16 +876,16 @@ const Price = () => {
                           <Text textAlign="center">99 </Text>
                         </Box>
                       </Box>
-                      <Link to="/payment" state={49}>
-                      <Button
-                        bg="rgb(34,209,114)"
-                        color="white"
-                        marginLeft={["auto", "auto", "auto", "auto"]}
-                        position={"revert"}
-                        marginTop="30px"
-                      >
-                        Buy Now
-                      </Button>
+                      <Link to="/home/payment" state={49}>
+                        <Button
+                          bg="rgb(34,209,114)"
+                          color="white"
+                          marginLeft={["auto", "auto", "auto", "auto"]}
+                          position={"revert"}
+                          marginTop="30px"
+                        >
+                          Buy Now
+                        </Button>
                       </Link>
                     </Td>
                     <Td
@@ -909,16 +911,16 @@ const Price = () => {
                           <Text textAlign="center">99 </Text>
                         </Box>
                       </Box>
-                      <Link to="/payment" state={99}>
-                      <Button
-                        bg="rgb(34,209,114)"
-                        color="white"
-                        marginLeft={["auto", "auto", "auto", "auto"]}
-                        position={"revert"}
-                        marginTop="30px"
-                      >
-                        Buy Now
-                      </Button>
+                      <Link to="/home/payment" state={99}>
+                        <Button
+                          bg="rgb(34,209,114)"
+                          color="white"
+                          marginLeft={["auto", "auto", "auto", "auto"]}
+                          position={"revert"}
+                          marginTop="30px"
+                        >
+                          Buy Now
+                        </Button>
                       </Link>
                     </Td>
                     <Td
@@ -945,16 +947,16 @@ const Price = () => {
                         </Box>
                       </Box>
 
-                      <Link to="/payment" state ={299}>
-                      <Button
-                        bg="rgb(34,209,114)"
-                        color="white"
-                        marginLeft={["auto", "auto", "auto", "auto"]}
-                        position={"revert"}
-                        marginTop="30px"
-                      >
-                        Buy Now
-                      </Button>
+                      <Link to="/home/payment" state={299}>
+                        <Button
+                          bg="rgb(34,209,114)"
+                          color="white"
+                          marginLeft={["auto", "auto", "auto", "auto"]}
+                          position={"revert"}
+                          marginTop="30px"
+                        >
+                          Buy Now
+                        </Button>
                       </Link>
                     </Td>
                   </Tr>

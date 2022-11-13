@@ -13,15 +13,12 @@ export const VerifyEmail = ({ code }: any) => {
     applyActionCode(auth, code)
       .then(() => {
         toast({
-          status: "success",
-          duration: 2000,
-          isClosable: true,
           position: "top",
-          render: () => (
-            <Box className="toastbox">
-              <Heading>Email Verified Successfully</Heading>
-            </Box>
-          ),
+          title: "Verified",
+          description: "Account verified successfully",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
         });
         setDisable(false);
         setTimeout(() => navigate("/login"), 2000);
