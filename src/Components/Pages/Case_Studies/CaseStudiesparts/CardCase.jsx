@@ -31,6 +31,7 @@ function CardCase() {
           color="white"
           padding={["3px", "10px"]}
           className="r_button_opt"
+          cursor="pointer"
         >
           All
         </Box>
@@ -40,6 +41,7 @@ function CardCase() {
           color={div1 ? "white" : "black"}
           bg={div1 ? "#1a2e44" : "none"}
           className="r_button_opt"
+          cursor="pointer"
         >
           Business Applications
         </Box>
@@ -49,6 +51,7 @@ function CardCase() {
           color={div2 ? "white" : "black"}
           bg={div2 ? "#1a2e44" : "none"}
           className="r_button_opt"
+          cursor="pointer"
         >
           Cloud Infrastruture
         </Box>
@@ -58,6 +61,7 @@ function CardCase() {
           color={div3 ? "white" : "black"}
           bg={div3 ? "#1a2e44" : "white"}
           className="r_button_opt"
+          cursor="pointer"
         >
           Software Development
         </Box>
