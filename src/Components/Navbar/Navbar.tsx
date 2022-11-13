@@ -33,6 +33,7 @@ export const Navbar = () => {
     if (path.includes("home")) {
       setDisplay(false);
     }
+    if (path === "/") setDisplay(true);
     window.addEventListener("scroll", stickNavbar);
     return () => window.removeEventListener("scroll", stickNavbar);
   }, [path]);

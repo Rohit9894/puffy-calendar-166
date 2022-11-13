@@ -69,11 +69,10 @@ export const AuthContextProvider = ({ children }) => {
     signInWithRedirect(auth, Provider);
   };
   const logout = () => {
-    signOut(auth);
-    setUser({});
+    signOut(auth).then(() => setUser({}));
+    console.log("logout", user);
     localStorage.removeItem("user");
     navigate("/");
-    window.location.reload(false);
   };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
