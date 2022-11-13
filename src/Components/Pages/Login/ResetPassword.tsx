@@ -40,7 +40,6 @@ export const ResetPassword = ({ code }: any) => {
           isClosable: true,
           position: "top",
         });
-        alert("Password reset successfully");
         navigate("/login");
       })
       .catch((error) => {

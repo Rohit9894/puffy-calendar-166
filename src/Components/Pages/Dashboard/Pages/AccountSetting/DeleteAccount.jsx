@@ -31,7 +31,10 @@ export const DeleteAccount = () => {
           isClosable: true,
         });
         setDisable(false);
-        setTimeout(() => navigate("/login"), 2000);
+      })
+      .then(() => {
+        navigate("/");
+        window.location.reload(false);
       })
       .catch(() =>
         toast({

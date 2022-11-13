@@ -9,6 +9,7 @@ import {
   signInWithRedirect,
 } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
+import { useNavigate } from "react-router-dom";
 
 // type AuthContextProviderType = {
 //   children: ReactNode;
@@ -39,7 +40,10 @@ const AuthContext = createContext();
 // export const AuthContextProvider = ({ children }: AuthContextProviderType) => {
 // const [user, setUser] = useState<{}>({});
 export const AuthContextProvider = ({ children }) => {
-  const [user, setUser] = useState();
+  const navigate = useNavigate();
+  const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("user")) || {}
+  );
   const googleSignIn = () => {
     const Provider = new GoogleAuthProvider();
     signInWithPopup(auth, Provider);
@@ -66,7 +70,9 @@ export const AuthContextProvider = ({ children }) => {
   };
   const logout = () => {
     signOut(auth);
-    localStorage.setItem("user", JSON.stringify(""));
+    localStorage.removeItem("user");
+    navigate("/");
+    window.location.reload(false);
   };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
