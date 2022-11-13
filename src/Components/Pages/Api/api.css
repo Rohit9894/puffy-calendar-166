@@ -1,0 +1,49 @@
+.r_small {
+  font-size: 14px;
+  color: #3e7d9b;
+}
+.r_big {
+  font-weight: medium;
+  color: #275dde;
+  margin-left: 10px;
+}
+.r_bigger {
+  font-size: 48px;
+}
+/* bg="#5c93fc"
+color="black"
+ml="5px"
+border="1px solid #5c93fc"
+_hover={{ bg: "#5c93fc", color: "white" }} */
+.rbutton {
+  padding: 6px;
+  padding-inline: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid #5c93fc;
+}
+.rbutton:hover {
+  background-color: #5c93fc;
+  color: white;
+}
+/* my="5px"
+fontWeight="medium"
+color="#275dde"
+fontSize="16px" */
+.rheading {
+  margin-top: 5px;
+  margin: bottom;
+  color: #275dde;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* my="10px" textAlign="center" color="#a3ab9b" */
+.rheading2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #a3ab9b;
+  font-size: 17px;
+  font-weight: 500;
+}

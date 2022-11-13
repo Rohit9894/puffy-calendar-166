@@ -8,7 +8,7 @@ import { Login } from "../Pages/Login/Login";
 import { ForgotPassword } from "../Pages/Login/ForgotPassword";
 import { Signup } from "../Pages/Login/Signup";
 import { User } from "../Pages/Login/User";
-import Price from "../Pricing/Price";
+import Price from "../Pages/Pricing/Price";
 import QAAutomation from "../Pages/QAAutomation";
 import HtmlCheck from "../Pages/HtmlCheck";
 import FakeServer from "../Pages/FakeServer";
@@ -32,14 +32,14 @@ export const AllRoutes = () => {
       <Route path="/htmlcheck" element={<HtmlCheck />} />
       <Route path="/fakeserver" element={<FakeServer />} />
       <Route path="/mailtrapApi" element={<MailTrapApi />} />
-      <Route path="/price" element={<Price />} />
+      <Route path="/price" element={<Price/>}/>
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/user" element={<User />} />
       <Route path="/resources/blog" element={<Blog />} />
       <Route path="/resources/casestudies" element={<CaseStudies />} />
       <Route path="/resources/help" element={<Help />} />
       <Route path="resources/api" element={<Api />} />
-      <Route path="/payement" element={<Payment />} />
+      <Route path="/payement" element={<Payment/>}/>
       <Route
         path="/home"
         element={
