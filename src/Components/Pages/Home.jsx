@@ -87,6 +87,7 @@ export const Home = () => {
               color={"#fff"}
               fontSize=".875rem"
               marginTop={9}
+              _hover={{ background: "#45e890" }}
             >
               Sign Up For Free
             </Button>
@@ -690,6 +691,7 @@ export const Home = () => {
               color={"#fff"}
               fontSize=".875rem"
               marginTop={9}
+              _hover={{ background: "#45e890" }}
             >
               Sign Up For Free
             </Button>
@@ -1227,6 +1229,7 @@ export const Home = () => {
                 color={"#fff"}
                 fontSize=".875rem"
                 marginTop={9}
+                _hover={{ background: "#45e890" }}
               >
                 Sign Up For Free
               </Button>

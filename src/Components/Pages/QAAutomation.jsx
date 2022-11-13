@@ -7,12 +7,12 @@ import {
   Icon,
   Image,
   List,
+  ListIcon,
   ListItem,
   SimpleGrid,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React from "react";
 
 const CircleIcon = (props) => (
   <Icon viewBox="0 0 200 200" {...props}>
@@ -26,7 +26,7 @@ const CircleIcon = (props) => (
 const QAAutomation = () => {
   return (
     <>
-      <Box h="130%" m="100px auto" w="90%">
+      <Box m="100px auto" w="90%">
         <VStack
           w={"100%"}
           textAlign="center"
@@ -62,7 +62,7 @@ const QAAutomation = () => {
                 Powerful Automation For Testing Your Email Sequences
               </Heading>
 
-              <VStack gap={4} w="100%">
+              <VStack gap={8} w="100%" align={"flex-start"}>
                 <Box
                   display={"block"}
                   lineHeight={1.2}
@@ -83,19 +83,20 @@ const QAAutomation = () => {
                   color={"#fff"}
                   fontSize=".875rem"
                   marginTop={5}
+                  _hover={{ background: "#45e890" }}
                 >
                   Sign Up For Free
                 </Button>
               </VStack>
 
-              <Box>
+              <Box pt="4">
                 <Flex
                   w={{ base: "100%", lg: "120%" }}
                   direction={{ base: "column", lg: "row" }}
                   display={"flex"}
                   alignItems="center"
                   textAlign="center"
-                  justifyContent={"center"}
+                  justifyContent={"flex-start"}
                   marginTop={5}
                 >
                   <Image
@@ -475,93 +476,33 @@ const QAAutomation = () => {
                 How QAs use Email Sandbox
               </Heading>
 
-              <List spacing={3} alignItems={"flex-start"} w="100%">
-                <ListItem
-                  alignItems={"flex-start"}
-                  w="100%"
-                  display={"block"}
-                  color="#202c45"
-                  fontSize={"1.125rem"}
-                  fontWeight={600}
-                  lineHeight={1.3}
-                  fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                >
-                  <CircleIcon color="#22d172" />
+              <List spacing={3} w="100%">
+                <ListItem fontSize={"18px"} fontWeight="600">
+                  <ListIcon as={CircleIcon} color="#22d172"></ListIcon>
                   Check any emails within your end-to-end automated test suites
+                  <Text fontSize="14px" ml="7" fontWeight="400" color="#202c45">
+                    Pick any, even the most complex email sequence and include
+                    it in the corresponding test.
+                  </Text>
                 </ListItem>
-                <Text
-                  ml={5}
-                  marginTop="1.2rem"
-                  display={"block"}
-                  fontSize="14px"
-                  lineHeight={1.7}
-                  fontWeight="400"
-                  color="#202c45"
-                  fontFamily={
-                    "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                  }
-                >
-                  Pick any, even the most complex email sequence and include it
-                  in the corresponding test.
-                </Text>
-                <ListItem
-                  alignItems={"flex-start"}
-                  w="100%"
-                  display={"block"}
-                  color="#202c45"
-                  fontSize={"1.125rem"}
-                  fontWeight={600}
-                  lineHeight={1.3}
-                  fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                >
-                  <CircleIcon color="#22d172" />
+                <ListItem fontSize={"18px"} fontWeight="600">
+                  <ListIcon as={CircleIcon} color="#22d172"></ListIcon>
                   Launch the tests
+                  <Text ml={7} fontSize="14px" fontWeight="400" color="#202c45">
+                    Use Sandbox API to build and launch automated acceptance
+                    tests for the entire sequence.
+                  </Text>
                 </ListItem>
-                <Text
-                  ml={5}
-                  marginTop="1.2rem"
-                  display={"block"}
-                  fontSize="14px"
-                  lineHeight={1.7}
-                  fontWeight="400"
-                  color="#202c45"
-                  fontFamily={
-                    "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                  }
-                >
-                  Use Sandbox API to build and launch automated acceptance tests
-                  for the entire sequence.
-                </Text>
-                <ListItem
-                  alignItems={"flex-start"}
-                  w="100%"
-                  display={"block"}
-                  color="#202c45"
-                  fontSize={"1.125rem"}
-                  fontWeight={600}
-                  lineHeight={1.3}
-                  fontFamily="Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                >
-                  <CircleIcon color="#22d172" />
+                <ListItem fontSize={"18px"} fontWeight="600">
+                  <ListIcon as={CircleIcon} color="#22d172"></ListIcon>
                   Verify the test results automatically
+                  <Text ml={7} fontSize="14px" fontWeight="400" color="#202c45">
+                    Confirm the results automatically using the Sandbox API.
+                    Validate if email headers and content are as expected and if
+                    the sending triggers work properly. Validate subject lines,
+                    links, attachments, and others.
+                  </Text>
                 </ListItem>
-                <Text
-                  ml={5}
-                  marginTop="1.2rem"
-                  display={"block"}
-                  fontSize="14px"
-                  lineHeight={1.7}
-                  fontWeight="400"
-                  color="#202c45"
-                  fontFamily={
-                    "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                  }
-                >
-                  Confirm the results automatically using the Sandbox API.
-                  Validate if email headers and content are as expected and if
-                  the sending triggers work properly. Validate subject lines,
-                  links, attachments, and others.
-                </Text>
               </List>
 
               <VStack>
@@ -572,6 +513,7 @@ const QAAutomation = () => {
                   color={"#fff"}
                   fontSize=".875rem"
                   marginTop={5}
+                  _hover={{ background: "#566583" }}
                 >
                   Sign Up For Free
                 </Button>
@@ -978,6 +920,7 @@ const QAAutomation = () => {
                 color={"#fff"}
                 fontSize=".875rem"
                 marginTop={9}
+                _hover={{ background: "#45e890" }}
               >
                 Sign Up For Free
               </Button>
