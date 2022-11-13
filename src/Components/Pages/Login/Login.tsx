@@ -1,15 +1,94 @@
-import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import { useState, FormEvent } from "react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useToast,
+  VStack,
+} from "@chakra-ui/react";
+import {
+  fetchSignInMethodsForEmail,
+  signInWithEmailAndPassword,
+  sendEmailVerification,
+} from "firebase/auth";
+import { useState, FormEvent, useEffect } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
-import { SiMicrosoftoffice } from "react-icons/si";
+import { SiFacebook } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../../Context/AuthContext";
+import { auth } from "../../Firebase/firebase";
 import login from "./assets/login.svg";
 import "./login.css";
+
 export const Login = () => {
-  const { googleSignIn } = UserAuth();
-  const [putmail, setPutmail] = useState(true);
+  const navigate = useNavigate();
+  const { googleSignIn, githubSignIn, facebookSignIn, setUser, user } =
+    UserAuth();
+  const [putmail, setPutmail] = useState<string>("");
+  const toast = useToast();
+  const [show, setShow] = useState(true);
+  const [disable, setDisable] = useState(false);
+  const [error, setError] = useState("");
+  const [showverify, setShowverify] = useState(false);
+  const verifyEmail = () => {
+    setError("");
+    if (!putmail.includes("@")) return setError("Enter a valid email");
+    setDisable(true);
+    fetchSignInMethodsForEmail(auth, putmail)
+      .then((res) => {
+        setDisable(false);
+        console.log(res);
+        if (res.length !== 0) setShow(!show);
+        else setError("Email doesn't exist");
+      })
+      .catch((error) => {
+        setDisable(false);
+        setError(error);
+      });
+  };
+  const sendVerifyEmail = () => {
+    setDisable(true);
+    sendEmailVerification(user.auth.currentUser).then(() => {
+      toast({
+        title: "Success",
+        description: "A verfication link has been sent to your email.",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+        position: "top",
+      });
+      setShow(true);
+      setShowverify(false);
+      setDisable(false);
+    });
+  };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const { email, password, check } = e.target as typeof e.target & {
+      email: { value: string };
+      password: { value: string };
+      check: { checked: boolean };
+    };
+    setDisable(true);
+    signInWithEmailAndPassword(auth, email.value, password.value)
+      .then((res) => {
+        setDisable(false);
+        const user: any = res.user;
+        setUser(user);
+        if (user.emailVerified) {
+          if (check.checked) localStorage.setItem("user", JSON.stringify(user));
+          navigate("/home");
+        } else {
+          setShowverify(true);
+          setShow(false);
+        }
+      })
+      .catch((err) => {
+        setDisable(false);
+        if (err.message.includes("wrong-password")) setError("Wrong Password");
+        else setError(err.message);
+      });
   };
   const handleGoogleLogin = async () => {
     console.log("check");
@@ -19,6 +98,25 @@ export const Login = () => {
       console.log(error);
     }
   };
+  const handleGithubLogin = async () => {
+    console.log("check");
+    try {
+      await githubSignIn().then((res: any) => console.log(res));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleFacebookLogin = async () => {
+    console.log("check");
+    try {
+      await facebookSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    if (user && user.emailVerified) navigate("/home");
+  }, [user, navigate]);
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>
       <Box h="full" py="50px" mx="auto" w={["95%", "90%", "90%", "90%", "80%"]}>
@@ -28,11 +126,11 @@ export const Login = () => {
             <Box className="loginbtn" onClick={handleGoogleLogin}>
               <AiOutlineGoogle /> Use Google account
             </Box>
-            <Box className="loginbtn">
+            <Box className="loginbtn" onClick={handleGithubLogin}>
               <AiFillGithub /> Use Github account
             </Box>
-            <Box className="loginbtn">
-              <SiMicrosoftoffice /> Use Office 365 account
+            <Box className="loginbtn" onClick={handleFacebookLogin}>
+              <SiFacebook /> Use Facebook account
             </Box>
             <Flex w="full" justify={"center"} align="center">
               <Box>
@@ -41,47 +139,57 @@ export const Login = () => {
                 </Text>
               </Box>
             </Flex>
-            <Box width={"full"}>
+            <Box width={"full"} display={showverify ? "none" : "block"}>
               <form onSubmit={handleSubmit} className="loginform">
                 <label className="loginlabel">Email</label>
-                <input type="email" placeholder="" />
-                <Box display={putmail ? "block" : "none"}>
-                  <button
-                    className="nextbtn"
-                    onClick={() => setPutmail(!putmail)}
-                  >
-                    Next
-                  </button>
-                </Box>
-                <Box className="loginform" display={putmail ? "none" : "block"}>
+                <input
+                  type="email"
+                  placeholder=""
+                  id="email"
+                  onChange={(e) => setPutmail(e.target.value)}
+                />
+                <Text display={show ? "block" : "none"} color={"red.500"}>
+                  {error}
+                </Text>
+                <Box className="loginform" display={show ? "none" : "block"}>
                   <label className="loginlabel">
                     Password
                     <span className="loginhyperlink">
-                      <a href="/forgotpassword">Forgot Password?</a>
+                      <a href="/forgot-password">Forgot Password?</a>
                     </span>
                   </label>
-                  <input type="password" placeholder="" />
+                  <input type="password" placeholder="" id="password" />
                   <Flex gap="5px" pl="5px">
-                    <input type="checkbox" /> <span>Remeber Me</span>
+                    <input type="checkbox" id="check" /> <span>Remeber Me</span>
                   </Flex>
-                  <input type="submit" value={"Log In"} />
+                  <Text color={"red.500"}>{error}</Text>
+                  <Box>
+                    <input type="submit" value={"Log In"} disabled={disable} />
+                  </Box>
                 </Box>
               </form>
+              <Box display={show ? "block" : "none"}>
+                <button
+                  className="nextbtn"
+                  disabled={disable}
+                  onClick={verifyEmail}
+                >
+                  Next
+                </button>
+              </Box>
             </Box>
-            <Flex
-              w="100%"
-              flexDirection={"column"}
-              justify="center"
-              align={"center"}
-              textAlign={"center"}
-            >
-              Haven't received the confirmation email yet?{" "}
-              <span className="loginhyperlink">
-                <a href="https://mailtrap.io/confirmation/new">
-                  Resend the email
-                </a>
-              </span>
-            </Flex>
+            <VStack display={showverify ? "flex" : "none"} w="full">
+              <Box w="full">
+                <Text color="red.500">Account not verified</Text>
+                <button
+                  className="nextbtn"
+                  disabled={disable}
+                  onClick={sendVerifyEmail}
+                >
+                  Verify
+                </button>
+              </Box>
+            </VStack>
           </VStack>
           <Flex
             mt="8%"

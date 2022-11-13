@@ -1,15 +1,93 @@
-import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useToast,
+  VStack,
+} from "@chakra-ui/react";
 import { useState, FormEvent } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
-import { SiMicrosoftoffice } from "react-icons/si";
-import signup from "./assets/signup.svg";
+import { SiFacebook } from "react-icons/si";
+import signupimg from "./assets/signup.svg";
 import nocc from "./assets/nocc.svg";
 import nocontract from "./assets/nocontract.svg";
 import "./login.css";
+import { UserAuth } from "../../Context/AuthContext";
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+} from "firebase/auth";
+import { auth } from "../../Firebase/firebase";
+import { useNavigate } from "react-router-dom";
+
 export const Signup = () => {
+  const toast = useToast();
+  const navigate = useNavigate();
+  const { googleSignIn, githubSignIn, facebookSignIn } = UserAuth();
   const [putmail, setPutmail] = useState(true);
+  const [disable, setDisable] = useState(false);
+  const [error, setError] = useState<string>();
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const { email, password, confirmation } = e.target as typeof e.target & {
+      email: { value: string };
+      password: { value: string };
+      confirmation: { value: string };
+    };
+
+    if (!email.value.includes("@") || email.value.length === 0)
+      return setError("Enter a valid Email");
+    else if (password.value.length < 6)
+      return setError("Password is too short (minimum is 6 characters)");
+    else if (password.value !== confirmation.value)
+      return setError("Passwords doesn't match ");
+    setDisable(true);
+    createUserWithEmailAndPassword(auth, email.value, password.value)
+      .then((res) => {
+        setDisable(false);
+        const user: any = res.user;
+        sendEmailVerification(user.auth.currentUser).then(() => {
+          toast({
+            title: "Success",
+            description: "A verfication link has been sent to your email.",
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+            position: "top",
+          });
+          setTimeout(() => navigate("/login"), 3000);
+        });
+      })
+      .catch((err) => {
+        setDisable(false);
+        setError(err.message);
+      });
+  };
+  const handleGoogleLogin = async () => {
+    console.log("check");
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleGithubLogin = async () => {
+    console.log("check");
+    try {
+      await githubSignIn().then((res: any) => console.log(res));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleFacebookLogin = async () => {
+    console.log("check");
+    try {
+      await facebookSignIn();
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Box w="full" bg="#fff" py="70px" h="max-content">
@@ -28,14 +106,14 @@ export const Signup = () => {
             h="full"
           >
             <Heading mb="10px">Create Free Account</Heading>
-            <Box className="loginbtn">
+            <Box className="loginbtn" onClick={handleGoogleLogin}>
               <AiOutlineGoogle /> Use Google account
             </Box>
-            <Box className="loginbtn">
+            <Box className="loginbtn" onClick={handleGithubLogin}>
               <AiFillGithub /> Use Github account
             </Box>
-            <Box className="loginbtn">
-              <SiMicrosoftoffice /> Use Office 365 account
+            <Box className="loginbtn" onClick={handleFacebookLogin}>
+              <SiFacebook /> Use Facebook account
             </Box>
             <Flex w="full" justify={"center"} align="center">
               <Box>
@@ -52,21 +130,13 @@ export const Signup = () => {
             <Box width={"full"} display={putmail ? "none" : "block"}>
               <form onSubmit={handleSubmit} className="loginform">
                 <label className="loginlabel">Email</label>
-                <input type="email" placeholder="" />
-
-                <Box className="loginform">
-                  <label className="loginlabel">
-                    Password
-                    <span className="loginhyperlink">
-                      <a href="/forgotpassword">Forgot Password?</a>
-                    </span>
-                  </label>
-                  <input type="password" placeholder="" />
-                  <Flex gap="5px" pl="5px">
-                    <input type="checkbox" /> <span>Remeber Me</span>
-                  </Flex>
-                  <input type="submit" value={"Log In"} />
-                </Box>
+                <input type="text" placeholder="" id="email" />
+                <label className="loginlabel">Password</label>
+                <input type="password" placeholder="" id="password" />
+                <label className="loginlabel">Confirmation</label>
+                <input type="password" placeholder="" id="confirmation" />
+                <Text color="red.500">{error ? error : null}</Text>
+                <input type="submit" value={"Sign Up"} disabled={disable} />
               </form>
             </Box>
             <Box w="100%" textAlign={"center"}>
@@ -83,7 +153,7 @@ export const Signup = () => {
             flexDir="column"
           >
             <Box>
-              <Image w="100%" src={signup}></Image>
+              <Image w="100%" src={signupimg}></Image>
             </Box>
             <VStack h="max-content">
               <Flex

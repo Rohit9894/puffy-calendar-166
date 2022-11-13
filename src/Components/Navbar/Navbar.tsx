@@ -26,12 +26,16 @@ export const Navbar = () => {
   const [active, setActive] = useState(" ");
   const [tdisplay, setTdisplay] = useState(false);
   const [rdisplay, setRdisplay] = useState(false);
+  const [navdisplay, setDisplay] = useState(true);
   const [open, setOpen] = useState(true);
   const path = useLocation().pathname;
   useEffect(() => {
+    if (path.includes("home")) {
+      setDisplay(false);
+    }
     window.addEventListener("scroll", stickNavbar);
     return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
+  }, [path]);
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
@@ -39,7 +43,10 @@ export const Navbar = () => {
     }
   };
   return (
-    <nav className={active}>
+    <nav
+      className={active}
+      style={{ display: `${navdisplay ? "flex" : "none"}` }}
+    >
       <Box width={["80px", "80px", "100px", "100px", "120px"]}>
         <Link to={"/"}>
           <Image src={logo} alt="MailTest" />
@@ -57,7 +64,7 @@ export const Navbar = () => {
             <ListIcon as={IoIosArrowDown} m="0" className="dropdownicon" />
             <List className="dropdownlist" spacing={7}>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/qaAutomation" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={qa}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>QA Automation</Text>
@@ -66,7 +73,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/htmlcheck" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={ch}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>HTML Check</Text>
@@ -75,7 +82,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/fakeserver" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={fa}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Fake SMTP Server</Text>
@@ -84,7 +91,7 @@ export const Navbar = () => {
                 </Link>
               </ListItem>
               <ListItem className="dropdownlistmenu">
-                <Link to="" className="dropdownlistmenu">
+                <Link to="/mailtrapApi" className="dropdownlistmenu">
                   <Image w="35px" h="37px" src={ap}></Image>
                   <Box fontSize="14px">
                     <Text fontWeight={"bold"}>Mailtrap API</Text>

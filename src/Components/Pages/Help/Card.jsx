@@ -1,5 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Text } from "@chakra-ui/react";
 
 function Card({ arr }) {
   console.log(arr);

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import "./blog.css";
 import blog_data from "./blogdata.json";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import email from "./assets/email.png";
 import email_inside from "./assets/emal_inside.jpeg";
 import Card from "./blog_Parts/Card";
@@ -18,9 +18,8 @@ import Skletin from "./blog_Parts/Skletin";
 function Blog() {
   const [data, setData] = useState([]);
   const [latest, setLatest] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("Eamil_Infrastruture");
-
   function getLatest() {
     setLatest(blog_data["Latest_Jobs"]);
   }
@@ -31,12 +30,12 @@ function Blog() {
     console.log(blog_database);
   }
   useEffect(() => {
+    setLoading(false);
     getData(query);
   }, [query]);
   useEffect(() => {
     getLatest();
   }, []);
-
   return (
     <div>
       <Box pt="90px" w={["90%", "85%"]} m="auto">
