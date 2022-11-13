@@ -60,14 +60,13 @@ color="white"
   padding-left: 2%;
   height: 100vh;
   background-color: #1b2d44;
-  width: 250px;
+  width: 260px;
 }
 .rsidebar::-webkit-scrollbar {
   display: none;
 }
 .rmaindiv {
   position: relative;
-  left: 250px;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -77,9 +76,11 @@ color="white"
 .rmaindiv::-webkit-scrollbar {
   display: none;
 }
-@media screen and (max-width: 540px) {
-  .rmaindiv {
-    left: 0;
-    padding: 10px;
-  }
+.navcomp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  background-color: #1b2d44;
+  z-index: 2000;
 }

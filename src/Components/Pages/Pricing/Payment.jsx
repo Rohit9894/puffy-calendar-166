@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack } from "@chakra-ui/react";
 
 import { FormControl, FormLabel, Text, Input } from "@chakra-ui/react";
 import { useState, useReducer } from "react";
@@ -73,60 +73,49 @@ const Payment = () => {
     Navigate("/");
   };
   return (
-    <Box margin="auto" marginTop={"100px"} width="100%" marginBottom={"5pc"}>
-      <Box
-        display={["block", "block", "block", "flex"]}
-        width={["90%", "90%", "90%", "90%"]}
-        margin={"auto"}
-        justifyContent="space-between"
-      >
-        <Box
-          margin={"auto"}
-          width={["430px", "430px", "500px", "500px"]}
-          marginTop="5pc"
-        >
-          <Text> Add new card to proceed</Text>
-          <Box
-            border={"1px solid gray"}
-            padding={["2pc", "2pc", "2pc", "2pc"]}
-            borderRadius="2xl"
-          >
-            <FormControl>
-              <FormLabel>Card holder name</FormLabel>
-              <Input
-                type="text"
-                placeholder="Name"
-                name="name"
-                value={state.name}
-                onChange={(e) =>
-                  dispatch({
-                    type: "name",
-                    payload: e.target.value,
-                  })
-                }
-              />
-            </FormControl>
-            <FormControl>
-              <FormLabel>Card Data</FormLabel>
-              <Input
-                id="kr"
-                type="number"
-                name="card"
-                placeholder="xxxx-xxxx-xxxx-xxxx"
-                value={state.card}
-                onChange={(e) =>
-                  dispatch({
-                    type: "card",
-                    payload: e.target.value,
-                  })
-                }
-              />
-            </FormControl>
-            <FormControl display={"flex"}>
-              <Box>
-                {" "}
-                Expiry Date{" "}
-                <Input
+    <Box width="100%" mt="10px">
+      <Flex flexDir={["column", "column", "row"]} gap="30px">
+        <Box w="full">
+          <Text fontSize={"18px"} fontWeight="bold" pl="2" py="1">
+            Add new card to proceed
+          </Text>
+          <Box border={"1px solid #ccc"} borderRadius="2xl" p="4">
+            <label className="loginlabel">Card holder name</label>
+            <input
+              className="accountupdate"
+              type="text"
+              placeholder="Name"
+              name="name"
+              value={state.name}
+              onChange={(e) =>
+                dispatch({
+                  type: "name",
+                  payload: e.target.value,
+                })
+              }
+            />
+
+            <label className="loginlabel">Card Data</label>
+            <input
+              className="accountupdate"
+              id="kr"
+              type="number"
+              name="card"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+              value={state.card}
+              onChange={(e) =>
+                dispatch({
+                  type: "card",
+                  payload: e.target.value,
+                })
+              }
+            />
+
+            {/* <HStack w="full">
+              <Box w="full">
+                <label className="loginlabel">Expiry Date</label>
+                <input
+                  className="accountupdate"
                   placeholder="MM/YY"
                   name="expiry"
                   value={state.expiry}
@@ -136,12 +125,13 @@ const Payment = () => {
                       payload: e.target.value,
                     })
                   }
-                ></Input>
+                ></input>
               </Box>
-              <Box>
-                {" "}
-                CVV
-                <Input
+
+              <Box w="full">
+                <label className="loginlabel">CVV</label>
+                <input
+                  className="accountupdate"
                   placeholder="CVV"
                   name="cvv"
                   value={state.cvv}
@@ -151,33 +141,22 @@ const Payment = () => {
                       payload: e.target.value,
                     })
                   }
-                ></Input>
+                ></input>
               </Box>
-            </FormControl>
+            </HStack> */}
 
-            <Button
-              backgroundColor={"rgb(76,131,238)"}
-              marginTop={"8px"}
-              color="white"
-              onClick={handlesave}
-            >
-              Save
-            </Button>
+            <Box mt="10px">
+              <button className="dashboardbtn" onClick={handlesave}>
+                Save
+              </button>
+            </Box>
           </Box>
         </Box>
-        <Box
-          margin={"auto"}
-          width={["430px", "430px", "500px", "500px"]}
-          marginTop={"5pc"}
-          bg={"rgb(248,250,250)"}
-          marginLeft={["auto", "auto", "auto", "10px"]}
-        >
-          <Text> Payment Sumery</Text>
-          <Box
-            border={"1px solid gray"}
-            padding={["2pc", "2pc", "2pc", "2pc"]}
-            borderRadius="2xl"
-          >
+        <Box w="full">
+          <Text fontSize={"18px"} fontWeight="bold" pl="2" py="1">
+            Payment Sumery
+          </Text>
+          <Box border={"1px solid #ccc"} p="4" borderRadius="2xl">
             <Box display={"flex"} justifyContent="space-between">
               <Text fontWeight={"bold"} fontSize="20px">
                 Plan
@@ -196,7 +175,6 @@ const Payment = () => {
                 Total to pay
               </Text>
               <Text fontWeight={"bold"} fontSize="20px">
-                {" "}
                 $ {planvalue}
               </Text>
             </Box>
@@ -212,12 +190,13 @@ const Payment = () => {
               marginLeft={"80%"}
               isDisabled={pro}
               onClick={finale}
+              _hover={{ background: "rgb(76,131,238)" }}
             >
               Proceed
             </Button>
           </Box>
         </Box>
-      </Box>
+      </Flex>
     </Box>
   );
 };

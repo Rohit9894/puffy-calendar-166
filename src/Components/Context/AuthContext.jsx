@@ -70,18 +70,19 @@ export const AuthContextProvider = ({ children }) => {
   };
   const logout = () => {
     signOut(auth);
+    setUser({});
     localStorage.removeItem("user");
     navigate("/");
     window.location.reload(false);
   };
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
-      setUser(currenUser);
-    });
-    return () => {
-      unsubscribe();
-    };
-  }, [user]);
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
+  //     setUser(currenUser);
+  //   });
+  //   return () => {
+  //     unsubscribe();
+  //   };
+  // }, [user]);
   return (
     <AuthContext.Provider
       value={{

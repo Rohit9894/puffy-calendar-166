@@ -10,22 +10,22 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import React from "react";
 import RequestTab from "./Parts/RequestTab";
 // import "../Api/Parts/api.css";
 import "./api.css";
 import { Link } from "react-scroll";
-import logo from "../../../Assets/favicon.png";
+import logo from "./favicon.png";
 function Api() {
   return (
     <div>
       <Flex>
         <Box className="rsidebar" display={["none", "block"]}>
-          <Flex justifyContent="center">
-            {" "}
-            <Img h="60px" my="10px" src={logo} alt="logo" />
+          <Flex className="navcomp">
+            <Box pl="70px">
+              <Img w="100px" py="10px" src={logo} alt="logo" />
+            </Box>
           </Flex>
-          <Box pt="20px">
+          <Flex mt="60px" pt="20px" align={"center"}>
             <Input placeholder="filter" w="50%" h="30px" />
             <Button
               bg="#5c93fc"
@@ -38,8 +38,8 @@ function Api() {
             >
               Clear
             </Button>
-          </Box>
-          <Link to="mailtrap" spy={true} smooth={true} duration={500}>
+          </Flex>
+          <Link to="" spy={true} smooth={true} duration={500}>
             <Text mt="20px" color="white">
               Mailtrap API
             </Text>
@@ -159,7 +159,12 @@ function Api() {
             </Text>
           </Box>
         </Box>
-        <Box lineHeight="30px" pt="90px" className="rmaindiv">
+        <Box
+          lineHeight="30px"
+          pt="90px"
+          className="rmaindiv"
+          ml={["0", "260px"]}
+        >
           <Box name="mailtrap">
             <Heading fontWeight="medium" mb="20px">
               Mailtrap API <sub style={{ fontSize: "16px" }}>v2</sub>

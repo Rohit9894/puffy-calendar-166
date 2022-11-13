@@ -20,6 +20,9 @@ import { LoginHome } from "../Pages/Dashboard/Pages/Home/LoginHome";
 import { AccountSetting } from "../Pages/Dashboard/Pages/AccountSetting/AccountSetting";
 import { DeleteAccount } from "../Pages/Dashboard/Pages/AccountSetting/DeleteAccount";
 import { Price } from "../Pages/Pricing/Price";
+import UserDashboard from "../Pages/Dashboard/Pages/UserManagement/UserDashboard";
+import APITokens from "../Pages/Dashboard/Pages/API/APITokens";
+import CorsDomain from "../Pages/Dashboard/Pages/API/CorsDomain";
 
 export const AllRoutes = () => {
   return (
@@ -52,6 +55,9 @@ export const AllRoutes = () => {
         <Route path="" element={<LoginHome />} />
         <Route path="account-settings" element={<AccountSetting />} />
         <Route path="delete-account-confirmation" element={<DeleteAccount />} />
+        <Route path="user-management" element={<UserDashboard />} />
+        <Route path="api-tokens" element={<APITokens />} />
+        <Route path="cors-domain" element={<CorsDomain />} />
       </Route>
     </Routes>
   );

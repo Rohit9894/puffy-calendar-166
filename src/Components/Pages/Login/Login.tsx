@@ -12,7 +12,7 @@ import {
   signInWithEmailAndPassword,
   sendEmailVerification,
 } from "firebase/auth";
-import { useState, FormEvent, useEffect } from "react";
+import { useState, FormEvent } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
 import { SiFacebook } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
@@ -114,9 +114,6 @@ export const Login = () => {
       console.log(error);
     }
   };
-  useEffect(() => {
-    if (user && user.emailVerified) navigate("/home");
-  }, [user, navigate]);
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>
       <Box h="full" py="50px" mx="auto" w={["95%", "90%", "90%", "90%", "80%"]}>

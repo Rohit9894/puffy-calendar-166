@@ -1,6 +1,6 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import MarkdownPreview from "@uiw/react-markdown-preview";
-const source = `## MarkdownPreview {
+const source = `
     "to": [
       {
         "email": "john_doe@example.com",
@@ -33,12 +33,10 @@ const source = `## MarkdownPreview {
     },
     "headers": {
       "header1": "value1"
-    }
   }`;
 const src2 = `
-  ## MarkdownPreview
+ 
   <pre style="fontSize=10px">
-{
 from*: {
 email: string
 name: string
@@ -95,7 +93,7 @@ custom_variables: {
 Values that are specific to the entire send that will be carried along with the email and its activity data. Total size of custom variables in JSON form must not exceed 1000 bytes.
 
 <any-key>: string
-}}
+}
 </pre>
 `;
 function RequestTab() {

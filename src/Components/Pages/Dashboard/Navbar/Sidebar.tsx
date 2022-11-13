@@ -288,7 +288,7 @@ export const Sidebar = ({ show }: s) => {
             </>
           )}
         </AccordionItem>
-        <Link to="">
+        <Link to="/home/user-management">
           <AccordionItem border={"none"}>
             <h2>
               <AccordionButton
@@ -324,7 +324,7 @@ export const Sidebar = ({ show }: s) => {
               </h2>
               <AccordionPanel p={0}>
                 <Accordion>
-                  <Link to="">
+                  <Link to="/home/api-tokens">
                     <AccordionItem border={"none"}>
                       <AccordionButton
                         _expanded={{ color: "#fff", background: "#38445e" }}
@@ -335,7 +335,7 @@ export const Sidebar = ({ show }: s) => {
                       </AccordionButton>
                     </AccordionItem>
                   </Link>
-                  <Link to="">
+                  <Link to="/home/cors-domain">
                     <AccordionItem border={"none"}>
                       <AccordionButton
                         _expanded={{ color: "#fff", background: "#38445e" }}

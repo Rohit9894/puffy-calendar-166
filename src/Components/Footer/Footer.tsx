@@ -20,13 +20,18 @@ export const Footer = () => {
     }
     return "none";
   };
+
   return (
     <Box
       px={["20px", "30px", "30px", "50px", "60px"]}
       pt="40px"
       pb={"20px"}
       borderTop="1px solid rgba(0, 0, 0, 0.24)"
-      display={path.includes("home") ? "none" : "block"}
+      display={
+        path.includes("home") || path.includes("resources/api")
+          ? "none"
+          : "block"
+      }
     >
       <Flex
         w={["100%", "80%", "80%", "70%", "70%"]}
