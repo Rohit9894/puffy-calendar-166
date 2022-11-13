@@ -62,9 +62,8 @@ const FakeServer = () => {
                 Safe Email Testing With Fake SMTP Server
               </Heading>
 
-              <VStack gap={4} w="100%">
+              <VStack gap={8} w="100%" align={["center", "flex-start"]}>
                 <Box
-                  display={"block"}
                   lineHeight={1.2}
                   fontWeight={500}
                   textAlign={{ base: "none", lg: "left" }}
@@ -78,27 +77,15 @@ const FakeServer = () => {
                   no risk of spamming recipients’ inboxes
                 </Box>
                 <Button
-                  display={"block"}
-                  textAlign="left"
                   bgColor={"#22d172"}
                   color={"#fff"}
                   fontSize=".875rem"
                   marginTop={5}
+                  _hover={{ background: "#45e890" }}
                 >
                   Sign Up For Free
                 </Button>
-              </VStack>
-
-              <Box mt={10}>
-                <Flex
-                  w={{ base: "100%", lg: "120%" }}
-                  direction={{ base: "column", lg: "row" }}
-                  display={"flex"}
-                  alignItems="center"
-                  textAlign="center"
-                  justifyContent={"center"}
-                  marginTop={5}
-                >
+                <Flex direction={{ base: "column", lg: "row" }} gap="2">
                   <Image
                     w={106}
                     h={30}
@@ -130,7 +117,7 @@ const FakeServer = () => {
                     alt="Jmeter"
                   />
                 </Flex>
-              </Box>
+              </VStack>
             </VStack>
 
             <Box>

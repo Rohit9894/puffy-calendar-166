@@ -8,7 +8,6 @@ import { Login } from "../Pages/Login/Login";
 import { ForgotPassword } from "../Pages/Login/ForgotPassword";
 import { Signup } from "../Pages/Login/Signup";
 import { User } from "../Pages/Login/User";
-import Price from "../Pages/Pricing/Price";
 import QAAutomation from "../Pages/QAAutomation";
 import HtmlCheck from "../Pages/HtmlCheck";
 import FakeServer from "../Pages/FakeServer";
@@ -20,6 +19,7 @@ import { UserHome } from "../Pages/Dashboard/Pages/UserHome";
 import { LoginHome } from "../Pages/Dashboard/Pages/Home/LoginHome";
 import { AccountSetting } from "../Pages/Dashboard/Pages/AccountSetting/AccountSetting";
 import { DeleteAccount } from "../Pages/Dashboard/Pages/AccountSetting/DeleteAccount";
+import { Price } from "../Pages/Pricing/Price";
 
 export const AllRoutes = () => {
   return (

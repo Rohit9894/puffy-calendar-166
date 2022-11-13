@@ -6,6 +6,8 @@ import {
   Hide,
   Text,
   Image,
+  VStack,
+  Flex,
 } from "@chakra-ui/react";
 import {
   Table,
@@ -25,14 +27,32 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-const Price = () => {
+export const Price = () => {
   const style = {
-    border: "1px solid black",
+    border: "1px solid grey ",
   };
   return (
-    <Box w="100%" p={4} marginTop={"100px"} color="black">
+    <Box w="100%" p={4} marginTop={"60px"} color="black">
       {/* upper chart */}
-
+      <VStack py="50px" gap="4" textAlign={"center"} w="full">
+        <Heading>Power up your email capabilities</Heading>
+        <Box className="pricetrusted">
+          <Box className="pricetrustedtext">Trusted by</Box>
+        </Box>
+        <Flex
+          gap="5"
+          className="trustedImages"
+          w="60%"
+          justify={["flex-start", "center"]}
+        >
+          <Image src="https://mailtrap.io/wp-content/uploads/2022/11/Yelp-2.svg" />
+          <Image src="https://mailtrap.io/wp-content/uploads/2022/11/UserTesting-1.svg" />
+          <Image src="https://mailtrap.io/wp-content/uploads/2022/11/PayPal-2.svg" />
+          <Image src="https://mailtrap.io/wp-content/uploads/2022/11/Calendly-2.svg" />
+          <Image src="https://mailtrap.io/wp-content/uploads/2022/11/Atlassian-2.svg" />
+          <Image src="https://mailtrap.io/wp-content/uploads/2022/11/Adobe-2.svg" />
+        </Flex>
+      </VStack>
       <Hide below="xl">
         <Box width="100%">
           <Box margin={"auto"} alignItems={"center"} textAlign={"center"}>
@@ -91,12 +111,11 @@ const Price = () => {
                 >
                   <Link to="/home/payment" state={0}>
                     <Button
-                      bg="#1a2e44"
+                      bg="rgb(26,46,68)"
                       color="white"
                       position={"revert"}
                       _hover={{ background: "#566583" }}
                     >
-                      {" "}
                       Try Free
                     </Button>
                   </Link>
@@ -254,7 +273,6 @@ const Price = () => {
                   h="30%"
                 >
                   <Text fontWeight="bold" textAlign="center">
-                    {" "}
                     Business
                   </Text>
                   <Box
@@ -448,15 +466,11 @@ const Price = () => {
         </Box>
         <Box width={"90%"} margin="auto">
           <TableContainer marginTop={"2pc"}>
-            <Accordion defaultIndex={[0]} allowMultiple>
-              <Table
-                variant="striped"
-                colorScheme="rgb(249,249,247)"
-                size={["md", "md", "md", "md"]}
-              >
+            <Accordion allowMultiple>
+              <Table variant="striped">
                 <Thead>
                   <Tr>
-                    <Th> </Th>
+                    <Th style={{ borderBottom: "1px solid " }}></Th>
                     <Th style={style}>Free</Th>
                     <Th style={style}>Indevidual</Th>
                     <Th style={style} height="50px">
@@ -473,18 +487,18 @@ const Price = () => {
                   {" "}
                   <Tr style={style}>
                     {" "}
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Total test emails per month</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"} p="0">
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Total test emails per month
+                        </AccordionButton>
+                        <AccordionPanel>
                           The maximum number of emails you can test with
                           Mailtrap and get in all your Mailtrap Inboxes
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
                     <Td style={style}>500</Td>
                     <Td style={style}>5K</Td>
                     <Td style={style}>15K</Td>
@@ -493,18 +507,18 @@ const Price = () => {
                     <Td style={style}>10M</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Sending rate limits per 10 sec</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Sending rate limits per 10 sec
+                        </AccordionButton>
+                        <AccordionPanel>
                           The number of emails you can send to each of your
                           Inboxes every 10 seconds.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
                     <Td style={style}>5</Td>
                     <Td style={style}>10</Td>
                     <Td style={style}>25</Td>
@@ -513,18 +527,18 @@ const Price = () => {
                     <Td style={style}>150</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Inboxes</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Inboxes
+                        </AccordionButton>
+                        <AccordionPanel>
                           Separate folders to capture you test messages from
                           different environments(dev, QA,staging).
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
                     <Td style={style}>1</Td>
                     <Td style={style}>5</Td>
                     <Td style={style}>15</Td>
@@ -534,18 +548,18 @@ const Price = () => {
                   </Tr>
                   <Tr style={style}>
                     {" "}
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Max emails per inbox</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Max emails per inbox
+                        </AccordionButton>
+                        <AccordionPanel>
                           The maximum number of emails you can test with
                           Mailtrap and get in all your Mailtrap Inoxes
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
                     <Td style={style}>50</Td>
                     <Td style={style}>200</Td>
                     <Td style={style}>400</Td>
@@ -554,19 +568,19 @@ const Price = () => {
                     <Td style={style}>1000</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>API</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          API
+                        </AccordionButton>
+                        <AccordionPanel>
                           Mailtrap API allows developers to run integrational or
                           load tests and receive messages or email lists via API
                           to make sure the sendiing works correctly.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}>✅</Td>
                     <Td style={style}>✅</Td>
@@ -576,19 +590,19 @@ const Price = () => {
                     <Td style={style}>✅</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Inbox email address</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Inbox email address
+                        </AccordionButton>
+                        <AccordionPanel>
                           Ted dedicated email address for each of your Inboxes
                           to send messages from other email accounts or right
                           from your application during the testing process.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}></Td>
                     <Td style={style}></Td>
@@ -598,18 +612,17 @@ const Price = () => {
                     <Td style={style}>✅</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td> email size</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon /> email size
+                        </AccordionButton>
+                        <AccordionPanel>
                           The maximum allowed size of each email message
                           including attachments, in megabytes(1MB = 1024KB).
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}>5</Td>
                     <Td style={style}>7</Td>
@@ -619,19 +632,18 @@ const Price = () => {
                     <Td style={style}>25</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Tech info and Bcc</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon /> Tech info and Bcc
+                        </AccordionButton>
+                        <AccordionPanel>
                           The detailed information about SMTP transactions and
                           email headers. Bcc'ed email addresses are displayed in
                           a Separate field.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}></Td>
                     <Td style={style}></Td>
@@ -641,19 +653,19 @@ const Price = () => {
                     <Td style={style}>✅</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Total forwarded emails per month</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Total forwarded emails per month
+                        </AccordionButton>
+                        <AccordionPanel>
                           The maximum number of emails that can be sent to
                           whitelisted recipients with both Manual Forwarding and
                           Auto Forwarding Rules.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}></Td>
                     <Td style={style}>100</Td>
@@ -663,18 +675,18 @@ const Price = () => {
                     <Td style={style}>10K</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Manual forwarding recipients</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Manual forwarding recipients
+                        </AccordionButton>
+                        <AccordionPanel>
                           The number of email addresses you can whitelist for
                           manual forwarding
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}></Td>
                     <Td style={style}>10</Td>
@@ -684,18 +696,18 @@ const Price = () => {
                     <Td style={style}>300</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Projects</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Projects
+                        </AccordionButton>
+                        <AccordionPanel>
                           The maximum number of Projects to arrage Mailtrap
                           Inboxes and distinguish different tasks.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}>1</Td>
                     <Td style={style}>5</Td>
@@ -705,18 +717,18 @@ const Price = () => {
                     <Td style={style}>300</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Support</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Support
+                        </AccordionButton>
+                        <AccordionPanel>
                           =The email support we provide you with on Monday-
                           Friday from 9 am till 6 pm (UTC)
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
                     <Td style={style}>non-priority</Td>
                     <Td style={style}>priority</Td>
                     <Td style={style}>priority</Td>
@@ -725,18 +737,18 @@ const Price = () => {
                     <Td style={style}>priority</Td>
                   </Tr>
                   <Tr style={style}>
-                    <AccordionItem>
-                      <AccordionButton backgroundColor={"lavender"}>
-                        <Td>Single Sign-on(SSO)</Td>
-                        <AccordionIcon />
-                      </AccordionButton>
-                      <AccordionPanel pb={4}>
-                        <Tr>
+                    <Td style={style}>
+                      <AccordionItem border={"none"}>
+                        <AccordionButton _hover={{ background: "none" }} p="0">
+                          <AccordionIcon />
+                          Single Sign-on(SSO)
+                        </AccordionButton>
+                        <AccordionPanel>
                           Integrate Mailtrap into you SSO platform and manage
                           all users and permissions from one place.
-                        </Tr>
-                      </AccordionPanel>
-                    </AccordionItem>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Td>
 
                     <Td style={style}></Td>
                     <Td style={style}></Td>
@@ -746,7 +758,7 @@ const Price = () => {
                     <Td style={style}>✅</Td>
                   </Tr>
                   <Tr style={style}>
-                    <Td border={"none"}></Td>
+                    <Td style={style} border={"none"}></Td>
 
                     <Td
                       style={style}
@@ -775,6 +787,7 @@ const Price = () => {
                           color="white"
                           marginLeft={["auto", "auto", "auto", "15%"]}
                           position={"revert"}
+                          _hover={{ background: "#45e890" }}
                           marginTop="30px"
                         >
                           Buy Now
@@ -811,6 +824,7 @@ const Price = () => {
                           color="white"
                           marginLeft={["auto", "auto", "auto", "8%"]}
                           position={"revert"}
+                          _hover={{ background: "#45e890" }}
                           marginTop="30px"
                         >
                           Buy Now
@@ -847,6 +861,7 @@ const Price = () => {
                           color="white"
                           marginLeft={["auto", "auto", "auto", "auto"]}
                           position={"revert"}
+                          _hover={{ background: "#45e890" }}
                           marginTop="30px"
                         >
                           Buy Now
@@ -882,6 +897,7 @@ const Price = () => {
                           color="white"
                           marginLeft={["auto", "auto", "auto", "auto"]}
                           position={"revert"}
+                          _hover={{ background: "#45e890" }}
                           marginTop="30px"
                         >
                           Buy Now
@@ -917,6 +933,7 @@ const Price = () => {
                           color="white"
                           marginLeft={["auto", "auto", "auto", "auto"]}
                           position={"revert"}
+                          _hover={{ background: "#45e890" }}
                           marginTop="30px"
                         >
                           Buy Now
@@ -953,6 +970,7 @@ const Price = () => {
                           color="white"
                           marginLeft={["auto", "auto", "auto", "auto"]}
                           position={"revert"}
+                          _hover={{ background: "#45e890" }}
                           marginTop="30px"
                         >
                           Buy Now
@@ -1007,12 +1025,18 @@ const Price = () => {
           <Text fontSize={["50px", "50px", "50px", "70px"]} fontWeight={600}>
             In 3 Clicks
           </Text>
-          <Button color="white" bg={"rgb(34,209,114)"} position="revert">
+          <Button
+            color="white"
+            bg={"rgb(34,209,114)"}
+            position="revert"
+            _hover={{ background: "#45e890" }}
+          >
             Sign Up Now
           </Button>
         </Box>
         <Box>
           <Image
+            boxSize={"sm"}
             src="https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg"
             alt="Dan Abramov"
           />
@@ -1021,5 +1045,3 @@ const Price = () => {
     </Box>
   );
 };
-
-export default Price;
