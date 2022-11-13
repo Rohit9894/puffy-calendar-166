@@ -27,10 +27,7 @@ _hover={{ bg: "#5c93fc", color: "white" }} */
   background-color: #5c93fc;
   color: white;
 }
-/* my="5px"
-fontWeight="medium"
-color="#275dde"
-fontSize="16px" */
+
 .rheading {
   margin-top: 5px;
   margin: bottom;
@@ -46,4 +43,43 @@ fontSize="16px" */
   color: #a3ab9b;
   font-size: 17px;
   font-weight: 500;
+}
+/* pl="2%"
+color="white"
+ w="24%"
+ h="100vh"
+ bg="#1b2d44" */
+.rsidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1233;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-left: 2%;
+  height: 100vh;
+  background-color: #1b2d44;
+  width: 250px;
+}
+.rsidebar::-webkit-scrollbar {
+  display: none;
+}
+.rmaindiv {
+  position: relative;
+  left: 250px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-left: 2%;
+  height: 100vh;
+}
+.rmaindiv::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  .rmaindiv {
+    left: 0;
+    padding: 10px;
+  }
 }

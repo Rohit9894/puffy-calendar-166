@@ -19,166 +19,147 @@ import logo from "../../../Assets/favicon.png";
 function Api() {
   return (
     <div>
-      <Flex Pt="90px" zIndex="0">
-        <Box w="20%" display={["none", "inline-block"]}>
-          <Box
-            pl="7%"
-            overflow="auto"
-            color="white"
-            mt="50px"
-            w="100%"
-            h="100vh"
-            bg="#1b2d44 "
-          >
-            <Flex justifyContent="center">
-              {" "}
-              <Img h="60px" my="10px" src={logo} alt="logo" />
-            </Flex>
-            <Box pt="20px">
-              <Input placeholder="filter" w="50%" h="30px" />
-              <Button
-                bg="#5c93fc"
-                color="white"
-                h="30px"
-                ml="10px"
-                border="1px solid red"
-              >
-                Clear
-              </Button>
-            </Box>
-            <Link to="mailtrap" spy={true} smooth={true} duration={500}>
-              <Text mt="20px">Mailtrap API</Text>
-            </Link>
-            <Link to="auth" spy={true} smooth={true} duration={500}>
-              {" "}
-              <Text my="20px">Authentication</Text>
-            </Link>
+      <Flex>
+        <Box className="rsidebar" display={["none", "block"]}>
+          <Flex justifyContent="center">
+            {" "}
+            <Img h="60px" my="10px" src={logo} alt="logo" />
+          </Flex>
+          <Box pt="20px">
+            <Input placeholder="filter" w="50%" h="30px" />
+            <Button
+              bg="#5c93fc"
+              color="white"
+              h="30px"
+              ml="10px"
+              _hover={{
+                background: "#5c93fc",
+              }}
+            >
+              Clear
+            </Button>
+          </Box>
+          <Link to="mailtrap" spy={true} smooth={true} duration={500}>
+            <Text mt="20px" color="white">
+              Mailtrap API
+            </Text>
+          </Link>
+          <Link to="auth" spy={true} smooth={true} duration={500}>
+            {" "}
+            <Text my="20px" color="white">
+              Authentication
+            </Text>
+          </Link>
 
-            <hr />
-            <Text className="rheading2" color="white">
+          <hr />
+          <Text className="rheading2" color="white">
+            Emails
+          </Text>
+          <Box lineHeight="40px">
+            <Text fontWeight="medium" color="#275dde">
               Emails
             </Text>
-            <Box lineHeight="40px">
-              <Text fontWeight="medium" color="#275dde">
-                Emails
+            <Text fontSize="14px" color="#3e7d9b" ml="10px">
+              <Text color="red" display="inline">
+                post{" "}
               </Text>
-              <Text fontSize="14px" color="#3e7d9b" ml="10px">
-                <Text color="red" display="inline">
-                  post
-                </Text>
-                Send email
+              Send email
+            </Text>
+            <Text fontWeight="medium" color="#275dde">
+              Webhooks
+            </Text>
+            <Text fontSize="14px" color="#3e7d9b" ml="10px">
+              <Text color="red" display="inline">
+                POST{" "}
               </Text>
-              <Text fontWeight="medium" color="#275dde">
-                Webhooks
-              </Text>
-              <Text fontSize="14px" color="#3e7d9b" ml="10px">
-                <Text color="red" display="inline">
-                  POST
-                </Text>
-                WEBHOOK Receive events
-              </Text>
-            </Box>
-            {/* sandBox */}
-            <hr />
-            <Text className="rheading2">SandBox</Text>
-            <Box color="#3e7d9b" ml="10px" lineHeight="40px" fontSize="14px">
-              <Text className="rheading">Accounts</Text>
-              <Text>
-                <Text color="#275dde" display="inline">
-                  Get
-                </Text>{" "}
-                all accounts
-              </Text>
-              <Text className="rheading">Accout Users</Text>
-              <Text>Get List all users in account</Text>
-              <Text>DELETE REmove user form the account</Text>
-              <Text className="rheading">Permissions</Text>
-              <Text>PUT Manage user or token Permissions</Text>
-              <Text>Get Get resources</Text>
-              <Text className="rheading">Projects</Text>
-              GET
-              <Text>
-                Get a list of projects
-                <br />
-                POST Create project
-                <br />
-                GET Get project by id DELETE Delete project
-                <br />
-                PATCH Update project
-              </Text>
-              {/* inboxes */}
-              <Text
-                my="5px"
-                fontWeight="medium"
-                color="#275dde"
-                fontSize="16px"
-              >
-                Inboxes
-              </Text>
-              <Text>
-                <span style={{ color: "red" }}>POST</span> Create an inbox
-                <br />
-                <span style={{ color: "green" }}>Get</span> inbox attributes
-                <br />
-                <span style={{ color: "red" }}>DELETE</span> Delete an inbox
-                <br />
-                <span style={{ color: "red" }}>PATCH</span> Update an inbox
-                <br />
-                <span style={{ color: "red" }}>PATCH</span> Clean inbox
-                <br />
-                <span style={{ color: "red" }}>PATCH</span> Mark as read
-                <br />
-                <span style={{ color: "red" }}>PATCH</span> Reset credentials
-                <br />
-                <span style={{ color: "red" }}>PATCH</span> Enable email address
-                <br />
-                <span style={{ color: "red" }}>PATCH</span> Reset email address
-                <br />
-                <span style={{ color: "red" }}>GET</span> Get a list of inboxes
-              </Text>
-              {/* messages */}
-              <Text className="rheading">Messages</Text>
-              <Text>
-                <span style={{ color: "#275dde" }}>Get</span> Get Show email
-                message <br />
-                <span style={{ color: "#275dde" }}>Get</span> DELETE Delete
-                message <br />
-                <span style={{ color: "#275dde" }}>Get</span> PATCH Update
-                message <br />
-                messages <br />
-                <span style={{ color: "#275dde" }}>Get</span> POST Forward
-                message <br />
-                <span style={{ color: "#275dde" }}>Get</span> message spam score{" "}
-                <br />
-                <span style={{ color: "#275dde" }}>Get</span> HTML message{" "}
-                <br />
-                <span style={{ color: "#275dde" }}>Get</span> message source{" "}
-                <br />
-                text message <br />
-                <span style={{ color: "#275dde" }}>Get</span> raw message <br />
-                message as .eml
-              </Text>
-              {/* Attchments */}
-              <Text className="rheading">Attchments</Text>
-              <Text>
-                <span style={{ color: "#275dde" }}>Get</span> Get attachments
-                <br />
-                <span style={{ color: "#275dde" }}>Get</span> Get single
-                attachment
-              </Text>
-            </Box>
+              WEBHOOK Receive events
+            </Text>
+          </Box>
+          {/* sandBox */}
+          <hr />
+          <Text className="rheading2">SandBox</Text>
+          <Box color="#3e7d9b" ml="10px" lineHeight="40px" fontSize="14px">
+            <Text className="rheading">Accounts</Text>
+            <Text>
+              <Text color="#275dde" display="inline">
+                Get
+              </Text>{" "}
+              all accounts
+            </Text>
+            <Text className="rheading">Accout Users</Text>
+            <Text>Get List all users in account</Text>
+            <Text>DELETE REmove user form the account</Text>
+            <Text className="rheading">Permissions</Text>
+            <Text>PUT Manage user or token Permissions</Text>
+            <Text>Get Get resources</Text>
+            <Text className="rheading">Projects</Text>
+            GET
+            <Text>
+              Get a list of projects
+              <br />
+              POST Create project
+              <br />
+              GET Get project by id DELETE Delete project
+              <br />
+              PATCH Update project
+            </Text>
+            {/* inboxes */}
+            <Text my="5px" fontWeight="medium" color="#275dde" fontSize="16px">
+              Inboxes
+            </Text>
+            <Text>
+              <span style={{ color: "red" }}>POST</span> Create an inbox
+              <br />
+              <span style={{ color: "green" }}>Get</span> inbox attributes
+              <br />
+              <span style={{ color: "red" }}>DELETE</span> Delete an inbox
+              <br />
+              <span style={{ color: "red" }}>PATCH</span> Update an inbox
+              <br />
+              <span style={{ color: "red" }}>PATCH</span> Clean inbox
+              <br />
+              <span style={{ color: "red" }}>PATCH</span> Mark as read
+              <br />
+              <span style={{ color: "red" }}>PATCH</span> Reset credentials
+              <br />
+              <span style={{ color: "red" }}>PATCH</span> Enable email address
+              <br />
+              <span style={{ color: "red" }}>PATCH</span> Reset email address
+              <br />
+              <span style={{ color: "red" }}>GET</span> Get a list of inboxes
+            </Text>
+            {/* messages */}
+            <Text className="rheading">Messages</Text>
+            <Text>
+              <span style={{ color: "#275dde" }}>Get</span> Get Show email
+              message <br />
+              <span style={{ color: "#275dde" }}>Get</span> DELETE Delete
+              message <br />
+              <span style={{ color: "#275dde" }}>Get</span> PATCH Update message{" "}
+              <br />
+              messages <br />
+              <span style={{ color: "#275dde" }}>Get</span> POST Forward message{" "}
+              <br />
+              <span style={{ color: "#275dde" }}>Get</span> message spam score{" "}
+              <br />
+              <span style={{ color: "#275dde" }}>Get</span> HTML message <br />
+              <span style={{ color: "#275dde" }}>Get</span> message source{" "}
+              <br />
+              text message <br />
+              <span style={{ color: "#275dde" }}>Get</span> raw message <br />
+              message as .eml
+            </Text>
+            {/* Attchments */}
+            <Text className="rheading">Attchments</Text>
+            <Text>
+              <span style={{ color: "#275dde" }}>Get</span> Get attachments
+              <br />
+              <span style={{ color: "#275dde" }}>Get</span> Get single
+              attachment
+            </Text>
           </Box>
         </Box>
-        <Box
-          lineHeight="30px"
-          pl={["10px", "60px"]}
-          // pl="30px"
-          h="100vh"
-          overflow="scroll"
-          pt="90px"
-          w={{ sm: "95%", md: "80%", lg: "80%" }}
-          position="relative"
-        >
+        <Box lineHeight="30px" pt="90px" className="rmaindiv">
           <Box name="mailtrap">
             <Heading fontWeight="medium" mb="20px">
               Mailtrap API <sub style={{ fontSize: "16px" }}>v2</sub>
