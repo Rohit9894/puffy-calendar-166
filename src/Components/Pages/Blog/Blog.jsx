@@ -176,12 +176,14 @@ function Blog() {
         bg="#1a2e44"
       >
         <Box w="500px">
-          <Heading fontSize={["32px", "48px"]} color="white">
+          <Heading fontSize={["32px", "48px"]} color="white" textAlign="center">
             Your email workflows deserve more love
           </Heading>
-          <Button bg="#f9c273" mt="20px">
-            Start Now!
-          </Button>
+          <Flex justifyContent="center">
+            <Button bg="#f9c273" mt="20px" textAlign="center">
+              Start Now!
+            </Button>
+          </Flex>
         </Box>
       </Flex>
     </div>
