@@ -1,11 +1,9 @@
-import React from "react";
 import { Box, Button } from "@chakra-ui/react";
 
 import { FormControl, FormLabel, Text, Input } from "@chakra-ui/react";
 import { useState, useReducer } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 // import { isDisabled,isActive } from "@testing-library/user-event/dist/utils";
-import {useNavigate} from "react-router-dom"
 const initialState = {
   name: "",
   card: "",
@@ -42,16 +40,14 @@ const Payment = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [pro, setPro] = useState(true);
   const [nam, setNam] = useState("");
-  const [user, setUser] = useState("")
+  const [user, setUser] = useState("");
   const location = useLocation();
-  const navigate = useNavigate()
   const handlesave = (e) => {
     setData([...data, state]);
     dispatch({ type: "reset" });
     // console.log(data);
 
-    
-    if (planvalue == 0) {
+    if (planvalue === 0) {
       setNam("Free");
     } else if (planvalue === 9) {
       setNam("Individual");
@@ -69,12 +65,12 @@ const Payment = () => {
   };
 
   const [planvalue, setPlanvalue] = useState(location.state || 0);
- 
+
   const finale = () => {
     alert(` Dear,${user} you Succsfully subscribed Monthly ${nam} plan`);
     setPro(!pro);
-    setPlanvalue(0)
-    Navigate("/")
+    setPlanvalue(0);
+    Navigate("/");
   };
   return (
     <Box margin="auto" marginTop={"100px"} width="100%" marginBottom={"5pc"}>
@@ -112,7 +108,8 @@ const Payment = () => {
             </FormControl>
             <FormControl>
               <FormLabel>Card Data</FormLabel>
-              <Input id="kr"
+              <Input
+                id="kr"
                 type="number"
                 name="card"
                 placeholder="xxxx-xxxx-xxxx-xxxx"
@@ -189,7 +186,7 @@ const Payment = () => {
                 $ {planvalue}
               </Text>
             </Box>
-            <hr marginTop="30px" />
+            <hr style={{ marginTop: "30px" }} />
             <Box
               display={"flex"}
               justifyContent="space-between"
