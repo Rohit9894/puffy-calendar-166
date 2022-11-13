@@ -40,4 +40,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* blog section */
+.pricetrusted {
+  position: relative;
+  padding: 0 3rem;
+  margin-top: 1.25rem;
+  z-index: 1;
+}
+.pricetrustedtext {
+  padding: 0 1rem;
+  background: #fff;
+  color: #a3abb4;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+}
+.pricetrusted::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+}
+.trustedImages {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.trustedImages::-webkit-scrollbar {
+  display: none;
+}

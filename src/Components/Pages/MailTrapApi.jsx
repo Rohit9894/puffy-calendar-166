@@ -43,16 +43,15 @@ const MailTrapApi = () => {
             <VStack
               w={{ base: "100%", lg: "82%" }}
               textAlign="center"
-              display={"block"}
+              align={["center", "flex-start"]}
               justifyContent={"center"}
-              marginTop={10}
+              gap="8"
             >
               <Heading
                 fontWeight={600}
                 fontSize="1.875rem"
                 lineHeight={1.3}
-                marginBottom={12}
-                textAlign={{ base: "none", lg: "left" }}
+                textAlign={"left"}
                 display={"block"}
                 color="#202c45"
                 fontFamily={
@@ -61,79 +60,70 @@ const MailTrapApi = () => {
               >
                 Automate Your Email Testing With Sandbox API
               </Heading>
-
-              <VStack gap={4} w="100%">
-                <Box
-                  display={"block"}
-                  lineHeight={1.2}
-                  fontWeight={500}
-                  textAlign={{ base: "none", lg: "left" }}
-                  fontSize="1.125rem"
-                  color="#202c45"
-                  fontFamily={
-                    "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                  }
-                >
-                  Cover your code with tests and validate if emails are sent.
-                  Test multiple variables at a time.
-                </Box>
-              </VStack>
-
-              <VStack mb={5}>
-                <Button
-                  display={"block"}
-                  textAlign="left"
-                  bgColor={"#22d172"}
-                  color={"#fff"}
-                  fontSize=".875rem"
-                  marginTop={5}
-                >
-                  Sign Up For Free
-                </Button>
-              </VStack>
-
-              <Box mt={10}>
-                <Flex
-                  w={{ base: "100%", lg: "120%" }}
-                  direction={{ base: "column", lg: "row" }}
-                  display={"flex"}
-                  alignItems="center"
-                  textAlign="center"
-                  justifyContent={"center"}
-                  marginTop={5}
-                >
-                  <Image
-                    w={106}
-                    h={30}
-                    src="https://mailtrap.io/wp-content/uploads/2021/01/logo__rails.svg"
-                    alt="Selenium"
-                  />
-                  <Image
-                    w={106}
-                    h={30}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__java.svg"
-                    alt="cucumber"
-                  />
-                  <Image
-                    w={106}
-                    h={30}
-                    src="https://mailtrap.io/wp-content/uploads/2021/01/logo__net.svg"
-                    alt="Protractor"
-                  />
-                  <Image
-                    w={106}
-                    h={30}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/Python.svg"
-                    alt="Cypress"
-                  />
-                  <Image
-                    w={106}
-                    h={30}
-                    src="https://mailtrap.io/wp-content/uploads/2021/01/logo__php.svg"
-                    alt="Jmeter"
-                  />
-                </Flex>
+              <Box
+                lineHeight={1.2}
+                fontWeight={500}
+                textAlign={{ base: "none", lg: "left" }}
+                fontSize="1.125rem"
+                color="#202c45"
+                fontFamily={
+                  "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+                }
+              >
+                Cover your code with tests and validate if emails are sent. Test
+                multiple variables at a time.
               </Box>
+              <Button
+                display={"block"}
+                textAlign="left"
+                bgColor={"#22d172"}
+                color={"#fff"}
+                fontSize=".875rem"
+                marginTop={5}
+                _hover={{ background: "#45e890" }}
+              >
+                Sign Up For Free
+              </Button>
+              <Flex
+                direction={{ base: "column", lg: "row" }}
+                display={"flex"}
+                alignItems="center"
+                textAlign="center"
+                justifyContent={"center"}
+                marginTop={5}
+                gap="3"
+              >
+                <Image
+                  w={106}
+                  h={30}
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/logo__rails.svg"
+                  alt="Selenium"
+                />
+                <Image
+                  w={106}
+                  h={30}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/logo__java.svg"
+                  alt="cucumber"
+                />
+                <Image
+                  w={106}
+                  h={30}
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/logo__net.svg"
+                  alt="Protractor"
+                />
+                <Image
+                  w={106}
+                  h={30}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/Python.svg"
+                  alt="Cypress"
+                />
+                <Image
+                  w={106}
+                  h={30}
+                  src="https://mailtrap.io/wp-content/uploads/2021/01/logo__php.svg"
+                  alt="Jmeter"
+                />
+              </Flex>
             </VStack>
 
             <Box>

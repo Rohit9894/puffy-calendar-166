@@ -42,10 +42,9 @@ const HtmlCheck = () => {
           >
             <VStack
               w={{ base: "100%", lg: "82%" }}
-              textAlign="center"
-              display={"block"}
-              justifyContent={"center"}
+              align={["center", "flex-start"]}
               marginTop={10}
+              gap="20px"
             >
               <VStack>
                 <Heading
@@ -63,80 +62,68 @@ const HtmlCheck = () => {
                   Check The HTML & CSS Support For Top Email Clients
                 </Heading>
               </VStack>
-
-              <VStack gap={4} w="100%">
-                <Box
-                  display={"block"}
-                  lineHeight={1.2}
-                  fontWeight={500}
-                  textAlign={{ base: "none", lg: "left" }}
-                  fontSize="1.125rem"
-                  color="#202c45"
-                  fontFamily={
-                    "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                  }
-                >
-                  See how Gmail, Outlook, Apple Mail, and others will treat your
-                  emails. Fix the issues right away.
-                </Box>
-              </VStack>
-
-              <VStack mb={5}>
-                <Button
-                  display={"block"}
-                  textAlign="left"
-                  bgColor={"#22d172"}
-                  color={"#fff"}
-                  fontSize=".875rem"
-                  marginTop={5}
-                >
-                  Sign Up For Free
-                </Button>
-              </VStack>
-
-              <Box mt={15}>
-                <Flex
-                  w={{ base: "100%", lg: "120%" }}
-                  direction={{ base: "column", lg: "row" }}
-                  display={"flex"}
-                  alignItems="center"
-                  textAlign="center"
-                  justifyContent={"center"}
-                  marginTop={5}
-                  gap={2}
-                >
-                  <Image
-                    w={106}
-                    h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__gmail.svg"
-                    alt="Gmail"
-                  />
-                  <Image
-                    w={106}
-                    h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__apple-mail.svg"
-                    alt="Apple"
-                  />
-                  <Image
-                    w={106}
-                    h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__yahoo-mail.svg"
-                    alt="Yahoo"
-                  />
-                  <Image
-                    w={106}
-                    h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__outlook.svg"
-                    alt="Outlook"
-                  />
-                  <Image
-                    w={106}
-                    h={33}
-                    src="https://mailtrap.io/wp-content/uploads/2021/05/logo__thunderbird.svg"
-                    alt="Thunderbird"
-                  />
-                </Flex>
+              <Box
+                lineHeight={1.5}
+                fontWeight={500}
+                textAlign={{ base: "none", lg: "left" }}
+                fontSize="1.125rem"
+                color="#202c45"
+                fontFamily={
+                  "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+                }
+              >
+                See how Gmail, Outlook, Apple Mail, and others will treat your
+                emails. Fix the issues right away.
               </Box>
+
+              <Button
+                bgColor={"#22d172"}
+                color={"#fff"}
+                fontSize=".875rem"
+                marginTop={5}
+                _hover={{ background: "#45e890" }}
+              >
+                Sign Up For Free
+              </Button>
+              <Flex
+                direction={{ base: "column", lg: "row" }}
+                display={"flex"}
+                alignItems="flex-start"
+                justify="center"
+                gap={2}
+              >
+                <Image
+                  ml="-5px"
+                  w={100}
+                  h={33}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/logo__gmail.svg"
+                  alt="Gmail"
+                />
+                <Image
+                  w={106}
+                  h={33}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/logo__apple-mail.svg"
+                  alt="Apple"
+                />
+                <Image
+                  w={106}
+                  h={33}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/logo__yahoo-mail.svg"
+                  alt="Yahoo"
+                />
+                <Image
+                  w={106}
+                  h={33}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/logo__outlook.svg"
+                  alt="Outlook"
+                />
+                <Image
+                  w={106}
+                  h={33}
+                  src="https://mailtrap.io/wp-content/uploads/2021/05/logo__thunderbird.svg"
+                  alt="Thunderbird"
+                />
+              </Flex>
             </VStack>
 
             <Box mt={5}>
@@ -572,12 +559,11 @@ const HtmlCheck = () => {
 
               <VStack>
                 <Button
-                  display={"block"}
-                  textAlign="left"
                   bgColor={"#1a2e44"}
                   color={"#fff"}
                   fontSize=".875rem"
                   marginTop={5}
+                  _hover={{ background: "#566583" }}
                 >
                   Sign Up For Free
                 </Button>
@@ -984,6 +970,7 @@ const HtmlCheck = () => {
                 color={"#fff"}
                 fontSize=".875rem"
                 marginTop={9}
+                _hover={{ background: "#45e890" }}
               >
                 Sign Up For Free
               </Button>

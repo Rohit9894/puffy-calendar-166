@@ -31,15 +31,14 @@ const EmailAPI = () => {
             <VStack
               w={"100%"}
               textAlign="center"
-              display={"block"}
-              justifyContent={"center"}
+              align={["center", "flex-start"]}
               marginTop={10}
+              gap="8"
             >
               <Heading
                 fontWeight={600}
                 fontSize="1.875rem"
                 lineHeight={1.3}
-                marginBottom={12}
                 textAlign="left"
                 display={"block"}
                 color="#202c45"
@@ -49,37 +48,30 @@ const EmailAPI = () => {
               >
                 Email API for Developers
               </Heading>
-
-              <VStack gap={4}>
-                <Box
-                  display={"block"}
-                  lineHeight={1.2}
-                  fontWeight={500}
-                  textAlign={"left"}
-                  fontSize="1.125rem"
-                  color="#202c45"
-                  fontFamily={
-                    "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-                  }
-                >
-                  Deliver emails with Mailtrap Email API or SMTP from any
-                  application. Monitor deliverability and share stats with the
-                  team.
-                </Box>
-              </VStack>
-
-              <VStack>
-                <Button
-                  float={"left"}
-                  bgColor={"#22d172"}
-                  color={"#fff"}
-                  fontSize=".875rem"
-                  marginTop={9}
-                  _hover={{ background: "#45e890" }}
-                >
-                  Sign Up
-                </Button>
-              </VStack>
+              <Box
+                display={"block"}
+                lineHeight={1.2}
+                fontWeight={500}
+                textAlign={"left"}
+                fontSize="1.125rem"
+                color="#202c45"
+                fontFamily={
+                  "Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+                }
+              >
+                Deliver emails with Mailtrap Email API or SMTP from any
+                application. Monitor deliverability and share stats with the
+                team.
+              </Box>
+              <Button
+                bgColor={"#22d172"}
+                color={"#fff"}
+                fontSize=".875rem"
+                marginTop={9}
+                _hover={{ background: "#45e890" }}
+              >
+                Sign Up
+              </Button>
             </VStack>
 
             <Box>
