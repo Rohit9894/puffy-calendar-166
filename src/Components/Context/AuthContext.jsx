@@ -75,14 +75,14 @@ export const AuthContextProvider = ({ children }) => {
     navigate("/");
     window.location.reload(false);
   };
-  // useEffect(() => {
-  //   const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
-  //     setUser(currenUser);
-  //   });
-  //   return () => {
-  //     unsubscribe();
-  //   };
-  // }, [user]);
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
+      setUser(currenUser);
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, [user]);
   return (
     <AuthContext.Provider
       value={{

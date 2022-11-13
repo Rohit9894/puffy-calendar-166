@@ -239,7 +239,7 @@ export const Sidebar = ({ show }: s) => {
                       </AccordionButton>
                     </AccordionItem>
                   </Link>
-                  <Link to="">
+                  <Link to="/home/price">
                     <AccordionItem border={"none"}>
                       <AccordionButton
                         _expanded={{ color: "#fff", background: "#38445e" }}

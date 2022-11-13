@@ -51,6 +51,7 @@ export const AllRoutes = () => {
           </Protected>
         }
       >
+        <Route path="price" element={<Price />} />
         <Route path="payment" element={<Payment />} />
         <Route path="" element={<LoginHome />} />
         <Route path="account-settings" element={<AccountSetting />} />

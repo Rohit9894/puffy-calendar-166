@@ -12,7 +12,7 @@ import {
   signInWithEmailAndPassword,
   sendEmailVerification,
 } from "firebase/auth";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import { AiFillGithub, AiOutlineGoogle } from "react-icons/ai";
 import { SiFacebook } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
@@ -20,11 +20,48 @@ import { UserAuth } from "../../Context/AuthContext";
 import { auth } from "../../Firebase/firebase";
 import login from "./assets/login.svg";
 import "./login.css";
+export default function useScreenWidth() {
+  const [windowWidth, setWindowWidth] = useState(0);
 
+  const isWindow = typeof window !== "undefined";
+
+  const getWidth = () => (isWindow ? window.innerWidth : windowWidth);
+
+  const resize = () => setWindowWidth(getWidth());
+
+  useEffect(() => {
+    if (isWindow) {
+      setWindowWidth(getWidth());
+
+      window.addEventListener("resize", resize);
+
+      return () => window.removeEventListener("resize", resize);
+    }
+    //eslint-disable-next-line
+  }, [isWindow]);
+
+  return windowWidth;
+}
 export const Login = () => {
   const navigate = useNavigate();
-  const { googleSignIn, githubSignIn, facebookSignIn, setUser, user } =
-    UserAuth();
+  const widthSize = useScreenWidth();
+
+  if (widthSize > 400) {
+  }
+
+  if (widthSize <= 400) {
+  }
+
+  const {
+    googleSignIn,
+    githubSignIn,
+    facebookSignIn,
+    googleSignInR,
+    githubSignInR,
+    facebookSignInR,
+    setUser,
+    user,
+  } = UserAuth();
   const [putmail, setPutmail] = useState<string>("");
   const toast = useToast();
   const [show, setShow] = useState(true);
@@ -74,9 +111,9 @@ export const Login = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
       .then((res) => {
         setDisable(false);
-        const user: any = res.user;
-        setUser(user);
-        if (user.emailVerified) {
+
+        setUser(res.user);
+        if (res.user.emailVerified) {
           if (check.checked) localStorage.setItem("user", JSON.stringify(user));
           navigate("/home");
         } else {
@@ -91,29 +128,48 @@ export const Login = () => {
       });
   };
   const handleGoogleLogin = async () => {
-    console.log("check");
     try {
-      await googleSignIn();
+      if (widthSize > 400) {
+        await googleSignIn();
+      }
+
+      if (widthSize <= 400) {
+        await googleSignInR();
+      }
     } catch (error) {
       console.log(error);
     }
   };
   const handleGithubLogin = async () => {
-    console.log("check");
     try {
-      await githubSignIn().then((res: any) => console.log(res));
+      if (widthSize > 400) {
+        await githubSignIn();
+      }
+
+      if (widthSize <= 400) {
+        await githubSignInR();
+      }
     } catch (error) {
       console.log(error);
     }
   };
   const handleFacebookLogin = async () => {
-    console.log("check");
     try {
-      await facebookSignIn();
+      if (widthSize > 400) {
+        await facebookSignIn();
+      }
+
+      if (widthSize <= 400) {
+        await facebookSignInR();
+      }
     } catch (error) {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    if (user && user.emailVerified) navigate("/home");
+  }, [user, navigate]);
   return (
     <Box w="full" bg="#fff" py="70px" h={["max-content"]}>
       <Box h="full" py="50px" mx="auto" w={["95%", "90%", "90%", "90%", "80%"]}>

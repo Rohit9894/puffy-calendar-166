@@ -2,7 +2,6 @@ import { Box, Flex, Img, Text } from "@chakra-ui/react";
 import React from "react";
 
 function Card({ arr }) {
-  // console.log(arr);
   return (
     <div>
       <Box

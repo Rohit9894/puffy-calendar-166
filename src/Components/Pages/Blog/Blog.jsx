@@ -24,10 +24,8 @@ function Blog() {
     setLatest(blog_data["Latest_Jobs"]);
   }
   function getData(query) {
-    console.log(query);
     const blog_database = blog_data[query];
     setData(blog_database);
-    console.log(blog_database);
   }
   useEffect(() => {
     setLoading(false);

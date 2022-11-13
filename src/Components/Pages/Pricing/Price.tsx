@@ -26,15 +26,22 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export const Price = () => {
   const style = {
     border: "1px solid grey ",
   };
+  const path = useLocation().pathname;
   return (
     <Box w="100%" p={4} marginTop={"60px"} color="black">
       {/* upper chart */}
-      <VStack py="50px" gap="4" textAlign={"center"} w="full">
+      <VStack
+        py="50px"
+        gap="4"
+        textAlign={"center"}
+        w="full"
+        display={path.includes("home") ? "none" : "flex"}
+      >
         <Heading>Power up your email capabilities</Heading>
         <Box className="pricetrusted">
           <Box className="pricetrustedtext">Trusted by</Box>
@@ -1006,40 +1013,42 @@ export const Price = () => {
         </Box>
       </Box>
       {/* last part of template */}
-      <Box
-        bg="rgb(26,46,68)"
-        marginTop={"5pc"}
-        w="100%"
-        p={4}
-        color="white"
-        display={["block", "block", "flex", "flex"]}
-        justifyContent="space-between"
-      >
+      <Box display={path.includes("home") ? "none" : "flex"}>
         <Box
-          marginLeft={["10%", "10%", "20%", "20%"]}
-          marginTop={["1%", "1%", "5%", "10%"]}
+          bg="rgb(26,46,68)"
+          marginTop={"5pc"}
+          w="100%"
+          p={4}
+          color="white"
+          display={["block", "block", "flex", "flex"]}
+          justifyContent="space-between"
         >
-          <Text fontSize={"30px"} fontWeight={"bold"}>
-            Create Your Free Account
-          </Text>
-          <Text fontSize={["50px", "50px", "50px", "70px"]} fontWeight={600}>
-            In 3 Clicks
-          </Text>
-          <Button
-            color="white"
-            bg={"rgb(34,209,114)"}
-            position="revert"
-            _hover={{ background: "#45e890" }}
+          <Box
+            marginLeft={["10%", "10%", "20%", "20%"]}
+            marginTop={["1%", "1%", "5%", "10%"]}
           >
-            Sign Up Now
-          </Button>
-        </Box>
-        <Box>
-          <Image
-            boxSize={"sm"}
-            src="https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg"
-            alt="Dan Abramov"
-          />
+            <Text fontSize={"30px"} fontWeight={"bold"}>
+              Create Your Free Account
+            </Text>
+            <Text fontSize={["50px", "50px", "50px", "70px"]} fontWeight={600}>
+              In 3 Clicks
+            </Text>
+            <Button
+              color="white"
+              bg={"rgb(34,209,114)"}
+              position="revert"
+              _hover={{ background: "#45e890" }}
+            >
+              Sign Up Now
+            </Button>
+          </Box>
+          <Box>
+            <Image
+              boxSize={"sm"}
+              src="https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg"
+              alt="Dan Abramov"
+            />
+          </Box>
         </Box>
       </Box>
     </Box>

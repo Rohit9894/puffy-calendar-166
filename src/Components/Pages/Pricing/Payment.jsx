@@ -1,9 +1,8 @@
-import { Box, Button, Flex, HStack } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, useToast } from "@chakra-ui/react";
 
-import { FormControl, FormLabel, Text, Input } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import { useState, useReducer } from "react";
 import { Navigate, useLocation } from "react-router-dom";
-// import { isDisabled,isActive } from "@testing-library/user-event/dist/utils";
 const initialState = {
   name: "",
   card: "",
@@ -36,16 +35,17 @@ const reducer = (state, action) => {
   }
 };
 const Payment = () => {
+  const toast = useToast();
   const [data, setData] = useState([]);
   const [state, dispatch] = useReducer(reducer, initialState);
   const [pro, setPro] = useState(true);
   const [nam, setNam] = useState("");
   const [user, setUser] = useState("");
   const location = useLocation();
-  const handlesave = (e) => {
+  const [show, setShow] = useState(false);
+  const handlesave = () => {
     setData([...data, state]);
     dispatch({ type: "reset" });
-    // console.log(data);
 
     if (planvalue === 0) {
       setNam("Free");
@@ -67,13 +67,20 @@ const Payment = () => {
   const [planvalue, setPlanvalue] = useState(location.state || 0);
 
   const finale = () => {
-    alert(` Dear,${user} you Succsfully subscribed Monthly ${nam} plan`);
+    toast({
+      title: "Success",
+      description: ` Dear,${user} you Succsfully subscribed Monthly ${nam} plan`,
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+      position: "top",
+    });
     setPro(!pro);
     setPlanvalue(0);
-    Navigate("/");
+    Navigate("/home");
   };
   return (
-    <Box width="100%" mt="10px">
+    <Box width="98%" mt="10px">
       <Flex flexDir={["column", "column", "row"]} gap="30px">
         <Box w="full">
           <Text fontSize={"18px"} fontWeight="bold" pl="2" py="1">
@@ -110,44 +117,50 @@ const Payment = () => {
                 })
               }
             />
+            <Box display={show ? "block" : "none"}>
+              <HStack w="full">
+                <Box w="full">
+                  <label className="loginlabel">Expiry Date</label>
+                  <input
+                    className="accountupdate"
+                    placeholder="MM/YY"
+                    name="expiry"
+                    value={state.expiry}
+                    onChange={(e) =>
+                      dispatch({
+                        type: "expiry",
+                        payload: e.target.value,
+                      })
+                    }
+                  ></input>
+                </Box>
 
-            {/* <HStack w="full">
-              <Box w="full">
-                <label className="loginlabel">Expiry Date</label>
-                <input
-                  className="accountupdate"
-                  placeholder="MM/YY"
-                  name="expiry"
-                  value={state.expiry}
-                  onChange={(e) =>
-                    dispatch({
-                      type: "expiry",
-                      payload: e.target.value,
-                    })
-                  }
-                ></input>
+                <Box w="full">
+                  <label className="loginlabel">CVV</label>
+                  <input
+                    className="accountupdate"
+                    placeholder="CVV"
+                    name="cvv"
+                    value={state.cvv}
+                    onChange={(e) =>
+                      dispatch({
+                        type: "cvv",
+                        payload: e.target.value,
+                      })
+                    }
+                  ></input>
+                </Box>
+              </HStack>
+              <Box mt="10px">
+                <button className="dashboardbtn" onClick={handlesave}>
+                  Save
+                </button>
               </Box>
+            </Box>
 
-              <Box w="full">
-                <label className="loginlabel">CVV</label>
-                <input
-                  className="accountupdate"
-                  placeholder="CVV"
-                  name="cvv"
-                  value={state.cvv}
-                  onChange={(e) =>
-                    dispatch({
-                      type: "cvv",
-                      payload: e.target.value,
-                    })
-                  }
-                ></input>
-              </Box>
-            </HStack> */}
-
-            <Box mt="10px">
-              <button className="dashboardbtn" onClick={handlesave}>
-                Save
+            <Box mt="10px" display={show ? "none" : "block"}>
+              <button className="dashboardbtn" onClick={() => setShow(true)}>
+                Next
               </button>
             </Box>
           </Box>
@@ -166,11 +179,7 @@ const Payment = () => {
               </Text>
             </Box>
             <hr style={{ marginTop: "30px" }} />
-            <Box
-              display={"flex"}
-              justifyContent="space-between"
-              marginTop="30px"
-            >
+            <Box display={"flex"} justifyContent="space-between" mt="24px">
               <Text fontWeight={"bold"} fontSize="20px">
                 Total to pay
               </Text>
@@ -183,17 +192,18 @@ const Payment = () => {
               upgraded immediately
             </Text>
 
-            <Button
-              backgroundColor={"rgb(76,131,238)"}
-              marginTop={"25px"}
-              color="white"
-              marginLeft={"80%"}
-              isDisabled={pro}
-              onClick={finale}
-              _hover={{ background: "rgb(76,131,238)" }}
-            >
-              Proceed
-            </Button>
+            <Flex justifyContent={"flex-end"} w="100%">
+              <Button
+                backgroundColor={"rgb(76,131,238)"}
+                marginTop={"25px"}
+                color="white"
+                isDisabled={pro}
+                onClick={finale}
+                _hover={{ background: "rgb(76,131,238)" }}
+              >
+                Proceed
+              </Button>
+            </Flex>
           </Box>
         </Box>
       </Flex>
