@@ -70,7 +70,6 @@ export const AuthContextProvider = ({ children }) => {
   };
   const logout = () => {
     signOut(auth).then(() => setUser({}));
-    console.log("logout", user);
     localStorage.removeItem("user");
     navigate("/");
   };
