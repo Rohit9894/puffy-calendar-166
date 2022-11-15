@@ -32,8 +32,7 @@ export const Navbar = () => {
   useEffect(() => {
     if (path.includes("home")) {
       setDisplay(false);
-    }
-    if (path === "/") setDisplay(true);
+    } else setDisplay(true);
     window.addEventListener("scroll", stickNavbar);
     return () => window.removeEventListener("scroll", stickNavbar);
   }, [path]);

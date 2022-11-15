@@ -34,7 +34,6 @@ export const DeleteAccount = () => {
       })
       .then(() => {
         navigate("/");
-        window.location.reload(false);
       })
       .catch(() =>
         toast({
