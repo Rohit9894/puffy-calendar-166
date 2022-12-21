@@ -47,19 +47,17 @@ const Payment = () => {
     setData([...data, state]);
     dispatch({ type: "reset" });
 
-    if (planvalue === 0) {
-      setNam("Free");
-    } else if (planvalue === 9) {
-      setNam("Individual");
-    } else if (planvalue === 24) {
-      setNam("Team");
-    } else if (planvalue === 49) {
-      setNam("Business");
-    } else if (planvalue === 99) {
-      setNam("Premium");
-    } else if (planvalue === 299) {
-      setNam("Enterprise");
+    switch(planvalue){
+      case planvalue===0: setNam("Free")
+      case planvalue===9:setNam("Individual")
+      case planvalue===24: setNam("Team")
+      case planvalue ===49 : setNam("Business")
+      case planvalue === 99 : setNam("Premium")
+      case planvalue === 299 : setNam("Enterprise")
     }
+
+
+    
     setUser(state.name);
     setPro(!pro);
   };
