@@ -46,12 +46,6 @@ export const Login = () => {
   const navigate = useNavigate();
   const widthSize = useScreenWidth();
 
-  if (widthSize > 400) {
-  }
-
-  if (widthSize <= 400) {
-  }
-
   const {
     googleSignIn,
     githubSignIn,
